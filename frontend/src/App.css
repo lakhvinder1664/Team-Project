@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  padding-top: 0; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar-transition {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999; 
+  transition: all 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.navbar-large {
+  padding: 1.5rem 1rem; 
+}
+
+.navbar-small {
+  padding: 0.5rem 1rem;
+  background-color: white; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Banner section */
+.banner {
+  position: relative;         
+  display: flex;             
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;          
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);    
+  padding-left: 5%;
+}
+
+
+
+/* Left-side content inside banner */
+.banner-content {
+  color: #fff;
+  max-width: 500px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+
+/* Page content below banner */
+.home-content {
+  padding: 2rem 5%;
+}
+
+/* Responsive: for mobile screens */
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 60px;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .banner-content {
+    max-width: 90%;
+  }
 }
