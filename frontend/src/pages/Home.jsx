@@ -34,10 +34,10 @@ import solutionImg2 from "../assets/OurSolution-img/solutionimg2.png";
 import solutionImg3 from "../assets/OurSolution-img/solutionimg3.png";
 
 // Testimonial images
-import testimonialUserImg from '../assets/images/testo.png';
-import testimonyImg2 from '../assets/images/1751275942.png';
-import testimonyImg3 from '../assets/images/1751275921.png';
-import testimonyImg4 from '../assets/images/1751275903.png';
+// import testimonialUserImg from '../assets/images/testo.png';
+// import testimonyImg2 from '../assets/images/1751275942.png';
+// import testimonyImg3 from '../assets/images/1751275921.png';
+// import testimonyImg4 from '../assets/images/1751275903.png';
 
 // Experience Centre images
 import expCenterImg1 from "../assets/images/Bangalore.svg";
@@ -88,26 +88,26 @@ const solutionItems = [
   },
 ];
 
-const testimonialData = [
-  {
-    text: "We partnered with Schon Doorways for a 120-apartment premium housing project. Their scale of production, delivery timelines, and on-site coordination made them a reliable execution partner. It’s rare to find a vendor that delivers both product quality and project efficiency.",
-    userImg: testimonyImg2,
-    name: "Karan Mehta",
-    designation: "Director",
-  },
-  {
-    text: "What sets Schon apart is their understanding of architectural vision. I needed custom aluminium systems for a minimalist villa project, and they executed every detail with precision. Their ability to handle complex briefs while maintaining design integrity is unmatched.",
-    userImg: testimonyImg3,
-    name: "Nikhil Shetty",
-    designation: "Principal Architect",
-  },
-  {
-    text: "From consultation to installation, the experience with Schon Doorways was seamless. Their team helped us choose the right doors and windows for our villa, and the quality speaks for itself—solid, sleek, and truly premium. I finally feel like I’ve built a home that will last generations.",
-    userImg: testimonyImg4,
-    name: "Anitha Rao",
-    designation: "Homeowner",
-  },
-];
+// const testimonialData = [
+//   {
+//     text: "We partnered with Schon Doorways for a 120-apartment premium housing project. Their scale of production, delivery timelines, and on-site coordination made them a reliable execution partner. It’s rare to find a vendor that delivers both product quality and project efficiency.",
+//     userImg: testimonyImg2,
+//     name: "Karan Mehta",
+//     designation: "Director",
+//   },
+//   {
+//     text: "What sets Schon apart is their understanding of architectural vision. I needed custom aluminium systems for a minimalist villa project, and they executed every detail with precision. Their ability to handle complex briefs while maintaining design integrity is unmatched.",
+//     userImg: testimonyImg3,
+//     name: "Nikhil Shetty",
+//     designation: "Principal Architect",
+//   },
+//   {
+//     text: "From consultation to installation, the experience with Schon Doorways was seamless. Their team helped us choose the right doors and windows for our villa, and the quality speaks for itself—solid, sleek, and truly premium. I finally feel like I’ve built a home that will last generations.",
+//     userImg: testimonyImg4,
+//     name: "Anitha Rao",
+//     designation: "Homeowner",
+//   },
+// ];
 
 const expCenters = [
   { img: expCenterImg1, name: "Bangalore" },
@@ -432,7 +432,7 @@ const Home = () => {
           </div>
           <div className="sec-9-row">
             <Row>
-              {testimonialData.map((t, i) => (
+              {/* {testimonialData.map((t, i) => (
                 <Col key={i}>
                   <div className={i === 2 ? "card-cont-bg" : ""}>
                     <div className="card-cont">
@@ -454,7 +454,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Col>
-              ))}
+              ))} */}
             </Row>
           </div>
         </Container>
