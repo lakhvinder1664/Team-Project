@@ -51,8 +51,8 @@ a.button {
 
 .side-img-btn {
     position: fixed;
-    left: 10px;
-    top: 50%;
+    left: 7%;
+    top: 6%;
     transform: translateY(-50%) !important;
     z-index: 1050; /* above other content */
     border: none;
@@ -61,7 +61,7 @@ a.button {
 }
 
 .side-img {
-    height: 50px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -165,7 +165,7 @@ a.button {
   
 }
 .banner-content h1{
-    width: 100%;
+    width: 140%;
     font-size: 58px;
 }
 .banner-content p{
@@ -639,7 +639,6 @@ font-family: DM Sans, sans-serif !important;
     font-size: 36px;
     line-height: 100%;
     letter-spacing: 0;
-    text-align: center;
     margin-bottom: 40px;}
 .sec-10-img img{
     height: 85px;

@@ -190,6 +190,7 @@ const Home = () => {
               <img src={bannerIcon1} alt="icon1" />
               <img src={bannerIcon2} alt="icon2" />
               <img src={bannerIcon3} alt="icon3" />
+              <img src={bannerIcon2} alt="icon4" />
             </Col>
           </Row>
         </Container>
@@ -218,7 +219,7 @@ const Home = () => {
                 </Col>
                 <Col>
                   <div className="sec-3-right-btn text-end">
-                    <Button className="sec-3-btn">All Products</Button>
+                    <Button className="sec-3-btn">All Products<FaArrowRight className="arrow-icon" /></Button>
                   </div>
                 </Col>
               </Row>
@@ -258,6 +259,7 @@ const Home = () => {
                     <h3>{card.title}</h3>
                     <p>{card.desc}</p>
                   </div>
+                  
                 </div>
               ))}
             </div>

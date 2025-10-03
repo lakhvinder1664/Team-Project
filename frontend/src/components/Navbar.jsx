@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Container, Nav, Button, Offcanvas } from "react-bootstrap";
+import { Navbar, Container, Nav, Button, Offcanvas, Tab } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import side from "../assets/images/side.png";
 import { FaArrowRight } from "react-icons/fa";
@@ -20,17 +20,15 @@ const CustomNavbar = () => {
       <Navbar
         expand="lg"
         fixed="top"
-        className={`py-3 navbar-transition ${scrolled ? "navbar-small" : "navbar-large"}`}
-      >
-        <Container>
-          {/* Side image as clickable menu trigger */}
+        className={`py-3 navbar-transition ${scrolled ? "navbar-small" : "navbar-large"}`}>
           <Button
-            className="side-img-btn d-lg-none"
+            className="side-img-btn"
             variant="transparent"
-            onClick={() => setShow(true)}
-          >
+            onClick={() => setShow(true)}>
             <img src={side} alt="Menu" className="side-img" />
           </Button>
+        <Container>
+          {/* Side image as clickable menu trigger */}
 
           <Navbar.Brand className="mx-auto">
             <img
