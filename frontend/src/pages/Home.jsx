@@ -13,6 +13,23 @@ import bannerIcon1 from "../assets/images/baanericon1.png";
 import bannerIcon2 from "../assets/images/baanericon2.png";
 import bannerIcon3 from "../assets/images/baanericon3.png";
 
+// right pills scrolling
+import pillsimage1 from "../assets/scrollingImg/1751689354.jpg"
+import pillsimage2 from "../assets/scrollingImg/1751689411.jpg"
+import pillsimage3 from "../assets/scrollingImg/1751690486.jpg"
+import pillsimage4 from "../assets/scrollingImg/1751690549.jpg"
+import pillsimage5 from "../assets/scrollingImg/1751691558.jpg"
+import pillsimage6 from "../assets/scrollingImg/1751691593.jpg"
+import pillsimage7 from "../assets/scrollingImg/1751691627.jpg"
+import pillsimage8 from "../assets/scrollingImg/1751691658.jpg"
+import pillsimage9 from "../assets/scrollingImg/1756816597.jpg"
+import pillsimage10 from "../assets/scrollingImg/1751691793.jpg"
+import pillsimage11 from "../assets/scrollingImg/1751691828.jpg"
+import pillsimage12 from "../assets/scrollingImg/1751691862.jpg"
+import pillsimage13 from "../assets/scrollingImg/1752396992.jpeg"
+import pillsimage14 from "../assets/scrollingImg/1752066091.jpg"
+import pillsimage15 from "../assets/scrollingImg/1752066395.jpeg"
+
 // Project Images (5-6 images for projects and logos carousel as sample)
 import projectImg1 from "../assets/6-row-img/1758177549.jpg";
 import projectImg2 from "../assets/6-row-img/1758177566.jpg";
@@ -34,10 +51,10 @@ import solutionImg2 from "../assets/OurSolution-img/solutionimg2.png";
 import solutionImg3 from "../assets/OurSolution-img/solutionimg3.png";
 
 // Testimonial images
-// import testimonialUserImg from '../assets/images/testo.png';
-// import testimonyImg2 from '../assets/images/1751275942.png';
-// import testimonyImg3 from '../assets/images/1751275921.png';
-// import testimonyImg4 from '../assets/images/1751275903.png';
+import image1 from '../assets/images/testo.png';
+import image2 from '../assets/images/1751275942.png';
+import image3 from '../assets/images/1751275921.png';
+import image4 from '../assets/images/1751275903.png';
 
 // Experience Centre images
 import expCenterImg1 from "../assets/images/Bangalore.svg";
@@ -87,27 +104,6 @@ const solutionItems = [
     text: "We offer tailored solutions, design flexibility, and expert support to ensure every client finds the perfect aluminium system to match their purpose, project, and style.",
   },
 ];
-
-// const testimonialData = [
-//   {
-//     text: "We partnered with Schon Doorways for a 120-apartment premium housing project. Their scale of production, delivery timelines, and on-site coordination made them a reliable execution partner. It’s rare to find a vendor that delivers both product quality and project efficiency.",
-//     userImg: testimonyImg2,
-//     name: "Karan Mehta",
-//     designation: "Director",
-//   },
-//   {
-//     text: "What sets Schon apart is their understanding of architectural vision. I needed custom aluminium systems for a minimalist villa project, and they executed every detail with precision. Their ability to handle complex briefs while maintaining design integrity is unmatched.",
-//     userImg: testimonyImg3,
-//     name: "Nikhil Shetty",
-//     designation: "Principal Architect",
-//   },
-//   {
-//     text: "From consultation to installation, the experience with Schon Doorways was seamless. Their team helped us choose the right doors and windows for our villa, and the quality speaks for itself—solid, sleek, and truly premium. I finally feel like I’ve built a home that will last generations.",
-//     userImg: testimonyImg4,
-//     name: "Anitha Rao",
-//     designation: "Homeowner",
-//   },
-// ];
 
 const expCenters = [
   { img: expCenterImg1, name: "Bangalore" },
@@ -193,6 +189,212 @@ const Home = () => {
               <img src={bannerIcon2} alt="icon4" />
             </Col>
           </Row>
+        </Container>
+      </div>
+
+      {/* What we do */}
+      <div className="sec-2">
+        <Container>
+          <div className="sec-2-top-head">
+            <h2>What We Do</h2>
+            <p>Crafted for Performance. Designed to Inspire Our Range of Precision-Engineered Solutions</p>
+          </div>
+
+          <div className="left-tabs-right">
+            <Row>
+              <Col lg={3} >
+              <div className="sec-2-left">
+                <ul>
+                  <li><a href="">Doors</a></li>
+                  <li><a href="">Window</a></li>
+                  <li><a href="">Railings</a></li>
+                  <li><a href="">Glasses</a></li>
+                  <li><a href="">Cubicles</a></li>
+                </ul>
+              </div>
+              </Col>
+              <Col lg={9} >
+                <div className="right-pills-scrolling">
+                  <div className="pill-right-cont">
+                    <h3>Aluminium Doors</h3>
+                    <p>Engineered for strength and sophistication, our aluminium doors feature slim profiles, smooth operation, and long-lasting durability. Whether sliding, hinged, or pivot, each system is designed to enhance space with maximum natural light and minimal visual disruption.</p>
+                  </div>
+                  <div className="right-pill-row">
+                      <Row>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage1} alt="" />
+                          </div>
+                            <p>Bi Fold Aluminium Doors</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage2} alt="" />
+                          </div>
+                            <p>Bi Fold Aluminium Doors</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage3} alt="" />
+                          </div>
+                            <p>Bi Fold Aluminium Doors</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage4} alt="" />
+                          </div>
+                            <p>Bi Fold Aluminium Doors</p>
+                          </div>
+                      </Col>
+                      </Row>
+                  </div>
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">Explore Aluminium Doors <FaArrowRight></FaArrowRight></Button>
+                    </div>
+                </div>
+              </Col>
+              <Col lg={9} >
+                <div className="right-pills-scrolling">
+                  <div className="pill-right-cont">
+                    <h3>Aluminium Windows</h3>
+                    <p>Our high-performance aluminium windows combine sleek design with superior insulation. Available in a range of configurations—from sliding to casement—they offer excellent thermal and acoustic control, along with custom finishes to match any architectural style</p>
+                  </div>
+                  <div className="right-pill-row">
+                      <Row>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage5} alt="" />
+                          </div>
+                            <p>Aluminium Awning Windows</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage6} alt="" />
+                          </div>
+                            <p>Aluminium Casement Windows</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage7} alt="" />
+                          </div>
+                            <p>Aluminium Fixed Windows</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage8} alt="" />
+                          </div>
+                            <p>Aluminium Sliding Windows</p>
+                          </div>
+                      </Col>
+                      </Row>
+                  </div>
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">Explore Aluminium Windows <FaArrowRight></FaArrowRight></Button>
+                    </div>
+                </div>
+              </Col>
+              <Col lg={9} >
+                <div className="right-pills-scrolling">
+                  <div className="pill-right-cont">
+                    <h3>Railings</h3>
+                    <p>Our aluminium and glass railing systems deliver safety without compromising on style. Perfect for balconies, staircases, and terraces, they offer a seamless look with high structural integrity and low maintenance, ideal for modern homes and commercial spaces.</p>
+                  </div>
+                  <div className="right-pill-row">
+                      <Row>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage9} alt="" />
+                          </div>
+                            <p>Luxury Decorative Glass Railings</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage10} alt="" />
+                          </div>
+                            <p>Aluminium Plain Glass Railings</p>
+                          </div>
+                      </Col>
+                      </Row>
+                  </div>
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">Explore Aluminium Windows <FaArrowRight></FaArrowRight></Button>
+                    </div>
+                </div>
+              </Col>
+              <Col lg={9} >
+                <div className="right-pills-scrolling">
+                  <div className="pill-right-cont">
+                    <h3>Luxury Glasses</h3>
+                    <p>Make a bold statement with our luxury glass solutions—ranging from decorative partitions to designer wall panels. Tailored to reflect your design sensibility, these high-quality glasses blend aesthetics with performance for refined living and working spaces.</p>
+                  </div>
+                  <div className="right-pill-row">
+                      <Row>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage11} alt="" />
+                          </div>
+                            <p>Double Glazing Units DGU Luxury Wall Decor</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage12} alt="" />
+                          </div>
+                            <p>Floor to Ceiling Tinted Mirror Panelling</p>
+                          </div>
+                      </Col>
+                      </Row>
+                  </div>
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">Explore Luxury Glasses <FaArrowRight></FaArrowRight></Button>
+                    </div>
+                </div>
+              </Col>
+              <Col lg={9} >
+                <div className="right-pills-scrolling">
+                  <div className="pill-right-cont">
+                    <h3>Shower Cubicles</h3>
+                    <p>Crafted for elegance and built to last, our frameless and semi-framed shower cubicles add a sleek touch to modern bathrooms. Designed for watertight performance and easy maintenance, they bring both comfort and luxury to your daily routine.</p>
+                  </div>
+                  <div className="right-pill-row">
+                      <Row>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage13} alt="" />
+                          </div>
+                            <p>Stainless Steel Shower Cubicles</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage14} alt="" />
+                          </div>
+                            <p>Frameless Shower Cubicles</p>
+                          </div>
+                      </Col>
+                        <Col lg={3} ><div className="row-image-cont">
+                          <div className="pill-image">
+                            <img src={pillsimage15} alt="" />
+                          </div>
+                            <p>Framed Shower Cubicles</p>
+                          </div>
+                      </Col>
+                      </Row>
+                  </div>
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">Explore Luxury Glasses <FaArrowRight></FaArrowRight></Button>
+                    </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
         </Container>
       </div>
 
@@ -432,33 +634,73 @@ const Home = () => {
           <div className="sec-9-head text-center">
             <h2>Built on Trust. Chosen by Experts</h2>
           </div>
-          <div className="sec-9-row">
-            <Row>
-              {/* {testimonialData.map((t, i) => (
-                <Col key={i}>
-                  <div className={i === 2 ? "card-cont-bg" : ""}>
-                    <div className="card-cont">
-                      <div className="quot-image">
-                        <img src={testimonialUserImg} alt="" />
+               <div className="sec-9">
+                  <Container>
+                              <div className="sec-9-row">
+                                  <Row>
+                                      <Col>
+                                          <div className="card-cont">
+                                              <div className="quot-image">
+                                                  <img src={image1} alt="" />
+                                              </div>
+                                              <div className="card-para">
+                                                  <p>We partnered with Schon Doorways for a 120-apartment premium housing project. Their scale of production, delivery timelines, and on-site coordination made them a reliable execution partner. It’s rare to find a vendor that delivers both product quality and project efficiency.</p>
+                                              </div>
+                                              <div className="card-user-cont ">
+                                                  <div className="card-user-image">
+                                                      <img src={image2} alt="" />
+                                                  </div>
+                                                  <div className="card-user-name">
+                                                      <h4>Karan Mehta</h4>
+                                                      <p>Director</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </Col>
+                                      <Col>
+                                <div className="card-cont">
+                                    <div className="quot-image">
+                                      <img src={image1} alt="" />
+                                    </div>
+                                    <div className="card-para">
+                                       <p>What sets Schon apart is their understanding of architectural vision. I needed custom aluminium systems for a minimalist villa project, and they executed every detail with precision. Their ability to handle complex briefs while maintaining design integrity is unmatched.</p>
+                                    </div>
+                                  <div className="card-user-cont ">
+                                    <div className="card-user-image">
+                                       <img src={image3} alt="" />
+                                    </div>
+                               <div className="card-user-name">
+                                       <h4>Nikhil Shetty</h4>
+                                       <p>Principal Architect</p>
+                                    </div>
+                                  </div>
+                               </div>
+                                      </Col>
+                                      <Col>
+                              <div className="card-cont-bg">
+                                    <div className="card-cont">
+                                    <div className="quot-image">
+                                      <img src={image1} alt="" />
+                                    </div>
+                                    <div className="card-para">
+                                      <p>From consultation to installation, the experience with Schon Doorways was seamless. Their team helped us choose the right doors and windows for our villa, and the quality speaks for itself—solid, sleek, and truly premium. I finally feel like I’ve built a home that will last generations.</p>
+                                    </div>
+                                <div className="card-user-cont ">
+                                    <div className="card-user-image">
+                                      <img src={image4} alt="" />
+                                    </div>
+                                    <div className="card-user-name">
+                                      <h4>Anitha Rao</h4>
+                                      <p>Homeowner</p>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Col>
+                        </Row>
                       </div>
-                      <div className="card-para">
-                        <p>{t.text}</p>
-                      </div>
-                      <div className="card-user-cont ">
-                        <div className="card-user-image">
-                          <img src={t.userImg} alt="" />
-                        </div>
-                        <div className="card-user-name">
-                          <h4>{t.name}</h4>
-                          <p>{t.designation}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              ))} */}
-            </Row>
-          </div>
+                  </Container>
+                </div>
         </Container>
       </div>
 
