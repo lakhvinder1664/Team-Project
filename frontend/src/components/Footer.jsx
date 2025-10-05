@@ -24,7 +24,7 @@ function Footer() {
                     </div>
                 </Col>
                 <Col lg={3}>
-                  <div className="footer-head">
+                  <div className="footer-head-our">
                     <h3>Our Existence</h3>
                     <ul>
                       <li><a href="">contact@theschon.com</a></li>
@@ -34,7 +34,7 @@ function Footer() {
                   </div>
                 </Col>
                 <Col lg={3}>
-                  <div className="footer-head">
+                  <div className="footer-head-quick">
                     <h3>Quick Links</h3>
                     <ul>
                       <li><a href="">Our Blogs</a></li>
@@ -45,7 +45,7 @@ function Footer() {
                   </div>
                 </Col>
                 <Col lg={3}>
-                  <div className="footer-head">
+                  <div className="footer-head-product">
                     <h3>Products</h3>
                     <ul>
                       <li><a href="">Doors</a></li>

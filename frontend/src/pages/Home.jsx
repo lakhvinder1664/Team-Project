@@ -70,6 +70,7 @@ import Client5 from "../assets/clientLogo/1751273994.png";
 import Client6 from "../assets/clientLogo/1751274009.png";
 import Client7 from "../assets/clientLogo/1751274022.png";
 import Client8 from "../assets/clientLogo/1751274047.png";
+
 import Client9 from "../assets/clientLogo/1751274064.png";
 
 const banners = [
@@ -159,6 +160,8 @@ const Home = () => {
     }
   }, []);
 
+  const [activeTab, setActiveTab] = useState("doors");
+
   return (
     <div className="home">
       {/* Banner Section */}
@@ -177,8 +180,8 @@ const Home = () => {
               <div className="banner-content">
                 <h1>{banners[current].title}</h1>
                 <p>{banners[current].text}</p>
-                <Button variant="light" className="banner-btn">
-                  {banners[current].button}
+                <Button variant="" className="bnner-btn"> 
+                  {banners[current].button} <FaArrowRight></FaArrowRight>
                 </Button>
               </div>
             </Col>
@@ -193,212 +196,228 @@ const Home = () => {
       </div>
 
       {/* What we do */}
-      <div className="sec-2">
-        <Container>
-          <div className="sec-2-top-head">
-            <h2>What We Do</h2>
-            <p>Crafted for Performance. Designed to Inspire Our Range of Precision-Engineered Solutions</p>
-          </div>
+          <div className="sec-2">
+      <Container>
+        <div className="sec-2-top-head">
+          <h2>What We Do</h2>
+          <p>
+            Crafted for Performance. Designed to Inspire Our Range of
+            Precision-Engineered Solutions
+          </p>
+        </div>
 
-          <div className="left-tabs-right">
-            <Row>
-              <Col lg={3} >
+        <div className="left-tabs-right">
+          <Row>
+            {/* LEFT SIDE */}
+            <Col lg={3}>
               <div className="sec-2-left">
                 <ul>
-                  <li><a href="">Doors</a></li>
-                  <li><a href="">Window</a></li>
-                  <li><a href="">Railings</a></li>
-                  <li><a href="">Glasses</a></li>
-                  <li><a href="">Cubicles</a></li>
+                  <li
+                    className={activeTab === "doors" ? "active" : ""}
+                    onClick={() => setActiveTab("doors")}
+                  >
+                    Doors
+                  </li>
+                  <li
+                    className={activeTab === "windows" ? "active" : ""}
+                    onClick={() => setActiveTab("windows")}
+                  >
+                    Windows
+                  </li>
+                  <li
+                    className={activeTab === "railings" ? "active" : ""}
+                    onClick={() => setActiveTab("railings")}
+                  >
+                    Railings
+                  </li>
+                  <li
+                    className={activeTab === "glasses" ? "active" : ""}
+                    onClick={() => setActiveTab("glasses")}
+                  >
+                    Glasses
+                  </li>
+                  <li
+                    className={activeTab === "cubicles" ? "active" : ""}
+                    onClick={() => setActiveTab("cubicles")}
+                  >
+                    Cubicles
+                  </li>
                 </ul>
               </div>
-              </Col>
-              <Col lg={9} >
-                <div className="right-pills-scrolling">
+            </Col>
+
+            {/* RIGHT SIDE */}
+            <Col lg={9}>
+              <div className="right-pills-scrolling">
+                {activeTab === "doors" && (
                   <div className="pill-right-cont">
                     <h3>Aluminium Doors</h3>
-                    <p>Engineered for strength and sophistication, our aluminium doors feature slim profiles, smooth operation, and long-lasting durability. Whether sliding, hinged, or pivot, each system is designed to enhance space with maximum natural light and minimal visual disruption.</p>
-                  </div>
-                  <div className="right-pill-row">
+                    <p>
+                      Engineered for strength and sophistication, our aluminium
+                      doors feature slim profiles, smooth operation, and
+                      long-lasting durability. Whether sliding, hinged, or
+                      pivot, each system is designed to enhance space with
+                      maximum natural light and minimal visual disruption.
+                    </p>
+
+                    <div className="right-pill-row">
                       <Row>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage1} alt="" />
-                          </div>
-                            <p>Bi Fold Aluminium Doors</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage2} alt="" />
-                          </div>
-                            <p>Bi Fold Aluminium Doors</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage3} alt="" />
-                          </div>
-                            <p>Bi Fold Aluminium Doors</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage4} alt="" />
-                          </div>
-                            <p>Bi Fold Aluminium Doors</p>
-                          </div>
-                      </Col>
+                        {[pillsimage1, pillsimage2, pillsimage3, pillsimage4].map((img, i) => (
+                          <Col lg={3} key={i}>
+                            <div className="row-image-cont">
+                              <div className="pill-image">
+                                <img src={img} alt="Door" />
+                              </div>
+                              <p>Bi Fold Aluminium Doors</p>
+                            </div>
+                          </Col>
+                        ))}
                       </Row>
-                  </div>
-                    <div className="right-pill-btn">
-                      <Button className="right-pill-down-btn">Explore Aluminium Doors <FaArrowRight></FaArrowRight></Button>
                     </div>
-                </div>
-              </Col>
-              <Col lg={9} >
-                <div className="right-pills-scrolling">
+
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">
+                        Explore Aluminium Doors <FaArrowRight />
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {activeTab === "windows" && (
                   <div className="pill-right-cont">
                     <h3>Aluminium Windows</h3>
-                    <p>Our high-performance aluminium windows combine sleek design with superior insulation. Available in a range of configurations—from sliding to casement—they offer excellent thermal and acoustic control, along with custom finishes to match any architectural style</p>
-                  </div>
-                  <div className="right-pill-row">
+                    <p>
+                      Our high-performance aluminium windows combine sleek design
+                      with superior insulation. Available in a range of
+                      configurations—from sliding to casement—they offer
+                      excellent thermal and acoustic control.
+                    </p>
+
+                    <div className="right-pill-row">
                       <Row>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage5} alt="" />
-                          </div>
-                            <p>Aluminium Awning Windows</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage6} alt="" />
-                          </div>
-                            <p>Aluminium Casement Windows</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage7} alt="" />
-                          </div>
-                            <p>Aluminium Fixed Windows</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage8} alt="" />
-                          </div>
-                            <p>Aluminium Sliding Windows</p>
-                          </div>
-                      </Col>
+                        {[pillsimage5, pillsimage6, pillsimage7, pillsimage8].map((img, i) => (
+                          <Col lg={3} key={i}>
+                            <div className="row-image-cont">
+                              <div className="pill-image">
+                                <img src={img} alt="Window" />
+                              </div>
+                              <p>Aluminium Window Type</p>
+                            </div>
+                          </Col>
+                        ))}
                       </Row>
-                  </div>
-                    <div className="right-pill-btn">
-                      <Button className="right-pill-down-btn">Explore Aluminium Windows <FaArrowRight></FaArrowRight></Button>
                     </div>
-                </div>
-              </Col>
-              <Col lg={9} >
-                <div className="right-pills-scrolling">
+
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">
+                        Explore Aluminium Windows <FaArrowRight />
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {activeTab === "railings" && (
                   <div className="pill-right-cont">
                     <h3>Railings</h3>
-                    <p>Our aluminium and glass railing systems deliver safety without compromising on style. Perfect for balconies, staircases, and terraces, they offer a seamless look with high structural integrity and low maintenance, ideal for modern homes and commercial spaces.</p>
-                  </div>
-                  <div className="right-pill-row">
+                    <p>
+                      Our aluminium and glass railing systems deliver safety
+                      without compromising on style. Perfect for balconies,
+                      staircases, and terraces.
+                    </p>
+
+                    <div className="right-pill-row">
                       <Row>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage9} alt="" />
-                          </div>
-                            <p>Luxury Decorative Glass Railings</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage10} alt="" />
-                          </div>
-                            <p>Aluminium Plain Glass Railings</p>
-                          </div>
-                      </Col>
+                        {[pillsimage9, pillsimage10].map((img, i) => (
+                          <Col lg={3} key={i}>
+                            <div className="row-image-cont">
+                              <div className="pill-image">
+                                <img src={img} alt="Railing" />
+                              </div>
+                              <p>Luxury Decorative Glass Railings</p>
+                            </div>
+                          </Col>
+                        ))}
                       </Row>
-                  </div>
-                    <div className="right-pill-btn">
-                      <Button className="right-pill-down-btn">Explore Aluminium Windows <FaArrowRight></FaArrowRight></Button>
                     </div>
-                </div>
-              </Col>
-              <Col lg={9} >
-                <div className="right-pills-scrolling">
+
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">
+                        Explore Railings <FaArrowRight />
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {activeTab === "glasses" && (
                   <div className="pill-right-cont">
                     <h3>Luxury Glasses</h3>
-                    <p>Make a bold statement with our luxury glass solutions—ranging from decorative partitions to designer wall panels. Tailored to reflect your design sensibility, these high-quality glasses blend aesthetics with performance for refined living and working spaces.</p>
-                  </div>
-                  <div className="right-pill-row">
+                    <p>
+                      Make a bold statement with our luxury glass solutions,
+                      ranging from decorative partitions to designer wall panels.
+                    </p>
+
+                    <div className="right-pill-row">
                       <Row>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage11} alt="" />
-                          </div>
-                            <p>Double Glazing Units DGU Luxury Wall Decor</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage12} alt="" />
-                          </div>
-                            <p>Floor to Ceiling Tinted Mirror Panelling</p>
-                          </div>
-                      </Col>
+                        {[pillsimage11, pillsimage12].map((img, i) => (
+                          <Col lg={3} key={i}>
+                            <div className="row-image-cont">
+                              <div className="pill-image">
+                                <img src={img} alt="Glass" />
+                              </div>
+                              <p>Decorative Glass Panel</p>
+                            </div>
+                          </Col>
+                        ))}
                       </Row>
-                  </div>
-                    <div className="right-pill-btn">
-                      <Button className="right-pill-down-btn">Explore Luxury Glasses <FaArrowRight></FaArrowRight></Button>
                     </div>
-                </div>
-              </Col>
-              <Col lg={9} >
-                <div className="right-pills-scrolling">
+
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">
+                        Explore Luxury Glasses <FaArrowRight />
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {activeTab === "cubicles" && (
                   <div className="pill-right-cont">
                     <h3>Shower Cubicles</h3>
-                    <p>Crafted for elegance and built to last, our frameless and semi-framed shower cubicles add a sleek touch to modern bathrooms. Designed for watertight performance and easy maintenance, they bring both comfort and luxury to your daily routine.</p>
-                  </div>
-                  <div className="right-pill-row">
-                      <Row>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage13} alt="" />
-                          </div>
-                            <p>Stainless Steel Shower Cubicles</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage14} alt="" />
-                          </div>
-                            <p>Frameless Shower Cubicles</p>
-                          </div>
-                      </Col>
-                        <Col lg={3} ><div className="row-image-cont">
-                          <div className="pill-image">
-                            <img src={pillsimage15} alt="" />
-                          </div>
-                            <p>Framed Shower Cubicles</p>
-                          </div>
-                      </Col>
-                      </Row>
-                  </div>
-                    <div className="right-pill-btn">
-                      <Button className="right-pill-down-btn">Explore Luxury Glasses <FaArrowRight></FaArrowRight></Button>
-                    </div>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Container>
-      </div>
+                    <p>
+                      Crafted for elegance and built to last, our frameless and
+                      semi-framed shower cubicles add a sleek touch to modern
+                      bathrooms.
+                    </p>
 
-      {/* Welcome Section */}
+                    <div className="right-pill-row">
+                      <Row>
+                        {[pillsimage13, pillsimage14, pillsimage15].map((img, i) => (
+                          <Col lg={3} key={i}>
+                            <div className="row-image-cont">
+                              <div className="pill-image">
+                                <img src={img} alt="Cubicle" />
+                              </div>
+                              <p>Framed Shower Cubicles</p>
+                            </div>
+                          </Col>
+                        ))}
+                      </Row>
+                    </div>
+
+                    <div className="right-pill-btn">
+                      <Button className="right-pill-down-btn">
+                        Explore Shower Cubicles <FaArrowRight />
+                      </Button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Container>
+    </div>
+
+      {/* Welcome to Schon */}
       <div className="sec-3">
         <Container>
           <div className="sec-3-top-head">
@@ -441,6 +460,24 @@ const Home = () => {
           </div>
         </Container>
       </div>
+
+      {/* Start your next project */}
+        <div className="sec-4-top-heading">
+          <Row>
+            <Col lg={6}>
+                <div className="sec-4-top-left">
+                    <h3>Start your next project with Schon</h3>
+                    <p>we’re just a step away</p>
+                </div>
+            </Col>
+            <Col lg={6}>
+                <div className="sec-4-top-right text-end">
+                  <Button className="sec-4-top-head-btn">Get in Touch <FaArrowRight></FaArrowRight></Button>
+                </div>
+            </Col>
+          </Row>
+        </div>
+ 
 
       {/* How It Works Carousel */}
       <Container className="sec-4-crousel-container">
@@ -601,15 +638,18 @@ const Home = () => {
 
       {/* Trusted Partners Carousel */}
       <div className="sec-8-bg">
-      <div className="sec-8">
+      <div className="sec-8 mt-4">
+        
+
+      </div>
+      <div className="crousel-row">
         <Container>
+        
           <div className="sec-8-top-head">
             <h2>Our Trusted Partners</h2>
             <p>Quality is always a Priority</p>
           </div>
-        </Container>
-      </div>
-      <div className="crousel-row">
+        </Container>  
         <div className="client-logo">
           <div className="sec-8-bg-slide">
             <div className="sec-8-next">

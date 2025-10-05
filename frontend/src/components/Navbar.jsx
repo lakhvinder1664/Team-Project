@@ -34,7 +34,7 @@ const CustomNavbar = () => {
             <img
               src={logo}
               alt="Logo"
-              height={scrolled ? 40 : 50}
+              height={scrolled ? 60: 80}
               style={{ transition: "height 0.3s ease" }}
             />
           </Navbar.Brand>

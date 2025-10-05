@@ -32,7 +32,7 @@ a.button {
     border-radius: 10px;
     border: 2px solid white !important;
     background: transparent;
-    padding: 12px 24px;
+    padding: 6px 24px;
     font-size: 20px;
 }
 .nav-btn:hover {
@@ -52,7 +52,7 @@ a.button {
 .side-img-btn {
     position: fixed;
     left: 7%;
-    top: 6%;
+    top: 7%;
     transform: translateY(-50%) !important;
     z-index: 1050; /* above other content */
     border: none;
@@ -61,7 +61,7 @@ a.button {
 }
 
 .side-img {
-    height: 40px;
+    height: 35px;
     cursor: pointer;
 }
 
@@ -171,6 +171,24 @@ a.button {
 .banner-content p{
   font-size: 30px;
 }
+.bnner-btn{
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition: all .2s 
+ease;
+}
+.bnner-btn:hover{
+      background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
 
 /* Page content below banner */
 .home-content {
@@ -194,76 +212,117 @@ a.button {
   }
 }
 
-.sec-2{
-  padding: 60px 0;      
-}
-.sec-2-top-head h2{
-    font-family: Playfair Display, serif !important;
-    font-size: 42px;
-    line-height: 100%;
-    letter-spacing: 0;
-    margin-bottom: 24px;
-}
-.sec-2-top-head p{
-    font-family: DM Sans, sans-serif !important;
-    font-size: 24px;
-    line-height: 150%;
-    margin: 0;
+.sec-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  position: relative;
+  padding: 60px 7%;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
 }
 
-.left-tabs-right{
+.sec-2-top-head h2 {
+  font-family: "Playfair Display", serif !important;
+  font-size: 42px;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
 
+.sec-2-top-head p {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
 }
-.sec-2-left{
-  
-}
-.sec-2-left ul{
-  
-}
-.sec-2-left li{
-    font-size: 36px;
-    padding: 15px 0;
-    list-style: none;
-}
-.sec-2-left li a{
-  color: #000;
-  text-decoration: none;
-  margin-left: -30px;
-}
+
 .left-tabs-right {
-    margin-top: 80px;
+  margin-top: 80px;
+  display: flex;
 }
-.pill-image img{
-  width: 100%;
+.sec-2-left {
+  position: sticky;
+  top: 120px; /* adjust as per your header height */
+  height: fit-content;
 }
-.pill-right-cont h3{
+.sec-2-left ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sec-2-left li {
+  font-size: 30px;
+  padding: 15px 0;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sec-2-left li:hover,
+.sec-2-left li.active {
+  color: black;
+  font-weight: 600;
+  transform: translateX(5px);
+}
+
+.right-pills-scrolling {
+  flex: 1;
+  height: 80vh; /* scrollable height */
+  overflow-y: auto; /* enable vertical scroll */
+  overflow-x: hidden;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Optional scrollbar */
+.right-pills-scrolling::-webkit-scrollbar {
+  width: 6px;
+}
+.right-pills-scrolling::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.right-pills-scrolling::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.pill-right-cont h3 {
   font-size: 42px;
 }
-.pill-right-cont p{
+.pill-right-cont p {
   font-size: 18px;
 }
-.row-image-cont p{
-      font-family: DM Sans, sans-serif !important;
-    font-weight: 300;
-    letter-spacing: 0;
-    text-align: left;  
-    font-size: 24px;
-    line-height: 100%;
-    margin-top: 24px;
+.pill-image img {
+  width: 100%;
 }
-.right-pill-btn{
+.row-image-cont p {
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.right-pill-btn {
   margin-top: 2rem !important;
 }
-.right-pill-down-btn{
-      color: white !important;
-    border-radius: 10px;
-    background: black;
-    padding: 12px 24px;
-    font-size: 20px;
-    border: none;
-    transition: all 0.3s ease;
-    margin-top: -30px;
+
+.right-pill-down-btn {
+  color: white !important;
+  border-radius: 10px;
+  background: black;
+  padding: 8px 24px;
+  font-size: 20px;
+  border: none;
+  transition: all 0.3s ease;
 }
+
+.right-pill-down-btn:hover {
+      background: #fff !important;
+    color: #000 !important;
+    border: 2px solid #000;
+}
+
+
 .sec-3{
   padding: 60px 0;
 }
@@ -288,7 +347,7 @@ a.button {
     color: white !important;
     border-radius: 10px;
     background: black;
-    padding: 12px 24px;
+    padding: 8px 24px;
     font-size: 20px;
     border: none;
     transition: all 0.3s ease;
@@ -308,8 +367,56 @@ a.button {
     border-radius: 30px;
 }
 
+.sec-4-top-heading{
+  margin-bottom: 90px;
+  color: white;
+  background-image: url('./assets/images/CTA.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 7%;
+}
+.sec-4-top-heading h3{
+      font-family: Playfair Display, serif !important;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 24px;  
+}
+.sec-4-top-heading p{
+    font-family: DM Sans, sans-serif !important;
+    font-size: 28px;
+    line-height: 150%;
+    margin: 0;
+}
+.sec-4-top-left{
+
+}
+.sec-4-top-right{
+      display: flex;
+    justify-content: end;
+    padding: 65px 0;
+}
+.sec-4-top-head-btn{
+    gap: 10px;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.sec-4-top-head-btn:hover{
+        background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
 
 .sec-4-crousel {
+    margin-bottom: 80px;
     display: flex;
     gap: 40px;
 }
@@ -332,7 +439,7 @@ a.button {
 }
 
 .sec-4-left-cont-btn {
-    padding: 12px 30px;
+    padding: 8px 30px;
     font-size: 18px;
     border-radius: 8px;
     border: none;
@@ -581,9 +688,10 @@ a.button {
 }
 
 .sec-8-bg{
-  padding: 20px 0;
+  padding: 0 !important;
   background: url(./assets/clientLogo/clientlogobg.png) no-repeat center center;
 }
+
 
 .sec-8-top-head h2{
   font-family: Playfair Display,serif!important;
@@ -594,7 +702,7 @@ a.button {
     font-weight: 300;
     letter-spacing: 0;
     text-align: left;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .sec-8-bg-slide {
@@ -789,17 +897,34 @@ font-family: DM Sans, sans-serif !important;
 
 
 .footer{
-  padding: 20px 0;
+  padding: 50px 0 0 0;
   background-color: #000;
 }
-.footer-head{
+.footer-p p{
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0;
+    color: #fff;
+    margin: 12px 0 30px;
+}
+.footer-head-our{
+  padding-left: 30px;
+  padding-top: 8px;
+}
+.footer-head-quick{
   padding-left: 80px;
+  padding-top: 8px;
+}
+.footer-head-product{
+  padding-left: 50px;
   padding-top: 8px;
 }
 .footer-logo img{
   width: 70%;
 }
-.footer-head h3{
+.footer-head-our h3{
     padding-left: 30px;
       font-family: DM Sans, sans-serif !important;
     font-weight: 400;
@@ -810,7 +935,47 @@ font-family: DM Sans, sans-serif !important;
     color: #fff;
     margin-bottom: 10px;
 }
-.footer p{    
+.footer-head-quick h3{
+    padding-left: 30px;
+      font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 125%;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-head-product h3{
+    padding-left: 30px;
+      font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 125%;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer-our p{    
+    margin-top: 20px;
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0;
+    color: #fff;
+}
+.footer-quick p{    
+    margin-top: 20px;
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0;
+    color: #fff;
+}
+.footer-product p{    
     margin-top: 20px;
     font-family: DM Sans, sans-serif !important;
     font-weight: 400;
@@ -824,28 +989,36 @@ font-family: DM Sans, sans-serif !important;
   line-height: 3;
   list-style: none;
 }
-.footer ul a{
-  text-decoration: none;
-  font-family: DM Sans, sans-serif !important;
+.footer ul, li, a{
+font-family: DM Sans, sans-serif !important;
     font-weight: 400;
     font-size: 18px;
-    line-height: 200%;
+    line-height: 240%;
     letter-spacing: 0;
     color: #f5f4f4;
-  list-style: none;
+    text-decoration: none;
 }
 .footer-socials a{
     margin: 0 3px;
     border-radius: 30px;
     padding: 7px 10px;
-    background: white;
 }
 
 svg {
     width: 12px;
-    height: 12px;
+    height: 28px;
+    color: white !important;
 }
 
 .all-right-deserve{
-  border-top: 1px solid gray;
+color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    margin: 40px 0 0;
+    padding: 20px 0;
+    border-top: 1px solid #535353;
+    font-family: DM Sans, sans-serif !important;
 }
