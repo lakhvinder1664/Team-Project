@@ -185,7 +185,7 @@ const Home = () => {
                 </Button>
               </div>
             </Col>
-            <Col md={6} className="banner-img-col">
+            <Col xs={12} md={6} className="banner-img-col">
               <img src={bannerIcon1} alt="icon1" />
               <img src={bannerIcon2} alt="icon2" />
               <img src={bannerIcon3} alt="icon3" />
