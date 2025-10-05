@@ -37,13 +37,14 @@ const CustomNavbar = () => {
           </Button>
           {/* Side image as clickable menu trigger */}
 
-          <Navbar.Brand className="mx-auto">
+          <Navbar.Brand className="">
             <img
               src={logo}
               alt="Logo"
-              height={scrolled ? 60: 80}
-              style={{ transition: "height 0.3s ease" }}
-              />
+              style={{
+              height: scrolled ? "60px" : "80px",
+              transition: "height 0.3s ease"
+            }} />
           </Navbar.Brand>
 
           <Nav className="d-none d-lg-flex align-items-center">

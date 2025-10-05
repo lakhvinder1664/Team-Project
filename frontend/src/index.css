@@ -402,6 +402,12 @@ html, body {
 
 /* ===== 576px to 481px ===== */
 @media (max-width: 576px) and (min-width: 481px) {
+  .side-img-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    order: 2;
+}
   .banner {
     min-height: 55vh;
   }

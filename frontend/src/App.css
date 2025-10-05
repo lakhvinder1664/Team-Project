@@ -597,40 +597,6 @@ ease;
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-1 * var(--scroll-distance))); }
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .sec-4-crousel {
-        flex-direction: column;
-        padding: 40px 3%;
-    }
-
-    .sec-4-left-cont {
-        flex: 1 0 auto;
-        margin-bottom: 30px;
-    }
-
-    .sec-4-right-crousel-card {
-        min-width: 300px;
-        height: 220px;
-    }
-}
-
-@media (max-width: 480px) {
-    .sec-4-right-crousel-track {
-        flex-direction: column;
-        animation: none;
-        gap: 20px;
-    }
-
-    .sec-4-right-crousel-card {
-        min-width: 100%;
-        height: auto;
-    }
-}
-
-
-
 .sec-5{
  background: url(./assets/banner/projectbg.png) no-repeat center center;
  padding: 60px 0;
