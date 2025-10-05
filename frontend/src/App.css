@@ -88,7 +88,6 @@ a.button {
 .contact-btns{
   display: flex;
   gap: 24px;
-  padding-bottom: 300px;
 }
 .header-btn{
     font-family: DM Sans, sans-serif !important;

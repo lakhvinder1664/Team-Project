@@ -408,6 +408,13 @@ html, body {
     padding: 0;
     order: 2;
 }
+.offcanvas-body {
+    flex-direction: column;
+}
+.contact-btns {
+    flex-direction: column;
+    align-items: baseline;
+}
   .banner {
     min-height: 55vh;
   }
