@@ -176,7 +176,7 @@ const Home = () => {
         <div className="banner-overlay"></div>
         <Container>
           <Row className="align-items-center">
-            <Col md={6}>
+            <Col xs={12} md={6}>
               <div className="banner-content">
                 <h1>{banners[current].title}</h1>
                 <p>{banners[current].text}</p>
@@ -209,7 +209,7 @@ const Home = () => {
         <div className="left-tabs-right">
           <Row>
             {/* LEFT SIDE */}
-            <Col lg={3}>
+            <Col xs={12} lg={3}>
               <div className="sec-2-left">
                 <ul>
                   <li
@@ -247,7 +247,7 @@ const Home = () => {
             </Col>
 
             {/* RIGHT SIDE */}
-            <Col lg={9}>
+            <Col xs={12} lg={9}>
               <div className="right-pills-scrolling">
                 {activeTab === "doors" && (
                   <div className="pill-right-cont">
@@ -263,7 +263,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage1, pillsimage2, pillsimage3, pillsimage4].map((img, i) => (
-                          <Col lg={3} key={i}>
+                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Door" />
@@ -296,7 +296,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage5, pillsimage6, pillsimage7, pillsimage8].map((img, i) => (
-                          <Col lg={3} key={i}>
+                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Window" />
@@ -328,7 +328,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage9, pillsimage10].map((img, i) => (
-                          <Col lg={3} key={i}>
+                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Railing" />
@@ -359,7 +359,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage11, pillsimage12].map((img, i) => (
-                          <Col lg={3} key={i}>
+                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Glass" />
@@ -391,7 +391,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage13, pillsimage14, pillsimage15].map((img, i) => (
-                          <Col lg={3} key={i}>
+                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Cubicle" />
@@ -429,7 +429,7 @@ const Home = () => {
                 Where Precision Meets Sophistication
               </div>
               <Row>
-                <Col>
+                <Col xs={12} md={8}>
                   <div className="bottom-cont-p">
                     <p>
                       India’s trusted name in premium aluminium doors and
@@ -438,7 +438,7 @@ const Home = () => {
                     </p>
                   </div>
                 </Col>
-                <Col>
+                <Col xs={12} md={4}>
                   <div className="sec-3-right-btn text-end">
                     <Button className="sec-3-btn">All Products<FaArrowRight className="arrow-icon" /></Button>
                   </div>
@@ -464,13 +464,13 @@ const Home = () => {
       {/* Start your next project */}
         <div className="sec-4-top-heading">
           <Row>
-            <Col lg={6}>
+            <Col xs={12} lg={6}>
                 <div className="sec-4-top-left">
                     <h3>Start your next project with Schon</h3>
                     <p>we’re just a step away</p>
                 </div>
             </Col>
-            <Col lg={6}>
+            <Col xs={12} lg={6}>
                 <div className="sec-4-top-right text-end">
                   <Button className="sec-4-top-head-btn">Get in Touch <FaArrowRight></FaArrowRight></Button>
                 </div>
@@ -519,16 +519,16 @@ const Home = () => {
           <div className="sec-5-images">
             <div className="sec-5-img-spc">
               <Row>
-                <Col md={4}><img src={projectImg1} alt="" /></Col>
-                <Col md={4}><img src={projectImg2} alt="" /></Col>
-                <Col md={4}><img src={projectImg3} alt="" /></Col>
+                <Col xs={12} md={6} lg={4} className="mb-4"><img src={projectImg1} alt="" /></Col>
+                <Col xs={12} md={6} lg={4} className="mb-4"><img src={projectImg2} alt="" /></Col>
+                <Col xs={12} md={6} lg={4} className="mb-4"><img src={projectImg3} alt="" /></Col>
               </Row>
             </div>
             <div className="sec-5-img-spc">
               <Row>
-                <Col md={4}><img src={projectImg4} alt="" /></Col>
-                <Col md={4}><img src={projectImg5} alt="" /></Col>
-                <Col md={4}><img src={projectImg1} alt="" /></Col>
+                <Col xs={12} md={6} lg={4} className="mb-4"><img src={projectImg4} alt="" /></Col>
+                <Col xs={12} md={6} lg={4} className="mb-4"><img src={projectImg5} alt="" /></Col>
+                <Col xs={12} md={6} lg={4} className="mb-4"><img src={projectImg1} alt="" /></Col>
               </Row>
             </div>
           </div>
@@ -547,7 +547,7 @@ const Home = () => {
           <Container>
             <div className="sec-6-row">
               <Row>
-                <Col>
+                <Col xs={12} md={6} lg={4} className="mb-4">
                   <div className="sec-6-cont-img-txt">
                     <div className="sec-6-cont-img"><img src={chooseIcon1} alt="Why Choose Scon" /></div>
                     <div className="sec-6-cont-txt">
@@ -565,7 +565,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
+                <Col xs={12} md={6} lg={4} className="mb-4">
                   <div className="sec-6-cont-img-txt">
                     <div className="sec-6-cont-img"><img src={chooseIcon3} alt="Why Choose Scon" /></div>
                     <div className="sec-6-cont-txt">
@@ -578,7 +578,7 @@ const Home = () => {
             </div>
             <div className="sec-6-row">
               <Row>
-                <Col>
+                <Col xs={12} md={6} lg={4} className="mb-4">
                   <div className="sec-6-cont-img-txt">
                     <div className="sec-6-cont-img"><img src={chooseIcon4} alt="Why Choose Scon" /></div>
                     <div className="sec-6-cont-txt">
@@ -587,7 +587,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
+                <Col xs={12} md={6} lg={4} className="mb-4">
                   <div className="sec-6-cont-img-txt">
                     <div className="sec-6-cont-img"><img src={chooseIcon5} alt="Why Choose Scon" /></div>
                     <div className="sec-6-cont-txt">
@@ -596,7 +596,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
+                <Col xs={12} md={6} lg={4} className="mb-4">
                   <div className="sec-6-cont-img-txt">
                     <div className="sec-6-cont-img"><img src={chooseIcon6} alt="Why Choose Scon" /></div>
                     <div className="sec-6-cont-txt">
@@ -621,7 +621,7 @@ const Home = () => {
           <div className="sec-7-row-img">
             <Row>
               {solutionItems.map((item, i) => (
-                <Col key={i}>
+                <Col xs={12} lg={4} key={i} className="mb-4">
                   <div className="sec-7-cont">
                     <div className="sec-7-row-img"><img src={item.img} alt={item.heading} /></div>
                     <div className="sec-7-row-text">
@@ -678,7 +678,7 @@ const Home = () => {
                   <Container>
                               <div className="sec-9-row">
                                   <Row>
-                                      <Col>
+                                      <Col xs={12} md={6} lg={4}  className="mb-4">
                                           <div className="card-cont">
                                               <div className="quot-image">
                                                   <img src={image1} alt="" />
@@ -697,7 +697,7 @@ const Home = () => {
                                               </div>
                                           </div>
                                       </Col>
-                                      <Col>
+                                      <Col xs={12} md={6} lg={4} className="mb-4">
                                 <div className="card-cont">
                                     <div className="quot-image">
                                       <img src={image1} alt="" />
@@ -716,7 +716,7 @@ const Home = () => {
                                   </div>
                                </div>
                                       </Col>
-                                      <Col>
+                                      <Col xs={12} md={6} lg={4} className="mb-4">
                               <div className="card-cont-bg">
                                     <div className="card-cont">
                                     <div className="quot-image">
@@ -748,7 +748,7 @@ const Home = () => {
       <div className="sec-10">
         <Container>
           <Row>
-            <Col md={6}>
+            <Col xs={12}  md={6}>
               <div className="sec-10-left">
                 <div className="sec-10-img"><img src={logo1} alt="" /></div>
                 <div className="sec-10-head">
@@ -756,7 +756,7 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col md={6} className="d-flex flex-column align-items-center">
+            <Col xs={12}  md={6} className="d-flex flex-column align-items-center">
               <h3 className="form-title">We’re just a step away!</h3>
               <form className="contact-form">
                 <div className="form-input">
@@ -787,7 +787,7 @@ const Home = () => {
           <div className="sec-11-row">
             <Row>
               {expCenters.map((center, i) => (
-                <Col lg={4} key={i}>
+                <Col xs={12} md={6} lg={4} key={i} className="mb-4">
                   <div className="sec-11-cont">
                     <img src={center.img} alt={center.name} />
                     <h3>{center.name}</h3>

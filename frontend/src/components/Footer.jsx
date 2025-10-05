@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer">
             <Container>
                 <Row>
-                  <Col lg={3} ><div className="container-column">
+                  <Col xs={12} lg={3} ><div className="container-column">
                         <div className="footer-logo">
                             <img src={logo} alt="" />
                         </div>
@@ -23,7 +23,7 @@ function Footer() {
                         </div>
                     </div>
                 </Col>
-                <Col lg={3}>
+                <Col xs={12} sm={6} lg={3} className="mb-4">
                   <div className="footer-head-our">
                     <h3>Our Existence</h3>
                     <ul>
@@ -33,7 +33,7 @@ function Footer() {
                     </ul>
                   </div>
                 </Col>
-                <Col lg={3}>
+                <Col xs={12} sm={6} lg={3} className="mb-4">
                   <div className="footer-head-quick">
                     <h3>Quick Links</h3>
                     <ul>
@@ -44,7 +44,7 @@ function Footer() {
                     </ul>
                   </div>
                 </Col>
-                <Col lg={3}>
+                <Col xs={12} sm={6} lg={3} className="mb-4">
                   <div className="footer-head-product">
                     <h3>Products</h3>
                     <ul>

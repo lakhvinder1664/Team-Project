@@ -53,13 +53,13 @@ const CustomNavbar = () => {
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav className="flex-column gap-3">
+          
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/why-schon">Why Schon</Nav.Link>
             <Nav.Link href="/product">Product</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/blogs">Blogs</Nav.Link>
-          </Nav>
+          
         </Offcanvas.Body>
       </Offcanvas>
     </>

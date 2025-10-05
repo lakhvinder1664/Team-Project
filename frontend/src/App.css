@@ -255,6 +255,7 @@ ease;
   padding: 15px 0;
   list-style: none;
   cursor: pointer;
+  color: #000;
   transition: all 0.3s ease;
 }
 
@@ -1022,3 +1023,5 @@ color: #fff;
     border-top: 1px solid #535353;
     font-family: DM Sans, sans-serif !important;
 }
+
+
