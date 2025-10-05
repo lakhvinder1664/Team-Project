@@ -1,6 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
 font-family: Playfair Display, serif !important;
-  padding-top: 0; 
+padding-top: 0; 
 }
 
 a.button {
@@ -24,9 +29,8 @@ a.button {
 .navbar-small {
   padding: 0.5rem 1rem;
   background-color: rgb(0, 0, 0); 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px 1px #ffffff71;
 }
-
 .nav-btn{     
     color: white !important;
     border-radius: 10px;
@@ -50,11 +54,6 @@ a.button {
 }
 
 .side-img-btn {
-    position: fixed;
-    left: 7%;
-    top: 7%;
-    transform: translateY(-50%) !important;
-    z-index: 1050; /* above other content */
     border: none;
     background: transparent;
     padding: 0;
@@ -67,14 +66,67 @@ a.button {
 .offcanvas-header .btn-close {
     filter: invert(1);
     opacity: 1;
+    font-size: 20px;
 }
 .offcanvas.show:not(.hiding), .offcanvas.showing {
     transform: none;
     background: #111111;
     width: 87%;
     color: white;
+    padding-left: 80px;
 }
-
+.menu-logo{
+  height: 60px;
+}
+.offcanvas-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-size: 28px;
+    font-weight: 200;
+}
+.contact-btns{
+  display: flex;
+  gap: 24px;
+  padding-bottom: 300px;
+}
+.header-btn{
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition: all .2s ease;
+}
+.header-btn:hover,
+.icon-1:hover{
+  background-color: white;
+  color: #000;
+}
+.oposite-hover{
+background-color: white;
+color:  black;
+}
+.oposite-hover:hover{
+  background-color: black;
+color:  white;
+}
+.dropdown-menu.show {
+    background: #2a2a2a;
+    border:  1px solid #ffffff6e;
+}
+.dropdown-item:hover{
+  background-color: #2a2a2a;
+  color: white;
+}
+.dropdown-item {
+    color: #ffffff6e;
+}
 /* Banner section */
 .banner {
   position: relative;

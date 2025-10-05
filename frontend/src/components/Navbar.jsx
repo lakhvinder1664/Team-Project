@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav, Button, Offcanvas, Tab } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import side from "../assets/images/side.png";
-import { FaArrowRight } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
+import HoverDropdown from "./Hoverdrop";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 const CustomNavbar = () => {
   const [show, setShow] = useState(false);
@@ -21,13 +26,15 @@ const CustomNavbar = () => {
         expand="lg"
         fixed="top"
         className={`py-3 navbar-transition ${scrolled ? "navbar-small" : "navbar-large"}`}>
+          <Container>
+        
+
           <Button
             className="side-img-btn"
             variant="transparent"
             onClick={() => setShow(true)}>
             <img src={side} alt="Menu" className="side-img" />
           </Button>
-        <Container>
           {/* Side image as clickable menu trigger */}
 
           <Navbar.Brand className="mx-auto">
@@ -36,12 +43,12 @@ const CustomNavbar = () => {
               alt="Logo"
               height={scrolled ? 60: 80}
               style={{ transition: "height 0.3s ease" }}
-            />
+              />
           </Navbar.Brand>
 
           <Nav className="d-none d-lg-flex align-items-center">
             <Button className="nav-btn">
-              Get in Touch <FaArrowRight style={{ marginLeft: "8px" }} />
+              Get in Touch <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: "8px" }} />
             </Button>
           </Nav>
         </Container>
@@ -50,17 +57,31 @@ const CustomNavbar = () => {
       {/* Offcanvas Menu */}
       <Offcanvas show={show} onHide={() => setShow(false)} placement="start">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Menu</Offcanvas.Title>
+          <Offcanvas.Title><img className="menu-logo" src={logo} />
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/why-schon">Why Schon</Nav.Link>
+            <HoverDropdown title="Why Schon" id="why-schon-dropdown" >
+                  <NavDropdown.Item href="#action3"><FontAwesomeIcon icon={faCircleChevronRight}  /> About us</NavDropdown.Item>
+                  <NavDropdown.Item href="#action4"><FontAwesomeIcon icon={faCircleChevronRight}  /> On-stop Housing Solutions</NavDropdown.Item>
+                  <NavDropdown.Item href="#action5"><FontAwesomeIcon icon={faCircleChevronRight}  /> Quality Assurance</NavDropdown.Item>
+                  <NavDropdown.Item href="#action6"><FontAwesomeIcon icon={faCircleChevronRight}  /> Sustainability</NavDropdown.Item>
+            </HoverDropdown>
             <Nav.Link href="/product">Product</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/blogs">Blogs</Nav.Link>
-          
+            <Nav.Link href="/blogs">Contact</Nav.Link>
         </Offcanvas.Body>
+            <div className="contact-btns">
+                  <button className="header-btn">
+              Get in Touch <FontAwesomeIcon icon={faArrowRight} />
+                  </button>
+                  <button className="oposite-hover header-btn">
+              Become a Dealer  <FontAwesomeIcon icon={faArrowRight} />
+                  </button>
+                </div>
       </Offcanvas>
     </>
   );
