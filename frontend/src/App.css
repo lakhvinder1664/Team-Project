@@ -64,7 +64,16 @@ a.button {
     height: 35px;
     cursor: pointer;
 }
-
+.offcanvas-header .btn-close {
+    filter: invert(1);
+    opacity: 1;
+}
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+    background: #111111;
+    width: 87%;
+    color: white;
+}
 
 /* Banner section */
 .banner {
