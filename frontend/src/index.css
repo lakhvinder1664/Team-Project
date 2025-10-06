@@ -1,16 +1,23 @@
 /* ===== BASE RESPONSIVE STYLES ===== */
 html, body {
   overflow-x: hidden;
-  max-width: 100%;
 }
 
-.container {
+/* .container {
   padding-left: 15px;
   padding-right: 15px;
+} */
+
+/* ===== XXL (1400px and above) ===== */
+@media (min-width: 1400px) {
+  .banner-content h1 {
+    width: 150%;
+    font-size: 62px;
+  }
 }
 
-/* ===== 1200px and above (xl) ===== */
-@media (min-width: 1200px) {
+/* ===== XL (1200px to 1399px) ===== */
+@media (min-width: 1200px) and (max-width: 1399px) {
   .banner-content h1 {
     width: 140%;
     font-size: 58px;
@@ -25,29 +32,8 @@ html, body {
   }
 }
 
-/* ===== 1199px to 1025px ===== */
-@media (max-width: 1199px) and (min-width: 1025px) {
-  .banner-content h1 {
-    font-size: 52px;
-    width: 120%;
-  }
-  
-  .banner-content p {
-    font-size: 26px;
-  }
-  
-  .sec-2-left li {
-    font-size: 26px;
-  }
-  
-  .banner-img-col img {
-    width: 80px;
-    height: 50px;
-  }
-}
-
-/* ===== 1099px to 992px ===== */
-@media (max-width: 1099px) and (min-width: 992px) {
+/* ===== LG (992px to 1199px) ===== */
+@media (min-width: 992px) and (max-width: 1199px) {
   .banner-content h1 {
     font-size: 46px;
     width: 110%;
@@ -61,6 +47,7 @@ html, body {
   .sec-2 {
     height: 55vh !important;
   }
+  
   .sec-2-left li {
     font-size: 24px;
   }
@@ -70,29 +57,9 @@ html, body {
   }
 }
 
-/* ===== 1024px to 993px ===== */
-@media (max-width: 1024px) and (min-width: 993px) {
-  .banner-content h1 {
-    font-size: 44px;
-    width: 100%;
-  }
+/* ===== MD (768px to 991px) ===== */
+@media (min-width: 768px) and (max-width: 991px) {
   
-  .banner-content p {
-    margin-bottom: 40px;
-    font-size: 22px;
-  }
-  
-  .side-img-btn {
-    left: 4%;
-  }
-  
-  .sec-2 {
-    padding: 50px 5%;
-  }
-}
-
-/* ===== 992px to 769px (md breakpoint) ===== */
-@media (max-width: 992px) and (min-width: 769px) {
   .banner {
     min-height: 70vh;
   }
@@ -102,8 +69,8 @@ html, body {
   }
   
   .banner-content h1 {
-    font-size: 42px;
-    width: 100%;
+    width: 115% !important;
+    font-size: 50px !important;
   }
   
   .banner-content p {
@@ -111,7 +78,9 @@ html, body {
   }
   
   .banner-img-col {
-    display: none;
+    width: 55%;
+    margin: 15px 0;
+    flex-direction: row !important;
   }
   
   .bnner-btn {
@@ -119,7 +88,6 @@ html, body {
     padding: 14px 28px;
   }
   
-  /* Section 2 */
   .sec-2 {
     height: auto;
     padding: 40px 5%;
@@ -143,8 +111,6 @@ html, body {
   .sec-2-left li {
     font-size: 20px;
     padding: 12px 24px;
-    border: 1px solid #ddd;
-    border-radius: 25px;
   }
   
   .right-pills-scrolling {
@@ -155,71 +121,117 @@ html, body {
   .pill-right-cont h3 {
     font-size: 32px;
   }
-  
-  /* Section 3 */
-  .sec-3-first-h h2 {
-    font-size: 38px;
+
+  .sec-3-btn{
+    margin-top: 0 !important;
   }
-  
-  .bottom-cont-h3 {
-    font-size: 22px;
+  .sec-3-right-btn{
+    text-align: left !important;
   }
-  
-  .bottom-cont-p {
-    margin-bottom: 35px;
-    width: 100%;
-  }
-  
   .bottom-cont-p p {
-    font-size: 16px;
+    max-width: 85% !important;
+    font-size: 18px !important;
   }
-  
-  .sec-3-right-btn {
-    margin-top: 20px;
+  .bottom-cont-h3 {
+    font-size: 20px !important;
+    margin: -13px 0px 13px 0 !important;
   }
-  
+  .sec-6-top-head h2 {
+    font-size: 35px !important;
+  }
   .sec-3-video iframe {
-    height: 450px;
+    border-radius: 30px !important;
+    width: 100% !important;
+    height: 330px !important;
   }
-  
-  /* Section 4 */
-  .sec-4-top-heading {
-    padding: 30px 5%;
+  .sec-4-top-heading h3{
+    font-size: 40px !important;
+    line-height: 55% !important;
   }
-  
-  .sec-4-top-heading h3 {
-    font-size: 36px;
+  .sec-4-top-heading p{
+    font-size: 25px !important;
   }
-  
-  .sec-4-top-heading p {
-    font-size: 20px;
-  }
-  
   .sec-4-top-right {
-    justify-content: flex-start;
-    padding: 30px 0;
-    margin-right: 38%;
+    justify-content: left !important;
+    padding: 20px 0 !important;
   }
-  
-  .sec-4-crousel {
-    flex-direction: column;
-    gap: 30px;
+  .sec-4-crousel{
+    flex-flow: column !important;
   }
-  
-  .sec-4-left-cont {
-    flex: 1;
+  .sec-4-left-cont h2 {
+    font-size: 35px !important;
   }
-  
-  .sec-4-right-crousel-card {
-    min-width: 280px;
-    height: 200px;
+  .sec-4-left-cont p {
+    font-size: 23px !important;
+  }
+  .sec-5-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-5-next-head h3 {
+    font-size: 23px !important;
+  }
+  .sec-5-next-head p {
+    text-align: justify !important;
+    font-size: 16px !important;
+  }
+  .slide img {
+    height: 100px !important;
+    width: auto !important;
+  }
+  .slide {
+    width: auto !important;
+  }
+  .sec-6-cont-txt h3{
+    font-size: 24px !important;
+  }
+  .sec-6-cont-txt p {
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  .sec-6-top-head p {
+    font-size: 16px !important;
+  }
+  .sec-7-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-7-top-head p {
+    text-align: justify !important;
+    font-size: 16px !important;
+  }
+  .sec-7-row-img img {
+    width: auto !important;
+    height: 100px !important;
+  }
+  .sec-7-row-text h3 {
+    font-size: 24px !important;
+  }
+  .sec-7-row-text p {
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  .sec-8-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-8-top-head p {
+     font-size: 18px !important;
+  }
+  .sec-9-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-11-cont img {
+    width: auto !important;
+    height: 100px !important;
+  }
+  .footer-logo img {
+    width: auto !important;
+    height: 50px !important;
   }
 }
 
-/* ===== 768px to 577px (sm breakpoint) ===== */
-@media (max-width: 768px) and (min-width: 577px) {
+/* ===== SM (576px to 767px) ===== */
+@media (min-width: 576px) and (max-width: 767px) {
   .banner {
-    min-height: 60vh;
+    min-height: 70vh;
   }
   
   .banner-content {
@@ -239,7 +251,6 @@ html, body {
     padding: 12px 24px;
   }
   
-  /* Navbar */
   .side-img-btn {
     left: 3%;
     top: 4%;
@@ -253,7 +264,6 @@ html, body {
     height: 35px !important;
   }
   
-  /* Section 2 */
   .sec-2-top-head h2 {
     font-size: 34px;
   }
@@ -270,139 +280,33 @@ html, body {
   .pill-right-cont h3 {
     font-size: 28px;
   }
-  
-  .pill-right-cont p {
-    font-size: 16px;
-  }
-  
-  /* Section 3 */
-  .sec-3-first-h h2 {
-    font-size: 32px;
-  }
-  
-  .bottom-cont-h3 {
-    font-size: 20px;
-  }
-  
-  .sec-3-video iframe {
-    height: 350px;
-  }
-  
-  .sec-3-btn {
-    font-size: 15px;
-  }
-  
-  /* Section 4 */
-  .sec-4-top-heading h3 {
-    font-size: 30px;
-  }
-  
-  .sec-4-top-heading p {
-    font-size: 18px;
-  }
-  
-  .sec-4-left-cont h2 {
-    font-size: 32px;
-  }
-  
-  .sec-4-left-cont p {
-    font-size: 18px;
-  }
-  
-  .sec-4-right-crousel-card {
-    min-width: 260px;
-    height: 180px;
-  }
-  
-  /* Section 5 */
-  .sec-5-top-head h2 {
-    font-size: 32px;
-  }
-  
-  .sec-5-next-head h3 {
-    font-size: 20px;
-  }
-  
-  /* Section 6 */
-  .sec-6-top-head h2 {
-    font-size: 32px;
-  }
-  
-  .sec-6-cont-txt h3 {
-    font-size: 24px;
-  }
-  
-  .sec-6-cont-txt p {
-    font-size: 16px;
-  }
-  
-  /* Section 7 */
-  .sec-7-top-head h2 {
-    font-size: 32px;
-  }
-  
-  .sec-7-row-text h3 {
-    font-size: 24px;
-  }
-  
-  .sec-7-row-text p {
-    font-size: 16px;
-  }
-  
-  /* Section 8 */
-  .sec-8-top-head h2 {
-    font-size: 32px;
-  }
-  
-  .slide {
-    width: 140px;
-  }
-  
-  /* Section 9 */
-  .sec-9-head h2 {
-    font-size: 32px;
-  }
-  
-  /* Section 10 */
-  .sec-10-head h2 {
-    font-size: 26px;
-  }
-  
-  .form-title {
-    font-size: 20px;
-  }
-  
-  /* Section 11 */
-  .sec-11-head h2 {
-    font-size: 28px;
-  }
-  
-  .sec-11-cont h3 {
-    font-size: 24px;
-  }
 }
 
-/* ===== 576px to 481px ===== */
-@media (max-width: 576px) {
+/* ===== XS (Below 576px) ===== */
+@media (max-width: 575px) {
   .offcanvas.show:not(.hiding), .offcanvas.showing {
     transform: none;
     background: #111111;
     width: 87%;
     color: white;
     padding-left: 30px;
-}
+  }
+  
   .side-img-btn {
     border: none;
     background: transparent;
     padding: 0;
   }
+  
   .offcanvas-body {
     flex-direction: column;
   }
+  
   .contact-btns {
     flex-direction: column;
     align-items: baseline;
   }
+  
   .banner {
     max-height: 80vh;
   }
@@ -420,7 +324,6 @@ html, body {
     padding: 11px 22px;
   }
   
-  /* Section 2 */
   .sec-2 {
     padding: 30px 20px;
   }
@@ -442,11 +345,6 @@ html, body {
     font-size: 26px;
   }
   
-  .row-image-cont p {
-    font-size: 14px;
-  }
-  
-  /* Section 3 */
   .sec-3-video iframe {
     height: 300px;
   }
@@ -455,7 +353,6 @@ html, body {
     font-size: 28px;
   }
   
-  /* Section 4 */
   .sec-4-top-heading h3 {
     font-size: 28px;
   }
@@ -469,7 +366,6 @@ html, body {
     height: 170px;
   }
   
-  /* Touch targets */
   .nav-btn,
   .bnner-btn,
   .sec-3-btn,
@@ -480,8 +376,90 @@ html, body {
   }
 }
 
-/* ===== 480px to 361px ===== */
-@media (max-width: 480px) and (min-width: 361px) {
+/* ===== HORIZONTAL SCROLL SECTIONS FOR MOBILE ===== */
+@media (max-width: 768px) {
+  .right-pill-row,
+  .sec-5-images,
+  .sec-7-row-img,
+  .sec-9-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 10px;
+  }
+  
+  .right-pill-row::-webkit-scrollbar,
+  .sec-5-images::-webkit-scrollbar,
+  .sec-7-row-img::-webkit-scrollbar,
+  .sec-9-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .right-pill-row .row,
+  .sec-5-img-spc .row,
+  .sec-7-row-img .row,
+  .sec-9-row .row {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  
+  .right-pill-row .col-xs-6 {
+    width: 280px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .sec-5-img-spc .col-md-4 {
+    width: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .sec-7-row-img .col-lg-4 {
+    width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .sec-9-row .col-lg-4 {
+    width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .pill-image img {
+    height: 200px;
+  }
+  
+  .sec-5-images img {
+    height: 250px;
+  }
+}
+
+/* ===== TOUCH OPTIMIZATIONS ===== */
+@media (max-width: 768px) {
+  .nav-btn,
+  .bnner-btn,
+  .sec-3-btn,
+  .sec-4-top-head-btn,
+  .sec-4-left-cont-btn,
+  .right-pill-down-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-input input,
+  .form-input textarea {
+    font-size: 16px;
+  }
+}
+
+/* ===== SMALL MOBILE ADJUSTMENTS ===== */
+@media (max-width: 480px) {
   .banner {
     min-height: 50vh;
   }
@@ -503,7 +481,6 @@ html, body {
     padding: 10px 20px;
   }
   
-  /* Navbar */
   .side-img-btn {
     left: 2%;
     top: 3%;
@@ -517,693 +494,6 @@ html, body {
     height: 30px !important;
   }
   
-  .nav-btn {
-    font-size: 14px;
-    padding: 6px 16px;
-  }
-  
-  /* Section 2 */
-  .sec-2 {
-    padding: 25px 15px;
-  }
-  
-  .sec-2-top-head h2 {
-    font-size: 26px;
-  }
-  
-  .sec-2-top-head p {
-    font-size: 16px;
-  }
-  
-  .sec-2-left li {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-  
-  .pill-right-cont h3 {
-    font-size: 24px;
-  }
-  
-  .pill-right-cont p {
-    font-size: 14px;
-  }
-  
-  /* Section 3 */
-  .sec-3-video iframe {
-    height: 250px;
-  }
-  
-  .sec-3-first-h h2 {
-    font-size: 26px;
-  }
-  
-  .bottom-cont-h3 {
-    font-size: 18px;
-  }
-  
-  .sec-3-btn {
-    font-size: 14px;
-    padding: 8px 18px;
-  }
-  
-  /* Section 4 */
-  .sec-4-top-heading {
-    padding: 25px 20px;
-  }
-  
-  .sec-4-top-heading h3 {
-    font-size: 26px;
-  }
-  
-  .sec-4-top-heading p {
-    font-size: 16px;
-  }
-  
-  .sec-4-left-cont h2 {
-    font-size: 28px;
-  }
-  
-  .sec-4-left-cont p {
-    font-size: 16px;
-  }
-  
-  .sec-4-right-crousel-card {
-    min-width: 220px;
-    height: 160px;
-  }
-  
-  .sec-4-top-head-btn,
-  .sec-4-left-cont-btn {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-  
-  /* Section 5 */
-  .sec-5-top-head h2 {
-    font-size: 26px;
-  }
-  
-  .sec-5-next-head h3 {
-    font-size: 18px;
-  }
-  
-  .sec-5-next-head p {
-    font-size: 14px;
-  }
-  
-  /* Section 6 */
-  .sec-6-top-head h2 {
-    font-size: 26px;
-  }
-  
-  .sec-6-cont-txt h3 {
-    font-size: 20px;
-  }
-  
-  .sec-6-cont-txt p {
-    font-size: 14px;
-  }
-  
-  .sec-6-cont-img img {
-    max-width: 50px;
-  }
-  
-  /* Section 7 */
-  .sec-7-top-head h2 {
-    font-size: 26px;
-  }
-  
-  .sec-7-row-text h3 {
-    font-size: 20px;
-  }
-  
-  .sec-7-row-text p {
-    font-size: 14px;
-  }
-  
-  .sec-7-row-img img {
-    height: 80px;
-  }
-  
-  /* Section 8 */
-  .sec-8-top-head h2 {
-    font-size: 26px;
-  }
-  
-  .sec-8-top-head p {
-    font-size: 16px;
-  }
-  
-  .slide {
-    width: 100px;
-  }
-  
-  .slide img {
-    max-width: 80px;
-  }
-  
-  /* Section 9 */
-  .sec-9-head h2 {
-    font-size: 26px;
-  }
-  
-  .card-para p {
-    font-size: 13px;
-  }
-  
-  .card-user-name h4,
-  .card-user-name p {
-    font-size: 13px;
-  }
-  
-  .card-user-image img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* Section 10 */
-  .sec-10-head h2 {
-    font-size: 22px;
-  }
-  
-  .form-title {
-    font-size: 18px;
-  }
-  
-  .form-input input,
-  .form-input textarea {
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-  
-  /* Section 11 */
-  .sec-11-head h2 {
-    font-size: 24px;
-  }
-  
-  .sec-11-cont h3 {
-    font-size: 20px;
-  }
-  
-  .sec-11-cont img {
-    max-width: 120px;
-  }
-}
-
-/* ===== 360px to 321px ===== */
-@media (max-width: 360px) and (min-width: 321px) {
-  .center-nav-logo img{
-    width: 100% ;
-    height: 45px !important;
-    transition: height 0.3s;
-  }
-  
-  .banner {
-    min-height: 80vh;
-  }
-  
-  .banner-content h1 {
-    text-align: left;
-    font-size: 36px;
-  }
-  
-  .banner-content p {
-    font-size: 22px;
-    text-align: left;
-  }
-  
-  .bnner-btn {
-    display: flex;
-    justify-items: left;
-    font-size: 12px;
-    padding: 8px 16px;
-  }
-  
-  /* Section 2 */
-  .sec-2-top-head h2 {
-    font-size: 24px;
-  }
-  
-  .sec-2-top-head p {
-    font-size: 14px;
-  }
-  
-  .sec-2-left li {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-  
-  .pill-right-cont h3 {
-    font-size: 22px;
-  }
-  
-  /* Section 3 */
-  .sec-3-video iframe {
-    height: 200px;
-  }
-  
-  .sec-3-first-h h2 {
-    font-size: 24px;
-  }
-  .sec-3-btn {
-    margin: 0% 57% 0 0;
-    font-size: 16px;
-    padding: 10px 20px;
-}
-  /* Section 4 */
-  .sec-4-top-heading h3 {
-    font-size: 24px;
-  }
-  .sec-4-top-right {
-  justify-content: flex-start;
-  padding: 20px 65px;
-  }
-  .sec-4-right-crousel-card {
-    min-width: 200px;
-    height: 150px;
-  }
-  
-  .card-number {
-    font-size: 48px;
-  }
-  
-  .sec-4-right-crousel-left h3 {
-    font-size: 18px;
-  }
-  
-  .sec-4-right-crousel-left p {
-    font-size: 12px;
-  }
-  .sec-5-next-head p {
-    font-family: DM Sans, sans-serif !important;
-    font-weight: 300;
-    letter-spacing: 0;
-    text-align: left;
-    font-size: 14px;
-    text-align: justify;
-}
-  .sec-10-img img {
-  margin: -30px 0 30px 0;
-  height: 65px;
-  width: 70%;
-  }
-  .sec-10-head h2 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .sec-11-cont img {
-    width: 30%;
-  }
-  .sec-11-cont {
-    display: flex;
-    align-items: center;
-  }
-  .sec-11-head h2 {
-    font-size: 30px;
-  }
-  .sec-11-cont h3 {
-    font-size: 20px;
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-}
-
-/* ===== 320px and below ===== */
-@media (max-width: 320px) {
-  .banner {
-    min-height: 40vh;
-  }
-  
-  .banner-content {
-    padding-top: 80px;
-  }
-  
-  .banner-content h1 {
-    font-size: 22px;
-  }
-  
-  .banner-content p {
-    font-size: 13px;
-  }
-  
-  .bnner-btn {
-    font-size: 11px;
-    padding: 7px 14px;
-  }
-  
-  /* Navbar */
-  .side-img-btn {
-    right: 1%;
-  }
-  
-  .side-img {
-    height: 18px;
-  }
-  
-  .navbar-logo {
-    height: 25px !important;
-  }
-  
-  /* Section 2 */
-  .sec-2 {
-    padding: 20px 10px;
-  }
-  
-  .sec-2-top-head h2 {
-    font-size: 22px;
-  }
-  
-  .sec-2-top-head p {
-    font-size: 13px;
-  }
-  
-  .sec-2-left ul {
-    gap: 8px;
-  }
-  
-  .sec-2-left li {
-    font-size: 11px;
-    padding: 4px 8px;
-  }
-  
-  .pill-right-cont h3 {
-    font-size: 20px;
-  }
-  
-  .pill-right-cont p {
-    font-size: 12px;
-  }
-  
-  .row-image-cont p {
-    font-size: 11px;
-  }
-  
-  .right-pill-down-btn {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-  
-  /* Section 3 */
-  .sec-3-video iframe {
-    height: 180px;
-  }
-  
-  .sec-3-first-h h2 {
-    font-size: 22px;
-  }
-  
-  .bottom-cont-h3 {
-    font-size: 16px;
-  }
-  
-  .bottom-cont-p p {
-    font-size: 12px;
-  }
-  
-  .sec-3-btn {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-  
-  /* Section 4 */
-  .sec-4-top-heading {
-    padding: 20px 15px;
-  }
-  
-  .sec-4-top-heading h3 {
-    font-size: 22px;
-  }
-  
-  .sec-4-top-heading p {
-    font-size: 14px;
-  }
-  
-  .sec-4-left-cont h2 {
-    font-size: 24px;
-  }
-  
-  .sec-4-left-cont p {
-    font-size: 14px;
-  }
-  
-  .sec-4-right-crousel-card {
-    min-width: 180px;
-    height: 140px;
-  }
-  
-  .sec-4-top-head-btn,
-  .sec-4-left-cont-btn {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-  
-  /* All other sections */
-  .sec-5-top-head h2,
-  .sec-6-top-head h2,
-  .sec-7-top-head h2,
-  .sec-8-top-head h2,
-  .sec-9-head h2,
-  .sec-11-head h2 {
-    font-size: 22px;
-  }
-  
-  .sec-10-head h2 {
-    font-size: 20px;
-  }
-  
-  .form-title {
-    font-size: 16px;
-  }
-  
-  /* Footer */
-  .footer ul li a {
-    font-size: 12px;
-  }
-  
-  .footer-head-our h3,
-  .footer-head-quick h3,
-  .footer-head-product h3 {
-    font-size: 18px;
-  }
-}
-
-/* ===== HORIZONTAL SCROLL SECTIONS FOR MOBILE ===== */
-@media (max-width: 768px) {
-  /* What We Do - Aluminum Doors, Windows Section */
-  .right-pill-row {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding-bottom: 10px;
-  }
-  
-  .right-pill-row::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .right-pill-row .row {
-    flex-wrap: nowrap;
-    margin: 0;
-  }
-  
-  .right-pill-row .col-xs-6 {
-    flex: 0 0 auto;
-    width: 280px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-  .pill-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-
-  /* Our Project Images Horizontal Scroll */
-  .sec-5-images {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding-bottom: 15px;
-  }
-  
-  .sec-5-images::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .sec-5-img-spc .row {
-    flex-wrap: nowrap;
-    margin: 0;
-  }
-  
-  .sec-5-img-spc .col-md-4 {
-    flex: 0 0 auto;
-    width: 300px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-  .sec-5-images img {
-    height: 250px;
-    object-fit: cover;
-  }
-
-  /* Our Solutions - Architects & Designers Horizontal Scroll */
-  .sec-7-row-img {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding-bottom: 20px;
-  }
-  
-  .sec-7-row-img::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .sec-7-row-img .row {
-    flex-wrap: nowrap;
-    margin: 0;
-  }
-  
-  .sec-7-row-img .col-lg-4 {
-    flex: 0 0 auto;
-    width: 320px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  
-  .sec-7-cont {
-    background: #1a1a1a;
-    padding: 25px;
-    border-radius: 16px;
-    height: 100%;
-    min-height: 400px;
-  }
-  
-  .sec-7-row-img img {
-    height: 120px;
-    object-fit: contain;
-  }
-
-  /* Built on Trust Cards Horizontal Scroll */
-  .sec-9-row {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding-bottom: 20px;
-  }
-  
-  .sec-9-row::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .sec-9-row .row {
-    flex-wrap: nowrap;
-    margin: 0;
-  }
-  
-  .sec-9-row .col-lg-4 {
-    flex: 0 0 auto;
-    width: 320px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-  .card-cont {
-    height: 100%;
-    min-height: 380px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-para {
-    flex: 1;
-  }
-
-  /* SCROLL INDICATORS */
-  .right-pill-row,
-  .sec-5-images,
-  .sec-7-row-img,
-  .sec-9-row {
-    position: relative;
-  }
-  
-  .right-pill-row:after,
-  .sec-5-images:after,
-  .sec-7-row-img:after,
-  .sec-9-row:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 30px;
-    background: linear-gradient(to right, transparent, rgba(0,0,0,0.1));
-    pointer-events: none;
-  }
-
-  /* TOUCH SCROLL ENHANCEMENTS */
-  .right-pill-row,
-  .sec-5-images,
-  .sec-7-row-img,
-  .sec-9-row {
-    scroll-snap-type: x mandatory;
-  }
-  
-  .right-pill-row .col-xs-6,
-  .sec-5-img-spc .col-md-4,
-  .sec-7-row-img .col-lg-4,
-  .sec-9-row .col-lg-4 {
-    scroll-snap-align: start;
-  }
-}
-
-/* ===== TOUCH OPTIMIZATIONS FOR MOBILE ===== */
-@media (max-width: 768px) {
-  .nav-btn,
-  .bnner-btn,
-  .sec-3-btn,
-  .sec-4-top-head-btn,
-  .sec-4-left-cont-btn,
-  .right-pill-down-btn {
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Prevent zoom on iOS input focus */
-  .form-input input,
-  .form-input textarea {
-    font-size: 16px;
-  }
-}
-
-/* ===== PERFORMANCE OPTIMIZATIONS ===== */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: row-reverse !important;
-}
-  .sec-4-right-crousel-track {
-    animation-duration: 45s;
-  }
-  
-  .marquee-track {
-    animation-duration: 35s;
-  }
-}
-
-/* Small mobile adjustments */
-@media (max-width: 480px) {
   .right-pill-row .col-xs-6 {
     width: 260px;
   }
@@ -1219,50 +509,54 @@ html, body {
   .sec-5-images img {
     height: 220px;
   }
-  
-  .sec-7-row-img .col-lg-4 {
-    width: 300px;
-  }
-  
-  .sec-9-row .col-lg-4 {
-    width: 300px;
-  }
-  
-  .sec-7-cont {
-    padding: 20px;
-    min-height: 380px;
-  }
 }
 
-/* Very small mobile adjustments */
+/* ===== VERY SMALL MOBILE ===== */
 @media (max-width: 360px) {
+  .center-nav-logo img{
+    width: 100%;
+    height: 45px !important;
+  }
+  
+  .banner {
+    min-height: 70vh;
+  }
+  
+  .banner-content h1 {
+    font-size: 36px;
+  }
+  
+  .banner-content p {
+    font-size: 22px;
+  }
+  
+  .bnner-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  
+  .sec-3-btn {
+    margin: 0% 57% 0 0;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .sec-4-top-right {
+    justify-content: flex-start;
+    padding: 20px 65px;
+  }
+  
+  .sec-4-left-cont p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
   .right-pill-row .col-xs-6 {
     width: 240px;
   }
   
   .pill-image img {
     height: 160px;
-  }
-  
-  .sec-5-img-spc .col-md-4 {
-    width: 260px;
-  }
-  
-  .sec-5-images img {
-    height: 200px;
-  }
-  
-  .sec-7-row-img .col-lg-4 {
-    width: 280px;
-  }
-  
-  .sec-9-row .col-lg-4 {
-    width: 280px;
-  }
-  
-  .sec-7-cont {
-    padding: 15px;
-    min-height: 350px;
   }
 }
 

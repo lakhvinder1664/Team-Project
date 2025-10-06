@@ -291,7 +291,6 @@ a.button {
   line-height: 150%;
   margin: 0;
 }
-
 .left-tabs-right {
   margin-top: 80px;
   display: flex;
@@ -301,6 +300,7 @@ a.button {
   position: sticky;
   top: 120px;
   height: fit-content;
+  border-right: .75px solid #aeaeae;
 }
 
 .sec-2-left ul {
@@ -315,13 +315,13 @@ a.button {
   cursor: pointer;
   color: #000;
   transition: all 0.3s ease;
+  
 }
-
-.sec-2-left li:hover,
 .sec-2-left li.active {
   color: black;
   font-weight: 600;
-  transform: translateX(5px);
+  /* transform: translateX(5px); */
+  border-right: 5px solid black;
 }
 
 .right-pills-scrolling {
@@ -345,7 +345,9 @@ a.button {
 .right-pills-scrolling::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
+.pill-right-cont {
+  padding-bottom: 60px;
+}
 .pill-right-cont h3 {
   font-size: 42px;
 }
@@ -573,7 +575,7 @@ a.button {
 
 .sec-4-right-crousel-left h3 {
   font-size: 22px;
-  font-weight: 700;
+  /* font-weight: 700; */
   margin-bottom: 10px;
 }
 
@@ -608,7 +610,7 @@ a.button {
 }
 
 .sec-5-top-head h2{
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 42px;
 }
 
@@ -655,17 +657,19 @@ a.button {
 }
 
 .sec-6-top-head p{
-  font: DM Sans,sans-serif!important;
+  font-family: DM Sans,sans-serif!important;
   font-size: 18px;
 }
 
 .sec-6-row {
   padding: 30px 0;
 }
-
+.sec-6-cont-txt{
+  margin: 25px 0;
+}
 .sec-6-cont-img img {
-  width: 80px;
-  height: auto;
+  width: auto;
+  height: 64px;
 }
 
 .sec-6-cont-txt h3 {
@@ -1031,325 +1035,3 @@ svg {
   border-top: 1px solid #535353;
 }
 
-/* ===== RESPONSIVE FIXES ONLY (No centering) ===== */
-
-/* Large tablets and small desktops */
-@media (max-width: 1199px) and (min-width: 992px) {
-  .banner-content h1 {
-    width: 120%;
-    font-size: 52px;
-  }
-  
-  .banner-content p {
-    font-size: 26px;
-  }
-  
-  .sec-2-left li {
-    font-size: 26px;
-  }
-}
-
-/* Tablets */
-@media (max-width: 991px) {
-  .banner {
-    min-height: 70vh;
-  }
-  
-  .banner-content h1 {
-    width: 100%;
-    font-size: 42px;
-  }
-  
-  .banner-content p {
-    font-size: 22px;
-  }
-  
-  .banner-img-col {
-    display: none;
-  }
-  
-  .bnner-btn {
-    font-size: 16px;
-    padding: 14px 28px;
-  }
-  
-  /* Section 2 - Fix layout only */
-  .sec-2 {
-    height: auto;
-    padding: 40px 5%;
-  }
-  
-  .left-tabs-right {
-    margin-top: 40px;
-    flex-direction: column;
-  }
-  
-  .sec-2-left {
-    position: static;
-    margin-bottom: 30px;
-  }
-  
-  .sec-2-left ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .sec-2-left li {
-    font-size: 20px;
-    padding: 12px 24px;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-  }
-  
-  .right-pills-scrolling {
-    height: auto;
-    overflow: visible;
-  }
-  
-  /* Section 3 */
-  .sec-3-video iframe {
-    height: 400px;
-  }
-  
-  .bottom-cont-p {
-    width: 100%;
-  }
-  
-  /* Section 4 */
-  .sec-4-crousel {
-    flex-direction: column;
-  }
-  
-  .sec-4-left-cont {
-    flex: 1;
-  }
-  
-  .sec-4-top-right {
-    padding: 30px 0;
-  }
-}
-
-/* Mobile devices */
-@media (max-width: 767px) {
-  .banner {
-    min-height: 60vh;
-  }
-  
-  .banner-content {
-    padding-top: 100px;
-  }
-  
-  .banner-content h1 {
-    font-size: 36px;
-  }
-  
-  .banner-content p {
-    font-size: 18px;
-  }
-  
-  .bnner-btn {
-    font-size: 15px;
-    padding: 12px 24px;
-  }
-  
-  .nav-btn {
-    font-size: 16px;
-    padding: 8px 20px;
-  }
-  
-  .side-img {
-    height: 25px;
-  }
-  
-  .sec-2 {
-    padding: 30px 20px;
-  }
-  
-  .sec-2-top-head h2 {
-    font-size: 34px;
-  }
-  
-  .sec-2-top-head p {
-    font-size: 18px;
-  }
-  
-  .sec-2-left li {
-    font-size: 18px;
-    padding: 10px 20px;
-  }
-  
-  .sec-3-video iframe {
-    height: 300px;
-  }
-  
-  .sec-3-first-h h2 {
-    font-size: 32px;
-  }
-  
-  .sec-4-top-heading h3 {
-    font-size: 36px;
-  }
-  
-  .sec-4-top-heading p {
-    font-size: 20px;
-  }
-  
-  .sec-4-right-crousel-card {
-    min-width: 280px;
-    height: 200px;
-  }
-  
-  .sec-10-left {
-    padding: 0 5%;
-    line-height: 1.5;
-    margin-bottom: 40px;
-  }
-}
-
-/* Small mobile devices */
-@media (max-width: 575px) {
-  .banner {
-    min-height: 50vh;
-  }
-  
-  .banner-content {
-    padding-top: 80px;
-  }
-  
-  .banner-content h1 {
-    font-size: 28px;
-  }
-  
-  .banner-content p {
-    font-size: 16px;
-  }
-  
-  .bnner-btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-  
-  .sec-2 {
-    padding: 25px 15px;
-  }
-  
-  .sec-2-top-head h2 {
-    font-size: 28px;
-  }
-  
-  .sec-2-top-head p {
-    font-size: 16px;
-  }
-  
-  .sec-2-left li {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-  
-  .pill-right-cont h3 {
-    font-size: 24px;
-  }
-  
-  .pill-right-cont p {
-    font-size: 16px;
-  }
-  
-  .sec-3-video iframe {
-    height: 250px;
-  }
-  
-  .sec-3-first-h h2 {
-    font-size: 28px;
-  }
-  
-  .bottom-cont-h3 {
-    font-size: 18px;
-  }
-  
-  .bottom-cont-p p {
-    font-size: 14px;
-  }
-  
-  .sec-3-btn {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-  
-  .sec-4-top-heading {
-    padding: 20px 15px;
-  }
-  
-  .sec-4-top-heading h3 {
-    font-size: 28px;
-  }
-  
-  .sec-4-top-heading p {
-    font-size: 16px;
-  }
-  
-  .sec-4-top-right {
-    padding: 20px 0;
-  }
-  
-  .sec-4-right-crousel-card {
-    min-width: 250px;
-    height: 180px;
-  }
-  
-  .sec-4-right-crousel-left h3 {
-    font-size: 18px;
-  }
-  
-  .sec-4-right-crousel-left p {
-    font-size: 14px;
-  }
-  
-  .sec-10-head h2 {
-    font-size: 24px;
-  }
-  
-  .form-title {
-    font-size: 18px;
-  }
-  
-  .contact-form {
-    max-width: 100%;
-  }
-  
-  .form-input input,
-  .form-input textarea {
-    font-size: 16px;
-  }
-  
-  /* Touch optimization only */
-  .nav-btn,
-  .bnner-btn,
-  .sec-3-btn,
-  .sec-4-top-head-btn,
-  .sec-4-left-cont-btn,
-  .right-pill-down-btn {
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* Fix for iOS Safari */
-@supports (-webkit-touch-callout: none) {
-  .banner {
-    background-attachment: scroll;
-  }
-  
-  .form-input input,
-  .form-input textarea {
-    font-size: 16px;
-  }
-}
-
-/* Image responsive fallback */
-img {
-  max-width: 100%;
-  height: auto;
-}
