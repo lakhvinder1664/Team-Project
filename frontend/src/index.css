@@ -164,6 +164,7 @@ html, body {
   }
   
   .bottom-cont-p {
+    margin-bottom: 35px;
     width: 100%;
   }
   
@@ -193,7 +194,9 @@ html, body {
   }
   
   .sec-4-top-right {
+    justify-content: flex-start;
     padding: 30px 0;
+    margin-right: 38%;
   }
   
   .sec-4-crousel {
@@ -754,12 +757,20 @@ html, body {
   .sec-3-first-h h2 {
     font-size: 24px;
   }
-  
+  .sec-3-btn {
+    margin: 0% 57% 0 0;
+    font-size: 16px;
+    padding: 10px 20px;
+}
   /* Section 4 */
   .sec-4-top-heading h3 {
     font-size: 24px;
   }
-  
+  .sec-4-top-right {
+  justify-content: flex-start;
+  padding: 30px 0;
+  margin-right: 38%;
+  }
   .sec-4-right-crousel-card {
     min-width: 200px;
     height: 150px;
@@ -775,6 +786,30 @@ html, body {
   
   .sec-4-right-crousel-left p {
     font-size: 12px;
+  }
+  .sec-10-img img {
+  margin: -30px 0 30px 0;
+  height: 65px;
+  width: 70%;
+  }
+  .sec-10-head h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .sec-11-cont img {
+    width: 30%;
+  }
+  .sec-11-cont {
+    display: flex;
+    align-items: center;
+  }
+  .sec-11-head h2 {
+    font-size: 30px;
+  }
+  .sec-11-cont h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
   }
 }
 
@@ -982,5 +1017,262 @@ img {
 @supports (-webkit-touch-callout: none) {
   .banner {
     background-attachment: scroll;
+  }
+}
+
+
+
+/* ===== HORIZONTAL SCROLL SECTIONS FOR MOBILE ===== */
+
+/* What We Do - Aluminum Doors, Windows Section */
+@media (max-width: 768px) {
+  .right-pill-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 10px;
+  }
+  
+  .right-pill-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .right-pill-row .row {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  
+  .right-pill-row .col-xs-6 {
+    flex: 0 0 auto;
+    width: 280px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .pill-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+/* Our Project Images Horizontal Scroll */
+@media (max-width: 768px) {
+  .sec-5-images {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 15px;
+  }
+  
+  .sec-5-images::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sec-5-img-spc .row {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  
+  .sec-5-img-spc .col-md-4 {
+    flex: 0 0 auto;
+    width: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .sec-5-images img {
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* Our Solutions - Architects & Designers Horizontal Scroll */
+@media (max-width: 768px) {
+  .sec-7-row-img {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+  }
+  
+  .sec-7-row-img::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sec-7-row-img .row {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  
+  .sec-7-row-img .col-lg-4 {
+    flex: 0 0 auto;
+    width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .sec-7-cont {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 16px;
+    height: 100%;
+    min-height: 400px;
+  }
+  
+  .sec-7-row-img img {
+    height: 120px;
+    object-fit: contain;
+  }
+}
+
+/* Built on Trust Cards Horizontal Scroll */
+@media (max-width: 768px) {
+  .sec-9-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+  }
+  
+  .sec-9-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sec-9-row .row {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  
+  .sec-9-row .col-lg-4 {
+    flex: 0 0 auto;
+    width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .card-cont {
+    height: 100%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-para {
+    flex: 1;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .right-pill-row .col-xs-6 {
+    width: 260px;
+  }
+  
+  .pill-image img {
+    height: 180px;
+  }
+  
+  .sec-5-img-spc .col-md-4 {
+    width: 280px;
+  }
+  
+  .sec-5-images img {
+    height: 220px;
+  }
+  
+  .sec-7-row-img .col-lg-4 {
+    width: 300px;
+  }
+  
+  .sec-9-row .col-lg-4 {
+    width: 300px;
+  }
+  
+  .sec-7-cont {
+    padding: 20px;
+    min-height: 380px;
+  }
+}
+
+/* Very small mobile adjustments */
+@media (max-width: 360px) {
+  .right-pill-row .col-xs-6 {
+    width: 240px;
+  }
+  
+  .pill-image img {
+    height: 160px;
+  }
+  
+  .sec-5-img-spc .col-md-4 {
+    width: 260px;
+  }
+  
+  .sec-5-images img {
+    height: 200px;
+  }
+  
+  .sec-7-row-img .col-lg-4 {
+    width: 280px;
+  }
+  
+  .sec-9-row .col-lg-4 {
+    width: 280px;
+  }
+  
+  .sec-7-cont {
+    padding: 15px;
+    min-height: 350px;
+  }
+}
+
+/* SCROLL INDICATORS */
+@media (max-width: 768px) {
+  .right-pill-row,
+  .sec-5-images,
+  .sec-7-row-img,
+  .sec-9-row {
+    position: relative;
+  }
+  
+  .right-pill-row:after,
+  .sec-5-images:after,
+  .sec-7-row-img:after,
+  .sec-9-row:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.1));
+    pointer-events: none;
+  }
+}
+
+/* TOUCH SCROLL ENHANCEMENTS */
+@media (max-width: 768px) {
+  .right-pill-row,
+  .sec-5-images,
+  .sec-7-row-img,
+  .sec-9-row {
+    scroll-snap-type: x mandatory;
+  }
+  
+  .right-pill-row .col-xs-6,
+  .sec-5-img-spc .col-md-4,
+  .sec-7-row-img .col-lg-4,
+  .sec-9-row .col-lg-4 {
+    scroll-snap-align: start;
   }
 }

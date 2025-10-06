@@ -73,6 +73,7 @@ import Client8 from "../assets/clientLogo/1751274047.png";
 
 import Client9 from "../assets/clientLogo/1751274064.png";
 
+
 const banners = [
   { image: banner1, title: "Smart living Starts with Schon", text: "This is our awesome home page.", button: "Start Your Next Project with Schon" },
   { image: banner2, title: "India’s Trusted Choice for Premium Spaces", text: "20000+ Installations, 200+Cities", button: "Speak to Our Technical Team" },
@@ -161,6 +162,68 @@ const Home = () => {
   }, []);
 
   const [activeTab, setActiveTab] = useState("doors");
+
+  // Add this useEffect to your Home component
+useEffect(() => {
+  // Add smooth scrolling for horizontal sections on mobile
+  const initHorizontalScroll = () => {
+    const scrollContainers = document.querySelectorAll('.right-pill-row, .sec-5-images, .sec-7-row-img, .sec-9-row');
+    
+    scrollContainers.forEach(container => {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      container.addEventListener('mousedown', (e) => {
+        isDown = true;
+        container.style.cursor = 'grabbing';
+        startX = e.pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+      });
+
+      container.addEventListener('mouseleave', () => {
+        isDown = false;
+        container.style.cursor = 'grab';
+      });
+
+      container.addEventListener('mouseup', () => {
+        isDown = false;
+        container.style.cursor = 'grab';
+      });
+
+      container.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - startX) * 2;
+        container.scrollLeft = scrollLeft - walk;
+      });
+
+      // Touch events for mobile
+      container.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+      });
+
+      container.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        const x = e.touches[0].pageX - container.offsetLeft;
+        const walk = (x - startX) * 2;
+        container.scrollLeft = scrollLeft - walk;
+      });
+    });
+  };
+
+  // Initialize on component mount
+  initHorizontalScroll();
+
+  // Re-initialize when window resizes
+  window.addEventListener('resize', initHorizontalScroll);
+
+  return () => {
+    window.removeEventListener('resize', initHorizontalScroll);
+  };
+}, []);
 
   return (
     <div className="home">
