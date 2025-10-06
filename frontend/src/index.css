@@ -389,13 +389,12 @@ html, body {
     background: #111111;
     width: 87%;
     color: white;
-    padding-left: 30px !important;
+    padding-left: 30px;
 }
   .side-img-btn {
     border: none;
     background: transparent;
     padding: 0;
-    order: 2;
   }
   .offcanvas-body {
     flex-direction: column;
