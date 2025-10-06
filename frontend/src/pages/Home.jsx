@@ -263,7 +263,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage1, pillsimage2, pillsimage3, pillsimage4].map((img, i) => (
-                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
+                          <Col xs={6} md={4} lg={3} key={i} className="">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Door" />
@@ -296,7 +296,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage5, pillsimage6, pillsimage7, pillsimage8].map((img, i) => (
-                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
+                          <Col xs={6} md={4} lg={3} key={i} className="">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Window" />
@@ -328,7 +328,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage9, pillsimage10].map((img, i) => (
-                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
+                          <Col xs={6} md={4} lg={3} key={i} className="">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Railing" />
@@ -359,7 +359,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage11, pillsimage12].map((img, i) => (
-                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
+                          <Col xs={6} md={4} lg={3} key={i} className="">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Glass" />
@@ -391,7 +391,7 @@ const Home = () => {
                     <div className="right-pill-row">
                       <Row>
                         {[pillsimage13, pillsimage14, pillsimage15].map((img, i) => (
-                          <Col xs={6} md={4} lg={3} key={i} className="mb-4">
+                          <Col xs={6} md={4} lg={3} key={i} className="">
                             <div className="row-image-cont">
                               <div className="pill-image">
                                 <img src={img} alt="Cubicle" />

@@ -57,6 +57,9 @@ html, body {
     font-size: 24px;
   }
   
+  .sec-2 {
+    height: 55vh !important;
+  }
   .sec-2-left li {
     font-size: 24px;
   }
@@ -94,7 +97,6 @@ html, body {
   
   .banner-content {
     padding-top: 120px;
-    text-align: center;
   }
   
   .banner-content h1 {
@@ -134,7 +136,6 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center;
   }
   
   .sec-2-left li {
@@ -151,17 +152,14 @@ html, body {
   
   .pill-right-cont h3 {
     font-size: 32px;
-    text-align: center;
   }
   
   /* Section 3 */
   .sec-3-first-h h2 {
-    text-align: center;
     font-size: 38px;
   }
   
   .bottom-cont-h3 {
-    text-align: center;
     font-size: 22px;
   }
   
@@ -170,12 +168,10 @@ html, body {
   }
   
   .bottom-cont-p p {
-    text-align: center;
     font-size: 16px;
   }
   
   .sec-3-right-btn {
-    text-align: center !important;
     margin-top: 20px;
   }
   
@@ -186,7 +182,6 @@ html, body {
   /* Section 4 */
   .sec-4-top-heading {
     padding: 30px 5%;
-    text-align: center;
   }
   
   .sec-4-top-heading h3 {
@@ -198,7 +193,6 @@ html, body {
   }
   
   .sec-4-top-right {
-    justify-content: center !important;
     padding: 30px 0;
   }
   
@@ -208,29 +202,12 @@ html, body {
   }
   
   .sec-4-left-cont {
-    text-align: center;
+    flex: 1;
   }
   
   .sec-4-right-crousel-card {
     min-width: 280px;
     height: 200px;
-  }
-  
-  /* Section 6 */
-  .sec-6-cont-img-txt {
-    text-align: center;
-  }
-  
-  .sec-6-cont-txt h3 {
-    font-size: 28px;
-  }
-  
-  /* Footer */
-  .footer-head-our,
-  .footer-head-quick,
-  .footer-head-product {
-    padding-left: 0;
-    text-align: center;
   }
 }
 
@@ -407,14 +384,14 @@ html, body {
     background: transparent;
     padding: 0;
     order: 2;
-}
-.offcanvas-body {
+  }
+  .offcanvas-body {
     flex-direction: column;
-}
-.contact-btns {
+  }
+  .contact-btns {
     flex-direction: column;
     align-items: baseline;
-}
+  }
   .banner {
     min-height: 55vh;
   }
@@ -724,6 +701,12 @@ html, body {
 
 /* ===== 360px to 321px ===== */
 @media (max-width: 360px) and (min-width: 321px) {
+  .center-nav-logo img{
+    width: 100% ;
+    height: 45px !important;
+    transition: height 0.3s;
+  }
+  
   .banner {
     min-height: 45vh;
   }
@@ -736,7 +719,6 @@ html, body {
   .banner-content p {
     font-size: 22px;
     text-align: left;
-
   }
   
   .bnner-btn {

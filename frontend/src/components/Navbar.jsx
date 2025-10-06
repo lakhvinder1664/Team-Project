@@ -37,7 +37,7 @@ const CustomNavbar = () => {
           </Button>
           {/* Side image as clickable menu trigger */}
 
-          <Navbar.Brand className="">
+          <Navbar.Brand className="center-nav-logo">
             <img
               src={logo}
               alt="Logo"
