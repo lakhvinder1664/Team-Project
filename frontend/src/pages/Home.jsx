@@ -73,7 +73,8 @@ import Client8 from "../assets/clientLogo/1751274047.png";
 
 import Client9 from "../assets/clientLogo/1751274064.png";
 
-
+// section-4
+import consultation from "../assets/images/Consultation.png"
 const banners = [
   { image: banner1, title: "Smart living Starts with Schon", text: "This is our awesome home page.", button: "Start Your Next Project with Schon" },
   { image: banner2, title: "India’s Trusted Choice for Premium Spaces", text: "20000+ Installations, 200+Cities", button: "Speak to Our Technical Team" },
@@ -548,9 +549,12 @@ useEffect(() => {
               {[...cards, ...cards].map((card, i) => (
                 <div key={i} className="sec-4-right-crousel-card">
                   <div className="sec-4-right-crousel-left">
-                    <div className="card-number">{i + 1}</div>
-                    <h3>{card.title}</h3>
+                    <div className="position-card">
+                    <div className="card-number"></div>
+                    <h3 className="h3-span-card">{card.title} <span>{i + 1}</span></h3>
                     <p>{card.desc}</p>
+                    </div>
+                    <img src={consultation} alt="" />
                   </div>
                   
                 </div>
