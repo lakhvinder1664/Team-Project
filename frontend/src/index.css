@@ -239,16 +239,28 @@ html, body {
   }
   
   .banner-content h1 {
-    font-size: 36px;
+    width: 110% !important;
+    font-size: 40px !important;
   }
   
   .banner-content p {
-    font-size: 18px;
+    font-size: 24px !important;
   }
-  
+   
+  .banner-img-col {
+    width: 55% !important;
+    margin: 15px 0 !important;
+    flex-direction: row !important;
+  }
+  .banner-img-col img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain !important;
+    margin: 5px 0 !important;
+  }
   .bnner-btn {
     font-size: 15px;
-    padding: 12px 24px;
+    padding: 5px 25px !important;
   }
   
   .side-img-btn {
@@ -265,7 +277,7 @@ html, body {
   }
   
   .sec-2-top-head h2 {
-    font-size: 34px;
+    font-size: 34px !important;
   }
   
   .sec-2-top-head p {
@@ -280,6 +292,127 @@ html, body {
   .pill-right-cont h3 {
     font-size: 28px;
   }
+  .sec-3-btn{
+    margin-top: 0 !important;
+  }
+  .sec-3-right-btn{
+    text-align: left !important;
+  }
+  .bottom-cont-p p {
+    max-width: 85% !important;
+    font-size: 18px !important;
+  }
+  .bottom-cont-h3 {
+    font-size: 20px !important;
+    margin: -13px 0px 13px 0 !important;
+  }
+  .sec-6-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-3-video iframe {
+    border-radius: 30px !important;
+    width: 100% !important;
+    height: 330px !important;
+  }
+  .sec-4-top-heading h3{
+    font-size: 40px !important;
+    line-height: 55% !important;
+  }
+  .sec-4-top-heading p{
+    font-size: 25px !important;
+  }
+  .sec-4-top-right {
+    justify-content: left !important;
+    padding: 20px 0 !important;
+  }
+  .sec-4-crousel{
+    flex-flow: column !important;
+  }
+  .sec-4-left-cont h2 {
+    font-size: 35px !important;
+  }
+  .sec-4-left-cont p {
+    font-size: 23px !important;
+  }
+  .sec-5-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-5-next-head h3 {
+    font-size: 23px !important;
+  }
+  .sec-5-next-head p {
+    text-align: justify !important;
+    font-size: 16px !important;
+  }
+  .slide img {
+    height: 100px !important;
+    width: auto !important;
+  }
+  .slide {
+    width: auto !important;
+  }
+  .sec-6-cont-txt h3{
+    font-size: 24px !important;
+  }
+  .sec-6-cont-txt p {
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  .sec-6-top-head p {
+    font-size: 16px !important;
+  }
+  .sec-7-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-7-top-head p {
+    text-align: justify !important;
+    font-size: 16px !important;
+  }
+  .sec-7-row-img img {
+    width: auto !important;
+    height: 100px !important;
+  }
+  .sec-7-row-text h3 {
+    font-size: 24px !important;
+  }
+  .sec-7-row-text p {
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  .sec-8-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-8-top-head p {
+     font-size: 18px !important;
+  }
+  .sec-9-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-10 {
+    padding: 25px 0 !important;
+  }
+  .sec-10-img {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .sec-10-img img {
+    height: auto !important;
+    width: 64% !important;
+  }
+  .sec-10-head h2 {
+    text-align: left;
+    font-size: 30px !important;
+    margin: 15px 0 !important;
+  }
+  .sec-11-cont img {
+    width: auto !important;
+    height: 100px !important;
+  }
+  .footer-logo img {
+    width: auto !important;
+    height: 50px !important;
+  }
+
 }
 
 /* ===== XS (Below 576px) ===== */
@@ -350,9 +483,9 @@ html, body {
   }
   
   .sec-3-first-h h2 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
-  
+
   .sec-4-top-heading h3 {
     font-size: 28px;
   }
