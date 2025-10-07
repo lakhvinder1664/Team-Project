@@ -812,7 +812,7 @@ useEffect(() => {
                 </div>
               </div>
             </Col>
-            <Col xs={12}  md={12} lg={6} className="d-flex flex-column align-items-center">
+            <Col xs={12}  md={12} lg={6} className="d-flex flex-column align-items-center form-contain">
               <h3 className="form-title">We’re just a step away!</h3>
               <form className="contact-form">
                 <div className="form-input">

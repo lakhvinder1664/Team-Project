@@ -912,7 +912,10 @@ a.button {
   height: 85px;
   width: 70%;
 }
-
+.form-contain{
+    padding: 80px 240px 80px 80px;
+    background: #00000099;
+}
 .form-title {
   margin-bottom: 20px;
   color: white;
