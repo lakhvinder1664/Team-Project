@@ -301,6 +301,7 @@ a.button {
   top: 120px;
   height: fit-content;
   border-right: .75px solid #aeaeae;
+  transition: all 0.3s ease;
 }
 
 .sec-2-left ul {

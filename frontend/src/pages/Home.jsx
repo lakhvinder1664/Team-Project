@@ -312,7 +312,7 @@ useEffect(() => {
               {/* RIGHT SIDE */}
               <Col xs={12} lg={9} md={12}>
                 <div className="right-pills-scrolling " ref={scrollRef} style={{
-                  maxHeight: "550px",
+                  maxHeight: "500px",
                   overflowY: "auto",
                   scrollBehavior: "smooth",
                   paddingRight: "10px",
