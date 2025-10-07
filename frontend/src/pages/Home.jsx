@@ -162,8 +162,26 @@ const Home = () => {
     }
   }, []);
 
-  const [activeTab, setActiveTab] = useState("doors");
+  const [activeId, setActiveId] = useState("doors");
+  const scrollRef = useRef(null);
 
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    const sections = scrollContainer.querySelectorAll(".pill-right-cont");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveId(entry.target.id);
+        });
+      },
+      { root: scrollContainer, threshold: 0.4 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+  
   // Add this useEffect to your Home component
 useEffect(() => {
   // Add smooth scrolling for horizontal sections on mobile
@@ -277,45 +295,29 @@ useEffect(() => {
             <Col xs={12} lg={3} md={12}>
               <div className="sec-2-left">
                 <ul>
-                  <li
-                    className={activeTab === "doors" ? "active" : ""}
-                    onClick={() => setActiveTab("doors")}
-                  >
-                    Doors
-                  </li>
-                  <li
-                    className={activeTab === "windows" ? "active" : ""}
-                    onClick={() => setActiveTab("windows")}
-                  >
-                    Windows
-                  </li>
-                  <li
-                    className={activeTab === "railings" ? "active" : ""}
-                    onClick={() => setActiveTab("railings")}
-                  >
-                    Railings
-                  </li>
-                  <li
-                    className={activeTab === "glasses" ? "active" : ""}
-                    onClick={() => setActiveTab("glasses")}
-                  >
-                    Glasses
-                  </li>
-                  <li
-                    className={activeTab === "cubicles" ? "active" : ""}
-                    onClick={() => setActiveTab("cubicles")}
-                  >
-                    Cubicles
-                  </li>
+                  {["doors", "windows", "railings", "glasses", "cubicles"].map((id) => (
+                    <li key={id}>
+                      <a
+                        href={`#${id}`}
+                        className={activeId === id ? "active" : ""}
+                      >
+                        {id.charAt(0).toUpperCase() + id.slice(1)}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </Col>
 
               {/* RIGHT SIDE */}
               <Col xs={12} lg={9} md={12}>
-                <div className="right-pills-scrolling">
-                  {activeTab === "doors" && (
-                    <div className="pill-right-cont">
+                <div className="right-pills-scrolling " ref={scrollRef} style={{
+                  maxHeight: "550px",
+                  overflowY: "auto",
+                  scrollBehavior: "smooth",
+                  paddingRight: "10px",
+                }}>
+                    <div id="doors" className="pill-right-cont">
                       <h3>Aluminium Doors</h3>
                       <p>
                         Engineered for strength and sophistication, our aluminium
@@ -346,10 +348,7 @@ useEffect(() => {
                         </Button>
                       </div>
                     </div>
-                  )}
-
-                  {activeTab === "windows" && (
-                    <div className="pill-right-cont">
+                    <div id="windows" className="pill-right-cont">
                       <h3>Aluminium Windows</h3>
                       <p>
                         Our high-performance aluminium windows combine sleek design
@@ -379,10 +378,7 @@ useEffect(() => {
                         </Button>
                       </div>
                     </div>
-                  )}
-
-                  {activeTab === "railings" && (
-                    <div className="pill-right-cont">
+                    <div id="railings" className="pill-right-cont">
                       <h3>Railings</h3>
                       <p>
                         Our aluminium and glass railing systems deliver safety
@@ -411,10 +407,7 @@ useEffect(() => {
                         </Button>
                       </div>
                     </div>
-                  )}
-
-                  {activeTab === "glasses" && (
-                    <div className="pill-right-cont">
+                    <div id="glasses" className="pill-right-cont">
                       <h3>Luxury Glasses</h3>
                       <p>
                         Make a bold statement with our luxury glass solutions,
@@ -442,10 +435,7 @@ useEffect(() => {
                         </Button>
                       </div>
                     </div>
-                  )}
-
-                  {activeTab === "cubicles" && (
-                    <div className="pill-right-cont">
+                    <div id="cubicles" className="pill-right-cont">
                       <h3>Shower Cubicles</h3>
                       <p>
                         Crafted for elegance and built to last, our frameless and
@@ -474,7 +464,6 @@ useEffect(() => {
                         </Button>
                       </div>
                     </div>
-                  )}
                 </div>
               </Col>
             </Row>

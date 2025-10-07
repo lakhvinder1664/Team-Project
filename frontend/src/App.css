@@ -308,16 +308,18 @@ a.button {
   margin: 0;
 }
 
-.sec-2-left li {
+.sec-2-left li, .sec-2-left li a{
   font-size: 30px;
   padding: 15px 0;
   list-style: none;
+  text-decoration: none;
   cursor: pointer;
   color: #000;
   transition: all 0.3s ease;
+  display: block;
   
 }
-.sec-2-left li.active {
+.sec-2-left li a.active{ 
   color: black;
   font-weight: 600;
   /* transform: translateX(5px); */
@@ -325,14 +327,12 @@ a.button {
 }
 
 .right-pills-scrolling {
-  flex: 1;
-  height: 80vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 10px;
-  scroll-behavior: smooth;
+    max-height: 800px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 10px;
+    scrollbar-width: none;
 }
-
 .right-pills-scrolling::-webkit-scrollbar {
   width: 6px;
 }
