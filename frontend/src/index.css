@@ -432,7 +432,7 @@ html, body {
   }
   
   .offcanvas-body {
-    flex-direction: column;
+    flex-direction: row;
   }
   
   .contact-btns {
@@ -445,11 +445,11 @@ html, body {
   }
   
   .banner-content h1 {
-    font-size: 32px;
+    font-size: 32p !important;
   }
   
   .banner-content p {
-    font-size: 17px;
+    font-size: 17px !important;
   }
   
   .bnner-btn {
@@ -602,11 +602,13 @@ html, body {
   }
   
   .banner-content h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
-  
+  .banner-img-col{
+    flex-direction: row !important;
+  }
   .banner-content p {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   
   .bnner-btn {
@@ -647,43 +649,178 @@ html, body {
 /* ===== VERY SMALL MOBILE ===== */
 @media (max-width: 360px) {
   .center-nav-logo img{
-    width: 100%;
+    width: 100% !important;
     height: 45px !important;
   }
   
   .banner {
-    min-height: 70vh;
+    min-height: 70vh !important;
   }
   
   .banner-content h1 {
-    font-size: 36px;
+    width: 100% !important;
+    font-size: 36px !important;
   }
   
   .banner-content p {
-    font-size: 22px;
+    font-size: 20px !important;
+  }
+  .banner-img-col{
+    margin: 20px 0 0 0;
+  }
+    .banner-img-col img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain !important;
+    margin: 5px 0 !important;
   }
   
   .bnner-btn {
-    font-size: 12px;
-    padding: 8px 16px;
+    font-size: 12px !important;
+    padding: 8px 16px !important;
   }
-  
+  .sec-2-top-head h2 {
+    font-size: 30px !important;
+  }
+  .sec-2-top-head p {
+    text-align: left !important;
+    font-size: 19px !important;
+  }
   .sec-3-btn {
-    margin: 0% 57% 0 0;
-    font-size: 16px;
-    padding: 10px 20px;
+    margin: 0% 57% 0 0 !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
   }
-  
+  .sec-3-video iframe {
+    border-radius: 30px !important;
+    width: 100% !important;
+    height: 330px !important;
+  }
   .sec-4-top-right {
-    justify-content: flex-start;
-    padding: 20px 65px;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 20px 0 !important;
   }
-  
+  .sec-4-top-left {
+    text-align: center !important;
+  }
+  .sec-4-top-heading h3 {
+    font-size: 30px !important;
+  }
+  .bottom-cont-h3 {
+    font-size: 18px !important;
+    margin: -14px 0 5px 0 !important;
+  }
+  .bottom-cont-p p {
+    text-align: left !important;
+    width: 78% !important;
+    font-size: 18px !important;
+  }
+  .sec-4-crousel {
+    /* margin-bottom: 101px; */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+  }
+  .sec-4-left-cont h2 {
+    font-size: 30px !important;
+    font-weight: normal !important;
+  }
+  .sec-4-left-cont {
+    margin-bottom: 20px !important;
+  }
   .sec-4-left-cont p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 22px !important;
   }
-  
+  .sec-5-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-5-next-head h3 {
+    font-size: 18px !important;
+  }
+  .sec-5-next-head p {
+    text-align: justify !important;
+    font-size: 17px !important;
+  }
+  .sec-6-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-6-top-head p {
+    font-size: 15px !important;
+    text-align: justify !important;
+  }
+  .sec-6-cont-txt h3 {
+    font-size: 24px !important;
+  }
+  .sec-6-cont-txt p {
+    text-align: justify !important;
+    font-size: 19px !important;
+    font-weight: normal !important;
+  }
+  .sec-6-cont-img img {
+    width: auto !important;
+    height: 50px !important;
+  }
+  .sec-7-top-head h2 {
+    font-size: 35px !important;
+  }
+  .sec-7-top-head p {
+    text-align: left !important;
+    font-size: 16px !important;
+  }
+  .sec-7-row-img img {
+    width: 50% !important;
+    height: auto !important;
+  }
+  .sec-7-row-text h3 {
+    font-size: 24px !important;
+  }
+  .sec-7-row-text p {
+    text-align: left !important;
+    font-size: 15px !important;
+  }
+  .sec-8-top-head h2 {
+    font-size: 30px !important;
+  }
+  .sec-8-top-head p {
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  .slide {
+    width: 40px !important;
+  }
+  .sec-9-head h2 {
+    font-size: 33px !important;
+  }
+  .sec-10-img img {
+    height: 70px !important;
+    width: auto !important;
+  }
+  .sec-10-head h2 {
+    text-align: center !important;
+    font-size: 24px !important;
+  }
+  .sec-11-head h2 {
+    font-size: 30px !important;
+  }
+  .sec-11-cont {
+    display: flex !important;
+  }
+  .sec-11-cont img {
+    width: 100px !important;
+    height: auto !important;
+  }
+  .sec-11-cont h3 {
+    font-size: 20px !important;
+    margin: 33px 0px 0 10px !important;
+  }
+  .sec-11 {
+    padding: 20px 0 !important;
+  }
+  .footer-logo img {
+    width: 50% !important;
+    height: auto !important;
+  }
   .right-pill-row .col-xs-6 {
     width: 240px;
   }
@@ -691,6 +828,7 @@ html, body {
   .pill-image img {
     height: 160px;
   }
+  
 }
 
 /* ===== IMAGE FALLBACKS ===== */
