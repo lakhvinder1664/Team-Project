@@ -59,6 +59,7 @@ a.button {
   border: none;
   background: transparent;
   padding: 0;
+  order: 0;
 }
 
 .side-img {

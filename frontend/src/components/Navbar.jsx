@@ -25,7 +25,7 @@ const CustomNavbar = () => {
       <Navbar
         expand="lg"
         fixed="top"
-        className={`head-nav, py-3 navbar-transition ${scrolled ? "navbar-small" : "navbar-large"}` }>
+        className={`py-3 navbar-transition ${scrolled ? "navbar-small" : "navbar-large"}` }>
           <Container>
         
 
