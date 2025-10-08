@@ -233,7 +233,9 @@ html, body {
   .banner {
     min-height: 70vh;
   }
-  
+  .head-nav{
+    flex-direction: row-reverse !important;
+  }
   .banner-content {
     padding-top: 100px;
   }
