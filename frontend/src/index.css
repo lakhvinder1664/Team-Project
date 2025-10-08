@@ -666,7 +666,7 @@ html, body {
     font-size: 20px !important;
   }
   .banner-img-col{
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 -24px;
   }
     .banner-img-col img {
     width: 50px !important;
@@ -705,7 +705,12 @@ html, body {
     text-align: center !important;
   }
   .sec-4-top-heading h3 {
-    font-size: 30px !important;
+      font-weight: normal !important;
+      font-size: 30px !important;
+  }
+  .sec-4-top-heading p {
+    font-weight: lighter !important;
+      font-size: 20px !important;
   }
   .bottom-cont-h3 {
     font-size: 18px !important;
@@ -828,7 +833,10 @@ html, body {
   .pill-image img {
     height: 160px;
   }
-  
+  .form-contain {
+    padding:  0 15px 0 15px !important;
+    background: #00000099;
+  }
 }
 
 /* ===== IMAGE FALLBACKS ===== */
