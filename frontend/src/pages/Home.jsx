@@ -70,7 +70,6 @@ import Client5 from "../assets/clientLogo/1751273994.png";
 import Client6 from "../assets/clientLogo/1751274009.png";
 import Client7 from "../assets/clientLogo/1751274022.png";
 import Client8 from "../assets/clientLogo/1751274047.png";
-
 import Client9 from "../assets/clientLogo/1751274064.png";
 
 // section-4

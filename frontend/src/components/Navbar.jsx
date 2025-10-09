@@ -72,7 +72,7 @@ const CustomNavbar = () => {
                   <NavDropdown.Item href="#action6"><FontAwesomeIcon icon={faCircleChevronRight}  /> Sustainability</NavDropdown.Item>
             </HoverDropdown>
             <Nav.Link href="/product">Product</Nav.Link>
-            <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link as={Link} to="/teammates/rozy/Projects">Projects</Nav.Link>
             <Nav.Link href="/blogs">Blogs</Nav.Link>
             <Nav.Link as={Link} to ="/teammates/saraswati/Contact">Contact</Nav.Link>
         </Offcanvas.Body>
