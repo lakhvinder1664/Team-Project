@@ -1,69 +1,67 @@
-import React from "react";
 import { Container, Row, Col, Nav, Tab, Button } from 'react-bootstrap';
-import { FaFacebookF, FaInstagram, FaPinterestP, FaLinkedinIn } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram,faPinterest,faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import logo from '../assets/images/logo.png'
 function Footer() {
   return (
-    <footer>
-      <div className="footer">
+       <section className="footer-sec">
             <Container>
-                <Row>
-                  <Col xs={12} lg={3} ><div className="container-column">
+                <Row className="footer">
+                    <Col lg={3} md={6} sm={12}>
+                    <div className="footer-1">
                         <div className="footer-logo">
                             <img src={logo} alt="" />
                         </div>
-                        <div className="footer-p">
+                        <div className="footer-para">
                             <p>India’s trusted name in premium aluminium doors and windows, blending world-class German engineering with refined Indian craftsmanship.</p>
                         </div>
-                        <div className="footer-socials">
-                            <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF  color="black" /></a>
-                            <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram  color="black" /></a>
-                            <a href="https://pinterest.com" target="_blank" rel="noreferrer"><FaPinterestP  color="black" /></a>
-                            <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn  color="black" /></a>
+                        <div className="footer-icons">
+                            <FontAwesomeIcon icon={faFacebook} />
+                            <FontAwesomeIcon icon={faInstagram} />
+                            <FontAwesomeIcon icon={faPinterest} />
+                            <FontAwesomeIcon icon={faLinkedin} />
                         </div>
                     </div>
-                </Col>
-                <Col xs={12} sm={6} lg={3} className="mb-4">
-                  <div className="footer-head-our">
-                    <h3>Our Existence</h3>
-                    <ul>
-                      <li><a href="">contact@theschon.com</a></li>
-                      <li><a href="">+91 9535359481</a></li>
-                      <li><a href="">+91 7019209490</a></li>
-                    </ul>
-                  </div>
-                </Col>
-                <Col xs={12} sm={6} lg={3} className="mb-4">
-                  <div className="footer-head-quick">
-                    <h3>Quick Links</h3>
-                    <ul>
-                      <li><a href="">Our Blogs</a></li>
-                      <li><a href="">About Us</a></li>
-                      <li><a href="">News</a></li>
-                      <li><a href="">Contact Us</a></li>
-                    </ul>
-                  </div>
-                </Col>
-                <Col xs={12} sm={6} lg={3} className="mb-4">
-                  <div className="footer-head-product">
-                    <h3>Products</h3>
-                    <ul>
-                      <li><a href="">Doors</a></li>
-                      <li><a href="">Windows</a></li>
-                      <li><a href="">Railings</a></li>
-                      <li><a href="">Glasses</a></li>
-                      <li><a href="">Cubicles</a></li>
-                    </ul>
-                  </div>
-                </Col>
-                  <div className="all-right-deserve text-center">
-                      <p>All Rights Reserved</p>
-                  </div>
+                    </Col> 
+                    <Col lg={3} md={6} sm={12}>
+                    <div className="footer-2">
+                        <h3>Our Existence</h3>
+                        <ul>
+                            <li><a href="mailto:contact@theschon.com">contact@theschon.com</a></li>
+                            <li><a href="tel:+91 9535359481">+91 9535359481</a></li>
+                            <li><a href="tel:+91 7019209490">+91 7019209490</a></li>
+                        </ul>
+                    </div>
+                    </Col> 
+                    <Col lg={2} md={6} sm={6} xs={6}>
+                    <div className="footer-2">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Our Blogs</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    </Col> 
+                    <Col lg={2} md={6} sm={6} xs={6}>
+                    <div className="footer-2">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="#">Doors</a></li>
+                            <li><a href="#">Windows</a></li>
+                            <li><a href="#">Railings</a></li>
+                            <li><a href="#">Glasses</a></li>
+                            <li><a href="#">Cubicles</a></li>
+                        </ul>
+                    </div>
+                    </Col> 
                 </Row>
-
-            </Container>
-        </div>
-    </footer>
+                <div className="lower-footer">
+                    <p>All Rights Reserved</p>
+                </div>
+            </Container>        
+        </section>
   );
 }
 

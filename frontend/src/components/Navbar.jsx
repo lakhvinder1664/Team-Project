@@ -7,6 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import HoverDropdown from "./Hoverdrop";
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
 
 
 const CustomNavbar = () => {
@@ -73,7 +74,7 @@ const CustomNavbar = () => {
             <Nav.Link href="/product">Product</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/blogs">Blogs</Nav.Link>
-            <Nav.Link href="/blogs">Contact</Nav.Link>
+            <Nav.Link as={Link} to ="/teammates/saraswati/Contact">Contact</Nav.Link>
         </Offcanvas.Body>
             <div className="contact-btns">
                   <button className="header-btn">

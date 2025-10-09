@@ -845,10 +845,7 @@ html, body {
 }
 
 /* ===== IMAGE FALLBACKS ===== */
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* ===== IOS SAFARI FIXES ===== */
 @supports (-webkit-touch-callout: none) {
