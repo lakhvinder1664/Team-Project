@@ -276,9 +276,7 @@ html, body {
     height: 22px;
   }
   
-  .navbar-logo {
-    height: 35px !important;
-  }
+
   
   .sec-2-top-head h2 {
     font-size: 34px !important;
@@ -320,7 +318,7 @@ html, body {
   }
   .sec-4-top-heading h3{
     font-size: 40px !important;
-    line-height: 55% !important;
+  
   }
   .sec-4-top-heading p{
     font-size: 25px !important;
@@ -501,7 +499,7 @@ html, body {
     height: 170px;
   }
   
-  .nav-btn,
+  
   .bnner-btn,
   .sec-3-btn,
   .sec-4-top-head-btn,
@@ -575,7 +573,7 @@ html, body {
 
 /* ===== TOUCH OPTIMIZATIONS ===== */
 @media (max-width: 768px) {
-  .nav-btn,
+
   .bnner-btn,
   .sec-3-btn,
   .sec-4-top-head-btn,
@@ -627,9 +625,7 @@ html, body {
     height: 20px;
   }
   
-  .navbar-logo {
-    height: 30px !important;
-  }
+
   
   .right-pill-row .col-xs-6 {
     width: 260px;
@@ -653,11 +649,7 @@ html, body {
   .side-img-btn {
     order: 2 !important;
   }
-  .center-nav-logo img{
-    width: 100% !important;
-    height: 45px !important;
-  }
-  
+
   .banner {
     min-height: 70vh !important;
   }

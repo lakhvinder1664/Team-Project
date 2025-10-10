@@ -250,7 +250,7 @@ useEffect(() => {
     <div className="home">
       {/* Banner Section */}
       <div
-        className="banner"
+        className="banner banner-sec"
         style={{
           backgroundImage: `url(${banners[current].image})`,
           backgroundSize: "cover",
