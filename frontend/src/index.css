@@ -7,7 +7,76 @@ html, body {
   padding-left: 15px;
   padding-right: 15px;
 } */
+@media (max-width:992px) {
+  .image-logo{
+    height: 60px !important;
+  }
+}
+@media (max-width:768px){
+  .image-logo {
+      width: 132px;
+      height: 41px !important;
+  }
+}
+@media (max-width: 576px){
+  .btn-close {
+    font-size: 15px !important;
+}
+  .theschon-logo {
+    height: 40px;
+    width: auto;
+}
+.hamburger{
+  width: 32px;
+  cursor: pointer;
+}
+  .navbar-links {
+    font-size: 16px !important;
+    align-items: flex-start !important;
 
+}
+.contact-btns button {
+    font-size: 16px;
+}
+  .offcanvas-custom {
+    padding-left: 20px !important;
+}
+  .navbar button.header-btn {
+    display: none !important;
+}
+  .navbar-toggle {
+    order: 2; 
+  }
+  .navbar-links {
+    flex-direction: column !important;
+}
+.contact-btns {
+    top: 500px !important;
+    left: 34px !important;
+    gap: 20px !important;
+    flex-direction: column !important;
+    align-items: baseline !important;
+}
+  .navbar-brand {
+    order: 1; 
+  }
+.mega-menu {
+    /* width: 340px; */
+    width: 265px;
+}
+.mega-right {
+    padding-right: 20px;
+}
+.mega-right ul li a{
+  font-size: 16px;
+}
+.mega-left {
+    width: 100px;
+}
+.Navbar.Offcanvas{
+    padding-left: 20px !important;
+}
+}
 /* ===== XXL (1400px and above) ===== */
 @media (min-width: 1400px) {
   .banner-content h1 {
@@ -59,9 +128,9 @@ html, body {
 
 /* ===== MD (768px to 991px) ===== */
 @media (min-width: 768px) and (max-width: 992px) {
-  .offcanvas-body {
+  /* .offcanvas-body {
     flex-direction: column;
-}
+} */
   .banner {
     min-height: 70vh;
   }
@@ -419,7 +488,7 @@ html, body {
 
 /* ===== XS (Below 576px) ===== */
 @media (max-width: 575px) {
-  .offcanvas.show:not(.hiding), .offcanvas.showing {
+  /* .offcanvas.show:not(.hiding), .offcanvas.showing {
     transform: none;
     background: #111111;
     width: 87%;
@@ -438,7 +507,7 @@ html, body {
   .contact-btns {
     flex-direction: column;
     align-items: baseline;
-  }
+  } */
   
   .banner {
     max-height: 80vh;

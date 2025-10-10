@@ -42,12 +42,12 @@ a.button {
 .offcanvas-custom {
   background-color: #111111 !important;
   width: 88% !important;
-  padding-left: 80px !important; 
+  padding-left: 80px; 
 }
 .navbar-links{
   font-size: 28px;
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
   gap: 24px; 
   color: white;
   font-family: var(--DM-sans);
