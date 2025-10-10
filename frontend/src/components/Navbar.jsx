@@ -21,7 +21,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const firstSection = document.querySelector(".banner-sec"); 
+      const firstSection = document.querySelector("#movenav"); 
       if (firstSection) {
         const rect = firstSection.getBoundingClientRect();
         const sectionTop = rect.top + window.scrollY; 
@@ -101,7 +101,7 @@ if (window.scrollY > triggerPoint) {
                   <NavDropdown.Item href="#action3"><FontAwesomeIcon icon={faCircleChevronRight}  /> About us</NavDropdown.Item>
                   <NavDropdown.Item href="#action4"><FontAwesomeIcon icon={faCircleChevronRight}  /> On-stop Housing Solutions</NavDropdown.Item>
                   <NavDropdown.Item href="#action5"><FontAwesomeIcon icon={faCircleChevronRight}  /> Quality Assurance</NavDropdown.Item>
-                  <NavDropdown.Item href="#action6"><FontAwesomeIcon icon={faCircleChevronRight}  /> Sustainability</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="sustainability"><FontAwesomeIcon icon={faCircleChevronRight}  /> Sustainability</NavDropdown.Item>
                 </HoverDropdown>
                   <ProductMega />
 

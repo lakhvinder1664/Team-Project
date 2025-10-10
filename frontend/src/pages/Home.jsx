@@ -249,7 +249,8 @@ useEffect(() => {
   return (
     <div className="home">
       {/* Banner Section */}
-      <div
+      <div 
+        id="movenav"
         className="banner banner-sec"
         style={{
           backgroundImage: `url(${banners[current].image})`,
@@ -827,7 +828,7 @@ useEffect(() => {
                 <div className="form-input">
                   <textarea placeholder="Message*"></textarea>
                 </div>
-                <Button variant="" className="nav-btn">Get in Touch <FaArrowRight style={{ marginLeft: "8px" }} /></Button>
+                <Button variant="" className="header-btn">Get in Touch <FaArrowRight style={{ marginLeft: "8px" }} /></Button>
               </form>
             </Col>
           </Row>
