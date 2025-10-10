@@ -44,7 +44,7 @@ function Contact(){
   }, []);
     return (
         <>
-        <section className="banner-sec">
+        <section className="banner-sec" id="movenav">
         <Container>
             <div className="banner-content">
                 <h4 className="banner-head">Let’s Build Something Exceptional Together</h4>

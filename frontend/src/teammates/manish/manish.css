@@ -1,0 +1,1558 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* banner */
+
+.Banner-main{
+    background-image: url("../../assets/banner/Sustainabilitybanner.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 220px;
+}
+.banner-containt{
+    color: white;
+    padding-top: 20%;
+    font-family: "Playfair", serif;
+    position: relative;
+    z-index: 1;
+}
+.banner-containt h1{
+    font-size: 70px;
+}
+.banner-containt p {
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "DM Sans", sans-serif;
+}
+button.btn.btn-primary {
+    background: transparent;
+    color: white;
+    border-color: white;
+    padding: 9px 43px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'DM Sans';
+}
+
+/* section 2 */
+
+.sustain{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec-2-containt p{
+      padding-top: 100px;
+      line-height: 150%;
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 300;
+      font-size: 25px;
+
+}
+/* section 3 */
+.Sustainable{
+     padding: 100px 80px;
+}
+
+.sec-3-image img{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-left: -0px;
+}
+.sec-3-containt h2{
+    font-family:  "Playfair", serif;
+    font-size: 47px;
+
+}
+.sec-3-containt p{
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+.list-main{
+    display: flex;
+   gap: 20px;
+}
+.icon-containt h3{
+    font-family: "Playfair", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 24px 0;
+}
+
+.icon-containt p{
+   font-size: 18px;
+   font-family: "DM Sans", sans-serif;
+}
+
+/* section 4 */
+
+.sec-4{
+    background-image: url("../../assets/banner/OurJourneybg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 80px;
+}
+.sec-4-image img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.sec-4-list{
+    color: white;
+}
+.sec-4-containt h2{
+    color: white;
+       font-family: "Playfair", serif;
+       font-size: 48px;
+       line-height: 100%;
+       margin-bottom: 24px;
+}
+.sec-4-containt p{
+    font-family: Arial;
+    color: white;
+    font-size: 19px;
+    line-height: 150%;
+    max-width: 100%;
+    font-weight: 300;
+    letter-spacing: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* section 5 */
+
+.Eco-Friendly{
+    padding: 100px 80px;
+}
+.sec-5-containt h2{
+     font-family: "Playfair", serif;
+     font-size: 45px;
+}
+.sec-5-containt p{
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+
+/* section-6 */
+
+.Sustainable-Design{
+    background-image: url("../../assets/banner/OurJourneybg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 80px;
+}
+.sec-6-containt{
+    text-align: center;
+    color: white;
+}
+.sec-6-containt h2{
+    font-size: 48px;
+    font-family: "Playfair", serif;
+     line-height: 150%;
+       margin-bottom: 24px;
+       margin-bottom: 24px;
+       letter-spacing: 0;
+}
+.sec-6-containt p{
+    font-size: 21px;
+    line-height: 150%;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* section-7 */
+
+.Empowering{
+    padding: 100px 80px;
+}
+.sec-7-main{
+    align-items: center;
+}
+.sec-7-image img{
+    width: 100%;
+    border-radius: 20px;
+    margin-left: -0px;
+}
+.sec-7-containt h2 {
+    font-size: 40px;
+    font-family: "Playfair", serif;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+.sec-7-containt{
+    margin-top: 20px;
+}
+.sec-7-containt p{
+      font-size: 21px;
+    line-height: 150%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+.sec-7-btn.btn.btn-primary {
+    background-color: black;
+    color: white;
+    border-color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.sec-7-btn.btn.btn-primary:hover{
+     color: black;
+    background-color: white;
+    border-color: black;
+}
+
+/* section-8 */
+
+.Commitment{
+    padding: 100px 80px;
+    background-color: black;
+
+}
+
+.sec-8-heading h2{
+       color: white;
+       font-family: "Playfair", serif;
+       font-size: 48px;
+       line-height: 100%;
+       margin: 24px 0;
+}
+.sec-8-heading p{
+    font-size: 20px;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+.sec-8-containt{
+    margin-top: 100px;
+}
+.sec-8-containt h3{
+    color: white;
+       font-family: "Playfair", serif;
+       font-size: 32px;
+       line-height: 100%;
+       margin: 24px 0;
+}
+.sec-8-containt p{
+    color: white;
+    font-size: 19px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+  /* section-9 */
+
+  .sec-9-bg{
+  padding: 100px 80px;
+  background: url(./assets/image/white_bg.jpg) no-repeat center center;
+}
+ 
+.sec-9-top-head h2{
+  font-family: Playfair Display,serif!important;
+  font-size: 42px;
+}
+.sec-9-top-head p{
+    font-family: DM Sans, sans-serif !important;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-align: left;
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+}
+ 
+.sec-9-bg-slide {
+  position: relative;
+  overflow: hidden;
+}
+.sec-9-next {
+  padding: 40px 0;
+  overflow: hidden;
+}
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 5s linear infinite;
+}
+.slide {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+/* .sec-9-crousal */
+
+
+
+/* section-10 */
+
+
+.sec-10-form{
+  background-image: url("../../assets/banner/form.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sec-10.form-right {
+    padding: 80px 80px 45px !important;
+    background: #00000099;
+}
+
+.form-back{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.392);
+    padding: 100px 80px;
+}
+ .sec-10-main{
+    align-items: center;
+}
+/* input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.message::placeholder {
+  color: white;
+} */
+
+.sec-10-form .form-left {
+    width: 100%;
+    margin-left: 91px;
+}
+.form-left img{
+    width: 40%;
+}
+.form h2{
+   font-family: "Playfair", serif;
+       font-size: 48px;
+       line-height: 100%;
+       color: white;
+       padding-top: 20px;
+}
+.sec-10-form .form-left span{
+    font-family: "Playfair", serif;
+       font-size: 48px;
+       line-height: 100%;
+       color: white;
+       padding-top: 20px;
+}
+/* form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 20px;
+} */
+/* input[type="text"] {
+    padding: 20px 11px;
+    border-radius: 10px;
+    margin-left: 40px;
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #cbd4e633;
+} */
+/* .sec-10-btn{
+    width: 60%;
+    margin-Left: 120px;
+} */
+.form-back h2{
+    margin-left: 100px;
+   
+    font-family: Arial;
+    font-size: 30px;
+} 
+
+
+/* section -=11 */
+
+.testmonial-heading{
+  text-align: center;
+  padding-bottom: 50px;
+}
+.testmonial-heading h2{
+  font-size: 40px;
+  font-family: "Playfair", serif;
+}
+.test-monial-para p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.test-img{
+  width: 26%;
+}
+.test-cont h3{
+  font-size: 20px;
+
+}
+.test-monial-icon img{
+  width: 35px;
+}
+.test-monial-block{
+  display: flex;
+}
+.main-sec-testM {
+    background: #fafbfe;
+        padding: 30px;
+}
+.Testmonial-part {
+    padding: 100px 80px;
+}
+
+/* footer */
+
+
+
+
+
+
+/* Responsive Styles for 1200px and below */
+@media (max-width: 1200px) {
+
+  /* Banner */
+  .banner-containt h1 {
+    font-size: 55px;
+  }
+  .banner-containt p {
+    font-size: 24px;
+  }
+  .Banner-main {
+    padding-bottom: 160px;
+  }
+
+  /* Section 2 */
+  .sec-2-containt p {
+    padding-top: 70px;
+    font-size: 22px;
+  }
+
+  /* Section 3 */
+  .sec-3 {
+    padding: 80px 60px;
+  }
+  .sec-3-containt h2 {
+    font-size: 40px;
+  }
+  .sec-3-containt p {
+    font-size: 18px;
+  }
+
+  /* Section 4 */
+  .sec-4 {
+    padding: 80px 60px;
+  }
+  .sec-4-containt h2 {
+    font-size: 40px;
+  }
+  .sec-4-containt p {
+    font-size: 18px;
+  }
+
+  /* Section 5 */
+  .Eco-Friendly {
+    padding: 80px 60px;
+  }
+  .sec-5-containt h2 {
+    font-size: 38px;
+  }
+
+  /* Section 6 */
+  .sec-6 {
+    padding: 80px 60px;
+  }
+  .sec-6-containt h2 {
+    font-size: 40px;
+  }
+  .sec-6-containt p {
+    font-size: 19px;
+  }
+
+  /* Section 7 */
+  .Empowering{
+    padding: 80px 60px;
+  }
+  .sec-7-containt h2 {
+    font-size: 40px;
+  }
+
+  /* Section 8 */
+  .sec-8 {
+    padding: 80px 60px;
+  }
+  .sec-8-heading h2 {
+    font-size: 40px;
+  }
+  .sec-8-containt {
+    gap: 40px;
+  }
+  .sec-8-containt h3 {
+    font-size: 29px;
+}
+
+  /* Section 9 */
+  .sec-9-bg {
+    padding: 80px 60px;
+  }
+  .sec-9-top-head h2 {
+    font-size: 36px;
+  }
+  .sec-9-top-head p {
+    font-size: 20px;
+  }
+
+  /* Section 10 */
+  .form-back {
+    padding: 80px 60px;
+  }
+  .sec-10-form.form-left {
+    margin-left: 100px;
+  }
+  /* input[type="text"] {
+    margin-left: 0;
+    width: 90%;
+  } */
+   /* .sec-10-btn {
+    width: 55%;
+    margin-left: 100px;
+  } */
+
+  /* Testimonials */
+  .Testmonial-part {
+    padding: 80px 60px;
+  }
+  .test-img {
+    width: 35%;
+  }
+
+  /* Footer */
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+
+  /* Banner section */
+  .Banner-main {padding-bottom: 140px; background-position: center;}
+  .banner-containt {padding-top: 18%;}
+  .banner-containt h1 {font-size: 50px;}
+  .banner-containt p {font-size: 22px;}
+
+  /* Section 2 */
+  .sec-2-containt p {padding-top: 70px; font-size: 20px;}
+
+  /* Section 3 */
+  .sec-3-main{align-items: center;}
+  .Sustainable {padding: 70px 50px;}
+  .sec-3-containt h2 {font-size: 33px;}
+  .sec-3-containt p {font-size: 17px;}
+ .icon-containt h3 {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 0; 
+     margin: 24px 0;
+}
+
+  /* Section 4 */
+  .sec-4 {padding: 100px 80px;}
+  .sec-4-containt h2 {font-size: 34px;}
+  .sec-4-containt p {font-size: 17px;}
+  .icon-containt p {
+    font-size: 16px;
+}    
+  .sec-4-main{
+  align-items: center;
+}
+ .icon-containt h3 {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 107%; 
+     margin: 24px 0;
+}
+
+  /* Section 5 */
+  .Eco-Friendly {padding: 70px 50px;}
+  .sec-5-containt h2 {font-size: 34px;}
+  .sec-5-containt p {font-size: 18px;}
+  .icon-containt p{
+  font-size: 17px;
+ }
+   .sec-5-main{
+    align-items: center;
+   }
+
+  /* Section 6 */
+  .sec-6 {padding: 70px 50px;}
+  .sec-6-containt h2 {font-size: 38px;}
+  .sec-6-containt p {font-size: 18px;}
+
+  /* Section 7 */
+  .Empowering {padding: 70px 50px;}
+  .sec-7-containt h2 {font-size: 38px;}
+  .sec-7-containt p {font-size: 18px;}
+  .sec-7-btn.btn.btn-primary {font-size: 17px; padding: 8px 18px;}
+  .sec-7-main{
+    align-items: center;
+  }
+
+  /* Section 8 */
+  .sec-8 {padding: 70px 50px;}
+  .sec-8-heading h2 {font-size: 24px;}
+  .sec-8-heading p {font-size: 15px;}
+  .sec-8-containt { gap: 30px;}
+      .sec-8-containt h3{
+        font-size: 27px;
+        margin: 19px 0;
+      }
+      .sec-8-containt p{
+        font-size: 16px;
+      }
+      .sec-8-icon img{
+        width: 155px;
+      }
+
+  /* Section 9 */
+  .sec-9-bg {padding: 70px 50px;}
+  .sec-9-top-head h2 {font-size: 34px;}
+  .sec-9-top-head p {font-size: 19px;}
+
+  /* Contact Form Section */
+  .form-back {padding: 70px 50px;}
+ .sec-10-form .form-left {margin-left: 60px;}
+  input[type="text"] {width: 90%; margin-left: 0;}
+   .sec-10-btn {
+    width: 55%;
+    margin-left: 80px;
+  }
+  .form h2, .sec-10-form.form-left span {font-size: 38px;}
+
+  /* Testimonial section */
+  .Testmonial-part {padding: 70px 50px;}
+  .test-img {width: 35%;}
+  .test-cont h3 {font-size: 18px;}
+
+  /* Footer section */
+}
+
+
+
+@media (max-width: 1024px) {
+
+  /* ===== NAVBAR ===== */
+
+  /* ===== BANNER ===== */
+  .Banner-main {
+    padding-bottom: 150px;
+  }
+  .banner-containt {
+    padding-top: 25%;
+  }
+  .banner-containt h1 {
+    font-size: 55px;
+  }
+  .banner-containt p {
+    font-size: 22px;
+  }
+
+  /* ===== SECTION 2 ===== */
+  .sec-2-containt p {
+    font-size: 20px;
+    padding-top: 70px;
+  }
+
+  /* ===== SECTION 3 ===== */
+  .Sustainable {
+    padding: 80px 50px;
+  }
+  .sec-3-containt h2 {
+    font-size: 38px;
+  }
+  .sec-3-containt p {
+    font-size: 18px;
+  }
+  .icon-containt h3 {
+    font-size: 26px;
+  }
+
+  /* ===== SECTION 4 ===== */
+  .sec-4 {
+    padding: 80px 50px;
+  }
+  .sec-4-containt h2 {
+    font-size: 40px;
+  }
+  .sec-4-containt p {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 5 ===== */
+  .Eco-Friendly {
+    padding: 80px 50px;
+  }
+  .sec-5-containt h2 {
+    font-size: 38px;
+  }
+  .sec-5-containt p {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 6 ===== */
+  .sec-6 {
+    padding: 80px 50px;
+  }
+  .sec-6-containt h2 {
+    font-size: 40px;
+  }
+  .sec-6-containt p {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 7 ===== */
+  .Empowering {
+    padding: 80px 50px;
+  }
+  .sec-7-containt h2 {
+    font-size: 40px;
+  }
+  .sec-7-containt p {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 8 ===== */
+  .sec-8 {
+    padding: 80px 50px;
+  }
+  .sec-8-heading h2 {
+    font-size: 40px;
+  }
+  .sec-8-heading p {
+    font-size: 18px;
+  }
+  .sec-8-containt {
+    /* flex-direction: column; */
+    gap: 40px;
+  }
+          .sec-8-containt h3{
+        font-size: 24px;
+      }
+
+  /* ===== SECTION 9 ===== */
+  .sec-9-bg {
+    padding: 80px 50px;
+  }
+  .sec-9-top-head h2 {
+    font-size: 36px;
+  }
+  .sec-9-top-head p {
+    font-size: 20px;
+  }
+  .slide img {
+    max-width: 70px;
+    height: auto;
+}
+
+  /* ===== SECTION 10 (FORM) ===== */
+  .form-back {
+    padding: 80px 50px;
+  }
+ .sec-10-form .form-left {
+    margin-left: 100px;
+  }
+  .form-left img {
+    width: 50%;
+  }
+  .form h2, 
+ .sec-10-form .form-left span {
+    font-size: 40px;
+  }
+  /* input[type="text"] {
+    margin-left: 20px;
+    padding: 15px 10px;
+  }
+.sec-10  button.btn.btn-primary {
+    font-size: 16px;
+    padding: 8px 25px;
+    margin-left: 73px;
+} */
+
+  /* ===== TESTIMONIAL ===== */
+  .Testmonial-part {
+    padding: 80px 50px;
+  }
+  .testmonial-heading h2 {
+    font-size: 36px;
+  }
+
+  /* ===== FOOTER ===== */
+}
+
+
+@media (max-width: 992px) {
+
+  /* ===== NAVBAR ===== */
+
+  /* ===== BANNER ===== */
+  .Banner-main {
+    padding-bottom: 140px;
+  }
+  .banner-containt {
+    padding-top: 30%;
+  }
+  .banner-containt h1 {
+    font-size: 48px;
+  }
+  .banner-containt p {
+    font-size: 20px;
+  }
+
+  /* ===== SECTION 2 ===== */
+  .sec-2-containt p {
+    font-size: 20px;
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  /* ===== SECTION 3 ===== */
+  .Sustainable {
+    padding: 70px 40px;
+  }
+  .sec-3-image img {
+    margin-top: 50px;
+  }
+  .sec-3-containt h2 {
+    font-size: 36px;
+  }
+  .sec-3-main{
+    align-items: center;
+  }
+  .sec-3-containt p {
+    font-size: 18px;
+  }
+  .list-main {
+    gap: 30px;
+  }
+
+  /* ===== SECTION 4 ===== */
+  .sec-4 {
+    padding: 70px 47px;
+  }
+  .sec-4-containt h2 {
+    font-size: 38px;
+  }
+  .sec-4-containt p {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 5 ===== */
+  .Eco-Friendly {
+    padding: 70px 40px;
+  }
+  .sec-5-containt h2 {
+    font-size: 36px;
+  }
+  .sec-5-containt p {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 6 ===== */
+  .sec-6 {
+    padding: 70px 40px;
+  }
+  .sec-6-containt h2 {
+    font-size: 38px;
+  }
+  .sec-6-containt p {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 7 ===== */
+  .Empowering{
+    padding: 70px 40px;
+  }
+  .sec-7-containt {
+    margin-top: 10px;
+  }
+  .sec-7-containt h2 {
+    font-size: 38px;
+    line-height: 93%;
+  }
+  .sec-7-containt p {
+    font-size: 18px;
+  }
+  .sec-7-image img {
+    margin-top: 30px;
+  }
+
+  /* ===== SECTION 8 ===== */
+  .sec-8 {
+    padding: 70px 40px;
+  }
+  .sec-8-heading h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .sec-8-heading p {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .sec-8-containt h3 {
+    font-size: 24px;
+  }
+  
+
+  /* ===== SECTION 9 ===== */
+  .sec-9-bg {
+    padding: 70px 40px;
+  }
+  .sec-9-top-head h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .sec-9-top-head p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* ===== SECTION 10 (FORM) ===== */
+  .form-back {
+    padding: 70px 40px;
+  }
+ 
+  .form-left img {
+    width: 50%;
+  }
+  .form h2,
+  .sec-10-form.form-left span {
+    font-size: 32px;
+  }
+  form {
+    margin: 0 auto;
+  }
+  input[type="text"] {
+    margin-left: 0;
+    padding: 15px;
+  }
+  .sec-10-btn {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* ===== TESTIMONIAL ===== */
+  .Testmonial-part {
+    padding: 70px 40px;
+  }
+  .testmonial-heading h2 {
+    font-size: 34px;
+  }
+
+  /* ===== FOOTER ===== */
+}
+
+
+
+
+/* ===============================
+   ✅ Responsive Styles (max-width: 768px)
+   =============================== */
+@media (max-width: 768px) {
+
+  /* ===== NAVBAR ===== */
+
+  /* ===== BANNER ===== */
+  .Banner-main {
+    padding-bottom: 120px;
+    background-position: center;
+  }
+ 
+  .banner-containt h1 {
+    font-size: 45px;
+  }
+  .banner-containt p {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  /* ===== SECTION 2 ===== */
+  .sec-2-containt p {
+    font-size: 18px;
+    padding: 50px 20px 0;
+    text-align: center;
+  }
+
+  /* ===== SECTION 3 ===== */
+  .Sustainable {
+    padding: 60px 30px;
+  }
+  .sec-3-image img {
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+  .sec-3-containt h2 {
+    font-size: 35px;
+    margin-top: 20px;
+   
+  }
+  .sec-3-containt p {
+    font-size: 16px;
+   
+  }
+  .list-main {
+    
+    gap: 20px;
+  }
+  .sec-3-containt h3{
+    font-size: 29px;
+  }
+ 
+
+  /* ===== SECTION 4 ===== */
+  .sec-4 {
+    padding: 60px 30px;
+  }
+  .sec-4-containt h2 {
+    font-size: 32px;
+  }
+  .sec-4-containt p {
+    font-size: 16px;
+  }
+
+  /* ===== SECTION 5 ===== */
+  .Eco-Friendly{
+    padding: 60px 30px;
+  }
+  .sec-5-containt h2 {
+    font-size: 32px;
+  }
+  .sec-5-containt p {
+    font-size: 16px;
+  }
+
+  /* ===== SECTION 6 ===== */
+  .sec-6 {
+    padding: 60px 30px;
+  }
+  .sec-6-containt h2 {
+    font-size: 32px;
+  }
+  .sec-6-containt p {
+    font-size: 16px;
+  }
+
+  /* ===== SECTION 7 ===== */
+  .Empowering {
+    padding: 60px 30px;
+  }
+  .sec-7-image img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .sec-7-containt h2 {
+    font-size: 32px;
+  }
+  .sec-7-containt p {
+    font-size: 16px;
+  }
+  .sec-7-btn.btn.btn-primary {
+  
+    font-size: 18px;
+  }
+
+  /* ===== SECTION 8 ===== */
+  .sec-8 {
+    padding: 60px 30px;
+  }
+  .sec-8-heading h2 {
+    font-size: 32px;
+  }
+  .sec-8-heading p {
+    font-size: 16px;
+  }
+  .sec-8-containt {
+    gap: 30px;
+  }
+  .sec-8-containt h3 {
+    font-size: 24px;
+  }
+  .sec-8-containt p {
+    font-size: 16px;
+  }
+
+  /* ===== SECTION 9 ===== */
+  .sec-9-bg {
+    padding: 60px 30px;
+  }
+  .sec-9-top-head h2 {
+    font-size: 30px;
+
+  }
+  .sec-9-top-head p {
+    font-size: 16px;
+  }
+  .sec-9-top-head{
+    text-align: start;
+  }
+
+  /* ===== SECTION 10 (FORM) ===== */
+  .sec-10-form.form-left {
+    margin-left: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .form-left img {
+    width: 25%;
+  }
+  .form h2,
+ .sec-10-form .form-left span {
+    font-size: 32px;
+  }
+  form {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+  input[type="text"] {
+   max-width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+   .sec-10-btn {
+    width: 25%;
+    margin-left: 180px;
+    padding: 30px;
+  }
+.sec-10 button.btn.btn-primary {
+    font-size: 15px;
+    padding: 11px 6px;
+    margin-left: 180px;
+    width: 33%;
+}
+
+  /* ===== TESTIMONIAL ===== */
+  .Testmonial-part {
+    padding: 60px 30px;
+  }
+  .testmonial-heading h2 {
+    font-size: 30px;
+  }
+  .testmonial-heading p {
+    font-size: 20px;
+  }
+  .testmonial-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .test-img {
+    width: 16%;
+  }
+}
+  /* ===== FOOTER ===== */
+  
+
+
+
+
+/* ===============================
+   ✅ Responsive (max-width: 577px)
+   =============================== */
+@media (max-width: 576px) {
+
+  /* ======= Navbar ======= */
+  /* ======= Banner ======= */
+  .Banner-main {
+    padding-bottom: 100px;
+  }
+
+  .banner-containt {
+    padding-top: 50%;
+  }
+
+  .banner-containt h1 {
+    font-size: 34px;
+  }
+
+  .banner-containt p {
+    font-size: 16px;
+  }
+
+  /* ======= Section 2 ======= */
+  .sec-2-containt p {
+    padding-top: 40px;
+    font-size: 16px;
+  }
+
+  /* ======= Section 3 ======= */
+  .Sustainable {
+    padding: 50px 20px;
+  }
+
+  .sec-3-image img {
+    margin-top: 40px;
+  }
+
+  .sec-3-containt h2 {
+    font-size: 28px;
+  }
+
+  .sec-3-containt p {
+    font-size: 16px;
+  }
+
+  /* ======= Section 4 ======= */
+  .sec-4 {
+    padding: 50px 20px;
+  }
+
+  .sec-4-containt h2 {
+    font-size: 30px;
+  }
+
+  .sec-4-containt p {
+    font-size: 16px;
+  }
+
+  /* ======= Section 5 ======= */
+  .Eco-Friendly {
+    padding: 50px 20px;
+  }
+
+  .sec-5-containt h2 {
+    font-size: 30px;
+  }
+
+  .sec-5-containt p {
+    font-size: 16px;
+  }
+
+  /* ======= Section 6 ======= */
+  .sec-6 {
+    padding: 50px 20px;
+  }
+
+  .sec-6-containt h2 {
+    font-size: 30px;
+  }
+
+  .sec-6-containt p {
+    font-size: 16px;
+  }
+
+  /* ======= Section 7 ======= */
+  .Empowering {
+    padding: 50px 20px;
+  }
+
+  .sec-7-containt h2 {
+    font-size: 30px;
+  }
+
+  .sec-7-containt p {
+    font-size: 16px;
+  }
+
+  .sec-7-btn.btn.btn-primary {
+    font-size: 16px;
+    padding: 6px 18px;
+  }
+
+  /* ======= Section 8 ======= */
+  .sec-8 {
+    padding: 50px 20px;
+  }
+
+  .sec-8-heading h2 {
+    font-size: 30px;
+  }
+
+  .sec-8-heading p {
+    font-size: 16px;
+  }
+      .sec-8-containt h3 {
+        font-size: 22px;
+    }
+
+  .sec-8-containt {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* ======= Section 9 ======= */
+  .sec-9-bg {
+    padding: 50px 20px;
+  }
+
+  .sec-9-top-head h2 {
+    font-size: 28px;
+  }
+
+  .sec-9-top-head p {
+    font-size: 16px;
+  }
+
+  .slide {
+    width: 120px;
+  }
+
+  /* ======= Section 10 (Form Section) ======= */
+  .form-back {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .sec-10-form.form-left {
+    margin-left: 0;
+    padding-top: 30px;
+  }
+
+  .form-left img {
+    width: 28%;
+    margin: 0 auto;
+  }
+
+  .form h2,
+  .sec-10-form.form-left span {
+    font-size: 28px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 15px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .sec-10 button.btn.btn-primary {
+    font-size: 12px;
+    padding: 11px 4px;
+    margin-left: 103px !important;
+    width: 33%;
+}
+
+  .form-back h2 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  /* ======= Testimonials ======= */
+  .Testmonial-part {
+    padding: 50px 20px;
+  }
+
+  .testmonial-heading h2 {
+    font-size: 28px;
+  }
+
+  .test-img {
+    width: 29%;
+  }
+
+  .test-cont h3 {
+    font-size: 16px;
+  }
+
+  /* ======= Footer ======= */
+  
+}
+
+
+
+
+/* ✅ Responsive for 360px (small mobile screens) */
+@media (max-width: 360px) {
+
+  /* 🔹 Navbar adjustments */
+
+  /* 🔹 Banner */
+  .banner-containt h1 {
+    font-size: 38px;
+  }
+
+  .banner-containt p {
+    font-size: 18px;
+  }
+
+  /* 🔹 Section paddings */
+  .Sustainable,
+  .sec-4,
+  .Eco-Friendly,
+  .sec-6,
+  .Empowering,
+  .sec-8,
+  .sec-9-bg,
+  .Testmonial-part {
+    padding: 40px 20px;
+  }
+
+  /* 🔹 Section 10 (Form) */
+  .form-back {
+    padding: 40px 20px;
+  }
+
+  .sec-10-form.form-left {
+    margin-left: 0;
+    padding-top: 40px;
+  }
+
+  .form-left img {
+    width: 60%;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  input[type="text"] {
+    margin-left: 0;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .sec-10-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .form-back h2 {
+    margin-left: 0;
+    font-size: 22px;
+  }
+
+  .sec-10 button.btn.btn-primary {
+    font-size: 20px;
+    padding: 11px 4px;
+    margin-left: 0px !important;
+    width: 100%;
+}
+
+  /* 🔹 Footer */
+}
+
+
+
+/* ✅ Responsive for 320px (extra small mobile screens) */
+@media (max-width: 320px) {
+
+  /* 🔹 Navbar */
+
+  /* 🔹 Banner section */
+
+  .banner-containt h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .banner-containt p {
+    font-size: 16px;
+  }
+
+  /* 🔹 General section padding */
+  .Sustainable,
+  .sec-4,
+  .Eco-Friendly,
+  .sec-6,
+  .Empowering,
+  .sec-8,
+  .sec-9-bg,
+  .Testmonial-part {
+    padding: 30px 15px;
+  }
+
+  /* 🔹 Section 10 (Form Section) */
+  .form-back {
+    padding: 30px 15px;
+  }
+
+  .sec-10-form.form-left {
+    margin-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .form-left img {
+    width: 65%;
+  }
+
+  .form-left h2,
+  .sec-10-form.form-left span {
+    font-size: 28px;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 15px;
+  }
+
+  input[type="text"] {
+    margin-left: 0;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+ .sec-10 button.btn.btn-primary {
+    font-size: 10px;
+    padding: 11px 4px;
+    margin-left: 83px !important;
+    width: 33%;
+}
+
+  .form-back h2 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  /* 🔹 Footer */
+ 
+}
+
+
+
+
+
+
