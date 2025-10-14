@@ -106,7 +106,7 @@ if (window.scrollY > triggerPoint) {
                   <ProductMega />
 
 
-                  <Nav.Link href="#action2">Projects</Nav.Link>
+                  <Nav.Link as={Link} to="/teammates/rozy/Projects">Projects</Nav.Link>
                   <Nav.Link href="#action2">Blog</Nav.Link>
                   <Nav.Link as={Link} to="/teammates/saraswati/Contact">Contact</Nav.Link>
                 </Nav>
