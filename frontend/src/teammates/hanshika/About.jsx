@@ -2,7 +2,6 @@ import React from 'react';
 import Container from 'react-bootstrap/esm/Container';
 // counter page
 import { Row, Col } from 'react-bootstrap'
-import CountUp from 'react-countup'
 // import { useInView } from 'react-intersection-observer'
   // mission image//
 import MissionIcon from "../../assets/images/aboutpagebannericon2.png";
