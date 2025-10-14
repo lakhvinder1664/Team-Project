@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./teammates/saraswati/Contact";
 import Sustainability from "./teammates/manish/Sustainability";
+import About from "./teammates/hanshika/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/teammates/saraswati/Contact" element={<Contact />} />
         <Route path="/Sustainability" element={<Sustainability />} />
+          <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </Router>

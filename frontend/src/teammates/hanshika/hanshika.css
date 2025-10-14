@@ -1,0 +1,1007 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Header ended here */
+.Banner-main-1 {
+  width: 100%;
+  position: relative;
+  /* margin-top: -85px; */
+  padding-bottom: 184px;
+  overflow: hidden;
+  color: white;
+}
+
+
+.Banner-main-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/banner/aboutpagebanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  animation: zoomPan 20s infinite alternate;
+}
+
+
+.Banner-about {
+  padding-top: 230px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.Banner-about h2 {
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Banner-about p {
+  font-size: 24px;
+  font-family: emoji;
+  margin-top: 10px;
+}
+button.Banner-btn.btn.btn-primary {
+  background-color: transparent;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+button.Banner-btn.btn.btn-primary:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes zoomPan {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.1) translateX(20px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* banner ended here */
+.video-main{
+  width: 100%;
+  background-image: url('../../assets/banner/slant-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.video-para p {
+    font-size: 19px;
+}
+.video-iframe {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 57px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.video-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; 
+}
+/* video page ended here */
+.Counter-main{
+  width: 100%;
+  padding-bottom: 100px;
+}
+.left-content h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.right-count .counter.col_fourth {
+    border: 1px solid #000000;
+    border-left: 0;
+        margin-right: 0;
+    text-align: center;
+}
+.counter {
+    border-radius: 0;
+    padding: 17px 0px;
+}
+.col_fourth {
+    width: 23%;
+}
+.right-count{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-content p {
+    font-size: 14px;
+}
+.counter h2 {
+    font-size: 23px;
+    font-family: inherit;
+}
+
+/* counter section ended here */
+
+.Misson-main {
+    width: 100%;
+    padding-bottom: 100px;
+}
+.mission-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon-mission img {
+  width: 110px;               
+  height: auto;
+}
+.our-mission h2 {
+    font-size: 24px;
+    font-family: emoji;
+}
+.our-mission p {
+    font-size: 14px;
+    line-height: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+/* misson ended here */
+.journey-main{
+  width: 100%;
+  background-image: url('../../assets/banner/OurJourneybg.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+      padding-top: 50px;
+}
+.journey-content{
+  color: white;
+  text-align: center;
+}
+.journey-content h2 {
+    font-size: 30px;
+    font-family: auto;
+}
+.journey-content p {
+    font-size: 19px;
+    font-family: math;
+}
+.boxes-main {
+    margin-top: 191px;
+}
+.boxes-year {
+    width: 83px;
+    height: 80px;
+    background: #000;
+    border: 8px solid #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.boxes-year h2 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.year-image img {
+    width: 100%;
+}
+.year-content{
+  color: white;
+}
+.year-content h5 {
+    font-size: 28px;
+    font-family: auto;
+    margin-top: 20px;
+}
+.year-content p {
+    font-size: 16px;
+    font-family: math;
+}
+/* years section ended here */
+.contact-main{
+  width: 100%;
+  background-image: url('../../assets/banner/form.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact-logo img {
+    width: 213px;
+    height: auto;
+}
+.contact-logo-left {
+    padding-top: 120px;
+    margin-left: 115px;
+}
+.contact-heading {
+    color: white;
+    margin-top: 25px;
+}
+.contact-heading h2 {
+    font-size: 38px;
+    font-family: auto;
+}
+.form-right {
+    background: #00000099;
+    color: white;
+    padding: 60px 120px 60px 50px;
+}
+.right-content h4 {
+    font-size: 22px;
+    font-family: auto;
+    text-align: center;
+}
+.form-main {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: transparent; 
+  color: white; 
+}
+
+
+.transparent-input {
+    color: white !important;
+    border: 1px solid white;
+    background: #2a2a2a !important;
+    padding: 14px;
+}
+
+.transparent-input::placeholder {
+  color: #ffffff !important; 
+  opacity: 0.7; 
+}
+.form{
+    margin: 20px 40px;
+}
+
+.form-btn {
+  border: 1px solid white;
+  background-color: transparent !important;
+  color: white !important;
+  transition: 0.3s;
+  width: 35%;
+  margin-top: 30px;
+}
+.form-control{
+    padding: 14px !important;
+        width: 483px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border: 1px solid #cbd4e633 !important;
+    box-shadow: 0 2px 10px 1px rgb(255 255 255 / 40%) !important
+}
+.form-control {
+    border: 1px solid #cbd4e633 !important;
+}
+.form-btn:hover {
+  background-color: black !important;
+  color: black;
+}
+/* Form section ended here */
+
+.Experience-main{
+  width: 100%;
+   background-image: url('../../assets/images/existenceimgbg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 60px;
+}
+.our-experience{
+  text-align: center;
+}
+.our-experience h2 {
+    font-size: 34px;
+    font-family: auto;
+}
+.exp-main {
+    text-align: center;
+    margin-top: 68px;
+}
+.exp-content h5 {
+    font-size: 19px;
+    font-family: auto;
+}
+.exp-content {
+    margin-top: 20px;
+}
+/* experience ended here */
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width:1024px){
+    button.form-btn.btn.btn-light {
+    width: 50%;
+}
+.experience-img img {
+    width: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.experience-img.second-change img {
+    width: 96px;
+}
+
+}
+@media(max-width:576px){
+    .journey-main {
+    padding-bottom: 30px;
+}
+.Banner-about {
+    padding-top: 109px;
+}
+.Banner-about h2 {
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Banner-about p {
+    font-size: 23px;
+    font-family: emoji;
+    margin-top: 10px;
+}
+.video-para p {
+    font-size: 17px;
+}
+.right-count {
+    margin-top: 38px;
+}
+.misson-main .row {
+    gap: 20px;
+}
+.contact-heading h2 {
+    font-size: 29px;
+    font-family: auto;
+}
+.Quick-Links-3 {
+    color: white;
+    margin-top: 32px;
+}
+.product {
+    margin-top: 32px;
+}
+.mission-box {
+    margin-top: 23px;
+}
+
+/* changes---- */
+.card-1{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.boxes-main {
+    margin-top: 0px !important;
+    gap: 75px;
+}
+.one .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 61px !important
+}
+.two .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 68px !important;
+}
+.three .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 62px !important;
+}
+.four .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 64px !important;
+}
+.five .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 81px !important;
+}
+.six .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 69px !important;
+}
+.seven .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 65px !important;
+}
+.eight .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 94px !important;
+}
+.year-image img {
+    width: 200px;
+    rotate: 90deg;
+    transform: scaleX(-1);
+}
+.boxes-main-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 75px;
+}
+.boxes-main-2 .year-image img{
+    width: 200px;
+    rotate: -90deg;
+    transform: scale(1);
+}
+.boxes-main.card-1.bottom-box {
+    flex-direction: row-reverse;
+}
+.bottom-box .year-image img {
+    width: 200px;
+    rotate: 90deg;
+    transform: scale(-1);
+}
+.boxes-main {
+    margin-top: 0px;
+    gap: 75px;
+    display: flex;
+}
+.change-direction.d-flex.flex-wrap.gap-5 {
+    flex-direction: column;
+}
+.exp-content {
+    margin-top: -59px;
+    margin-left: 276px;
+}
+}
+@media(max-width:768px){
+    button.form-btn.btn.btn-light {
+    width: 41%;
+}
+ .journey-main {
+    padding-bottom: 30px;
+}
+.Banner-about {
+    padding-top: 109px;
+}
+.Banner-about h2 {
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Banner-about p {
+    font-size: 23px;
+    font-family: emoji;
+    margin-top: 10px;
+}
+.video-para p {
+    font-size: 17px;
+}
+.right-count {
+    margin-top: 38px;
+}
+.misson-main .row {
+    gap: 20px;
+}
+.contact-heading h2 {
+    font-size: 36px;
+    font-family: auto;
+}
+.Quick-Links-3 {
+    color: white;
+    margin-top: 32px;
+}
+.product {
+    margin-top: 32px;
+}
+.mission-box {
+    margin-top: 23px;
+}
+
+/* changes---- */
+.card-1{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.boxes-main {
+    margin-top: 0px;
+    gap: 75px;
+}
+.one .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 39px;
+}
+.two .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 42px;
+}
+.three .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 25px;
+}
+.four .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 44px;
+}
+.five .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 44px;
+}
+.six .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 44px;
+}
+.seven .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 44px;
+}
+.eight .boxes-year {
+    position: absolute;
+    left: 152px;
+    top: 44px;
+}
+.year-image img {
+    width: 200px;
+    rotate: 90deg;
+    transform: scaleX(-1);
+}
+.try-gori {
+    max-width: 45%;
+    flex: 0 0 45%;
+}
+.boxes-main-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 75px;
+}
+.boxes-main-2 .year-image img{
+    width: 200px;
+    rotate: -90deg;
+    transform: scale(1);
+}
+.boxes-main.card-1.bottom-box {
+    flex-direction: row-reverse;
+}
+.bottom-box .year-image img {
+    width: 200px;
+    rotate: 90deg;
+    transform: scale(-1);
+}
+.boxes-main {
+    margin-top: 74px;
+    gap: 75px;
+    display: flex;
+}
+.change-direction.d-flex.flex-wrap.gap-5 {
+    flex-direction: column;
+}
+
+}
+
+@media (max-width:400px){
+    .exp-main{
+        text-align: left;
+    }
+    .exp-content {
+    margin-top: -59px;
+    margin-left: 230px;
+}
+.boxes-main-2,.boxes-main {
+    gap: 0px;
+}
+.form-right {
+    padding: 40px 20px;
+}
+.contact-logo-left {
+    padding-top: 30px;
+    margin-left: 0px;
+}
+.year-content h5 {
+    font-size: 24px;
+    font-family: auto;
+    margin-top: 20px;
+}
+.year-image img {
+    width: 146px;
+    rotate: 90deg;
+    transform: scaleX(-1);
+} 
+.boxes-main-2 .year-image img{
+    width: 146px;
+}
+.bottom-box .year-image img {
+    width: 146px;
+}
+.boxes-year {
+    width: 70px;
+    height: 70px;
+    background: #000;
+    border: 4px solid #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.boxes-year h2 {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+.one .boxes-year {
+    position: absolute;
+    left: 113px;
+    top: 72px !important;
+}
+    .try-gori {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+.two .boxes-year {
+    position: absolute;
+    left: 113px;
+    top: 80px !important;
+}    
+.three .boxes-year {
+    position: absolute;
+    left: 114px;
+    top: 82px !important;
+}
+.four .boxes-year {
+    position: absolute;
+    left: 114px;
+    top: 83px !important;
+}
+.five .boxes-year {
+    position: absolute;
+    left: 115px;
+    top: 104px !important;
+}
+.six .boxes-year {
+    position: absolute;
+    left: 114px;
+    top: 99px !important;
+}
+.seven .boxes-year {
+    position: absolute;
+    left: 116px;
+    top: 88px !important;
+}
+.eight .boxes-year {
+    position: absolute;
+    left: 115px;
+    top: 111px !important;
+}
+}
+@media (max-width:360px){
+.journey-main, .Counter-main, .Experience-main, .contact-main, .Misson-main, .video-main, .Banner-main-1{
+    padding: 40px 20px;
+}
+.boxes-main {
+    margin-top: 74px;
+    gap: 30px;
+}
+.boxes-main-2 {
+    gap: 30px;
+}
+.year-image img {
+    width: 100px;
+    rotate: 90deg;
+    transform: scaleX(-1);
+}
+.one .boxes-year {
+    position: absolute;
+    left: 78px;
+    top: 76px !important;
+}
+.boxes-year h2 {
+    font-size:10px;
+    color: white;
+    text-align: center;
+}
+.boxes-year {
+    width: 52px;
+    height: 51px;
+     border: 5px solid #d9d9d9;
+}
+.year-content h5 {
+    font-size: 16px;
+    font-family: auto;
+    margin-top: 20px;
+}
+.year-content p {
+    font-size: 13px;
+    font-family: math;
+}
+.two .boxes-year {
+    position: absolute;
+    left: 81px;
+    top: 73px !important;
+}
+.boxes-main-2 .year-image img {
+    width: 100px;
+    rotate: -90deg;
+    transform: scale(1);
+}
+.three .boxes-year {
+    position: absolute;
+    left: 81px;
+    top: 74px !important;
+}
+.bottom-box .year-image img {
+    width: 100px;
+    rotate: 90deg;
+    transform: scale(-1);
+}
+.four .boxes-year {
+    position: absolute;
+    left: 77px;
+    top: 74px !important;
+}
+.five .boxes-year {
+    position: absolute;
+    left: 80px;
+    top: 74px !important;
+}
+.six .boxes-year {
+    position: absolute;
+    left: 80px;
+    top: 83px !important;
+}
+.seven .boxes-year {
+    position: absolute;
+    left: 79px;
+    top: 80px !important;
+}
+.eight .boxes-year {
+    position: absolute;
+    left: 80px;
+    top:83px !important;
+}
+.journey-content p {
+    font-size: 14px;
+    font-family: math;
+}
+.boxes-main {
+    margin-top: 26px;
+    /* gap: 40px; */
+}
+
+.Banner-about p {
+    font-size: 21px;
+    font-family: emoji;
+    margin-top: 10px;
+}
+.Banner-about h2 {
+    font-size: 37px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Banner-main-1 {
+    padding-bottom: 172px;
+}
+.video-para p {
+    font-size: 13px;
+}
+.left-content h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.left-content p {
+    font-size: 15px;
+}
+.icon-mission img {
+    width: 72px;
+    height: auto;
+}
+.contact-logo img {
+    width: 179px;
+    height: auto;
+}
+.contact-logo-left {
+    padding-top: 120px;
+    margin-left: 40px;
+}
+.form-control {
+    /* display: block; */
+   width: 100%;
+    /* margin-left: -25px; */
+}
+button.btn.btn-primary {
+    background: transparent;
+    color: white;
+    border-color: white;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'DM Sans';
+}
+.form-right {
+    background: #00000099;
+    color: white;
+    padding: 40px 20px;
+}
+.contact-heading h2 {
+    font-size: 23px;
+    font-family: auto;
+}
+.our-experience h2 {
+    font-size: 27px;
+    font-family: auto;
+}
+button.form-btn.btn.btn-light {
+    width: 100%;
+    /* margin-left: 28px; */
+}
+.experience-img img {
+    width: 126px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: 155px;
+}
+.exp-content {
+    margin-top: -43px;
+    margin-left: 118px;
+}
+.experience-img.third-change img {
+    /* width: 153px; */
+}
+.change-direction.d-flex.flex-wrap.gap-5 {
+    flex-direction: column;
+}
+}
+@media (max-width:320px){
+.Banner-about h2 {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Banner-about p {
+    font-size: 18px;
+    font-family: emoji;
+    margin-top: 10px;
+}
+.icon-mission img {
+    width: 56px;
+    height: auto;
+}
+.our-mission p {
+    font-size: 12px;
+}
+.our-mission h2 {
+    font-size: 22px;
+    font-family: emoji;
+}
+.one .boxes-year {
+    position: absolute;
+    left: 78px;
+    top: 66px !important;
+}
+.two .boxes-year {
+    position: absolute;
+    left: 81px;
+    top: 57px !important;
+}
+.three .boxes-year {
+    position: absolute;
+    left: 81px;
+    top: 85px !important;
+}
+.four .boxes-year {
+    position: absolute;
+    left: 77px;
+    top: 57px !important;
+}
+.five .boxes-year {
+    position: absolute;
+    left: 80px;
+    top: 63px !important;
+}
+.six .boxes-year {
+    position: absolute;
+    left: 80px;
+    top: 67px !important;
+}
+.seven .boxes-year {
+    position: absolute;
+    left: 79px;
+    top: 76px !important;
+}
+.eight .boxes-year {
+    position: absolute;
+    left: 80px;
+    top: 64px !important;
+}
+.contact-logo img {
+    width: 160px;
+    height: auto;
+}
+button.form-btn.btn.btn-light {
+    width: 46%;
+}
+.experience-img img {
+    width: 186px;
+}
+.form-right {
+    background: #00000099;
+    color: white;
+    padding: 45px 0px 36px 47px;
+}
+button.form-btn.btn.btn-light {
+    width: 62%;
+    margin-left: -32px;
+}
+.right-content h4 {
+    font-size: 23px;
+    font-family: auto;
+    text-align: left;
+}
+button.form-btn.btn.btn-light {
+    width: 65%;
+}
+.inner-content p {
+    font-size: 12px;
+}
+.counter h2 {
+    font-size: 18px;
+    font-family: inherit;
+}
+.experience-img img {
+    width: 132px;
+}
+.year-content h5 {
+    font-size: 16px;
+    font-family: auto;
+    margin-top: 20px;
+}
+.change-direction.d-flex.flex-wrap.gap-5 {
+    flex-direction: column;
+}
+}
