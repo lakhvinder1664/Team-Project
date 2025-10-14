@@ -98,7 +98,7 @@ if (window.scrollY > triggerPoint) {
                 <Nav className="justify-content-between flex-grow-1 pe-3 navbar-links">
                   <Nav.Link href="/">Home</Nav.Link>
                 <HoverDropdown title="Why Schon" id="why-schon-dropdown" >
-                  <NavDropdown.Item href="#action3"><FontAwesomeIcon icon={faCircleChevronRight}  /> About us</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/about"><FontAwesomeIcon icon={faCircleChevronRight}  /> About us</NavDropdown.Item>
                   <NavDropdown.Item href="#action4"><FontAwesomeIcon icon={faCircleChevronRight}  /> On-stop Housing Solutions</NavDropdown.Item>
                   <NavDropdown.Item href="#action5"><FontAwesomeIcon icon={faCircleChevronRight}  /> Quality Assurance</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="sustainability"><FontAwesomeIcon icon={faCircleChevronRight}  /> Sustainability</NavDropdown.Item>
