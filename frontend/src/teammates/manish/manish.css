@@ -1420,9 +1420,9 @@ button.btn.btn-primary {
   .Sustainable,
   .sec-4,
   .Eco-Friendly,
-  .sec-6,
+  .Sustainable-Design,
   .Empowering,
-  .sec-8,
+  .Commitment,
   .sec-9-bg,
   .Testmonial-part {
     padding: 40px 20px;
@@ -1442,9 +1442,9 @@ button.btn.btn-primary {
     width: 60%;
   }
 
-  form {
+  .form {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 ;
   }
 
   input[type="text"] {
@@ -1495,9 +1495,9 @@ button.btn.btn-primary {
   .Sustainable,
   .sec-4,
   .Eco-Friendly,
-  .sec-6,
+ .Sustainable-Design,
   .Empowering,
-  .sec-8,
+  .Commitment,
   .sec-9-bg,
   .Testmonial-part {
     padding: 30px 15px;
@@ -1529,11 +1529,11 @@ button.btn.btn-primary {
     gap: 15px;
   }
 
-  input[type="text"] {
+  /* input[type="text"] {
     margin-left: 0;
     padding: 12px;
     font-size: 14px;
-  }
+  } */
 
  .sec-10 button.btn.btn-primary {
     font-size: 10px;

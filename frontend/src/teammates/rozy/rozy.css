@@ -1,0 +1,696 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+  --dm: "DM Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner-section */
+
+.Banner-section {
+  background-image: url("../../assets/banner/banner-project-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* animation: bgPop 4s infinite ease-in-out; */
+}
+button.Logo-btn-4.btn.btn-primary {
+   background-color: black;
+    border: 1px solid silver;
+    padding: 10px 35px;
+    border-radius: 11px;
+   font-size: 20px;
+}
+button.Logo-btn-4.btn.btn-primary:hover{
+   background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+nav.mb-3.Navbar-main-sec.navbar.navbar-light {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+
+.main-banner {
+  padding-top: 18%;
+  padding-bottom: 15%;
+}
+
+.main-haeding-banner h2 {
+  color: white;
+  font-family: "Playfair", serif;
+  font-size: 70px;
+}
+
+.main-para-banner p {
+  color: white;
+   font-family:--dm;
+  font-size: 38px;
+}
+
+/* Section1 */
+.section-ourproject {
+  background-image: url("../../assets/banner/white_bg.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  padding-bottom: 50px;
+  background-size: contain;
+
+}
+
+.main-head-project {
+  text-align: center;
+
+}
+
+.main-head-project h2 {
+  font-family: "Playfair", serif;
+  font-size: 40px;
+}
+
+.main-Our-project {
+  padding-top: 60px;
+}
+
+.main-img-project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* gap between row & col */
+  max-width: 900px;
+  margin-top: 50px;
+
+}
+
+.main-img-project img {
+  flex: 1 1 calc(33% - 15px);
+  max-width: calc(100% - 0px);
+  border-radius: 12px;
+}
+
+/* formsection-part */
+.section-frompart {
+  background-image: url("../../assets/images/form.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+
+}
+
+.main-heading-fq {
+  font-family: "Playfair", serif;
+  font-size: 42px;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+
+/* Main Button */
+button.form-btn-secmain.btn.btn-primary {
+    background: #00000099;
+    padding: 15px 20px;
+    font-size: 26px;
+    text-align: left;
+    /* border-radius: 8px; */
+    border-radius: inherit;
+    border: none;
+    font-family: "Playfair", serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active (when open) */
+button.form-btn-secmain.active {
+  background: #212121;
+  border-radius: 8px 8px 0 0;
+  /* top rounded only */
+}
+
+/* Hover Effect */
+button.form-btn-secmain.btn.btn-primary:hover {
+  background: #212121 !important;
+}
+
+/* Plus/Minus Icon */
+button.form-btn-secmain .icon {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+/* Collapse Content */
+.tabs-main-sec {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #212121;
+  padding: 20px 25px;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+}
+
+/* Inside Close Button */
+.tabs-main-sec .close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.main-heading-fq h2 {
+    font-size: 42px;
+}
+
+.tabs-main-sec .close-btn:hover {
+  color: #ff5252;
+}
+
+.card-main {
+    padding: 5px;
+}
+
+body {
+  background: #111;
+  /* dark background */
+  font-family: Arial, sans-serif;
+}
+/* form-part */
+.contact-form {
+  background: #00000099;
+  padding: 85px;
+  color: white;
+  width: 100%;
+}
+
+
+.submit-btn {
+  background: #333;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #444;
+}
+
+button.Logo-btn-3.btn.btn-primary {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    width: 50%;
+    padding: 15px 5px;
+    font-size: 20px;
+}
+button.Logo-btn-3.btn.btn-primary:hover{
+  color: black;
+  background: white;
+}
+
+
+.btn-from {
+  text-align: center;
+}
+/* Testmonial-part */
+.testmonial-heading{
+  text-align: center;
+  padding-bottom: 50px;
+}
+.testmonial-heading h2{
+  font-size: 40px;
+  font-family: "Playfair", serif;
+}
+.test-monial-para p{
+  font-style: italic;
+}
+.test-img{
+  width: 26%;
+}
+.test-cont h3{
+  font-size: 20px;
+
+}
+.main-row-testm {
+    padding-bottom: 80px;
+}
+.test-monial-icon img{
+  width: 35px;
+}
+.test-monial-block{
+  display: flex;
+}
+.main-sec-testM {
+    background: #fafbfe;
+        padding: 30px;
+}
+section.testmonial-part {
+    /* padding-top: 80px; */
+    padding: 100px 80px;
+}
+
+@media (max-width:1200px) {
+/* ✅ Laptops and small desktops (≤1200px) */
+@media (max-width: 1200px) {
+
+  /* Example adjustments */
+  .main-haeding-banner h2 {
+    font-size: 58px;
+  }
+
+  .main-para-banner p {
+    font-size: 26px;
+  }
+
+  .main-img-project {
+    max-width: 800px;
+  }
+
+  button.Logo-btn.btn.btn-primary {
+    font-size: 18px;
+    padding: 9px 28px;
+  }
+
+  .nav-inner {
+    font-size: 18px;
+    justify-content: space-between;
+  }
+
+  .testmonial-heading h2 {
+    font-size: 36px;
+  }
+
+  .main-head-project h2 {
+    font-size: 36px;
+  }
+
+  .contact-form {
+    padding: 60px;
+  }
+
+}
+}
+@media (max-width: 1100px) {
+
+  /* Banner Section */
+  .main-haeding-banner h2 {
+    font-size: 52px;
+  }
+
+  .main-para-banner p {
+    font-size: 24px;
+  }
+
+  .main-banner {
+    padding-top: 20%;
+    padding-bottom: 12%;
+  }
+
+  button.Logo-btn.btn.btn-primary {
+    font-size: 18px;
+    padding: 9px 30px;
+  }
+
+  /* Project Section */
+  .main-head-project h2 {
+    font-size: 36px;
+  }
+
+  .main-img-project {
+    max-width: 850px;
+    gap: 12px;
+  }
+
+  .main-img-project img {
+    flex: 1 1 calc(50% - 12px);
+  }
+
+  /* Form Section */
+  .contact-form {
+    padding: 60px 50px;
+  }
+
+  .form-title {
+    font-size: 28px;
+  }
+
+  button.form-btn-secmain.btn.btn-primary {
+    font-size: 21px;
+  }
+
+  /* Testimonial Section */
+  .testmonial-heading h2 {
+    font-size: 36px;
+  }
+
+  .test-img {
+    width: 30%;
+  }
+
+
+  .main-heading-fq h2 {
+    font-size: 39px;
+}
+.test-monial-icon img {
+    width: 28px;
+}
+.test-monial-para p {
+    font-size: 14px;
+}
+.test-cont h3 {
+    font-size: 18px;
+}
+.row-main-sec2 h3{
+
+    font-size: 22px;
+}
+
+}
+/* ✅ Tablets & Small Laptops (≤992px) */
+@media (max-width: 992px) {
+
+  /* Banner Section */
+  .main-haeding-banner h2 {
+    font-size: 48px;
+  }
+
+  .main-para-banner p {
+    font-size: 22px;
+  }
+
+  .main-banner {
+    padding-top: 22%;
+    padding-bottom: 12%;
+  }
+
+  button.Logo-btn.btn.btn-primary {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+
+  
+
+  /* Project Section */
+  .main-head-project h2 {
+    font-size: 34px;
+  }
+
+  .main-img-project {
+    max-width: 750px;
+    gap: 12px;
+  }
+
+  .main-img-project img {
+    flex: 1 1 calc(50% - 12px);
+  }
+
+  /* Form Section */
+  .contact-form {
+    padding: 50px 35px;
+  }
+
+  .form-title {
+    font-size: 26px;
+  }
+
+  button.form-btn-secmain.btn.btn-primary {
+    font-size: 20px;
+  }
+
+  /* Testimonial Section */
+  .testmonial-heading h2 {
+    font-size: 32px;
+  }
+
+  .test-img {
+    width: 28%;
+  }
+
+  .test-cont h3 {
+    font-size: 18px;
+  }
+
+}
+/* ✅ Mobile & Small Tablets (≤768px) */
+@media (max-width: 768px) {
+
+  /* Banner Section */
+  .main-haeding-banner h2 {
+    font-size: 54px;
+    
+  }
+
+  .main-para-banner p {
+    font-size: 23px;
+ 
+  }
+
+  .main-banner {
+    padding-top: 25%;
+    padding-bottom: 10%;
+    
+  }
+
+
+  button.Logo-btn.btn.btn-primary {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+
+  /* Project Section */
+  .main-head-project h2 {
+    font-size: 30px;
+  }
+
+  .main-img-project {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-img-project img {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Form Section */
+  .contact-form {
+    
+    padding: 40px 20px;
+    margin: 50px auto;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  button.form-btn-secmain.btn.btn-primary {
+    font-size: 21px;
+    padding: 12px;
+  }
+
+  /* Testimonial Section */
+  .testmonial-heading h2 {
+    font-size: 28px;
+  }
+
+  .test-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .test-cont h3 {
+    font-size: 16px;
+  }
+}
+/* ✅ Small Mobile Devices (≤576px) */
+/* ✅ Small Mobile Devices (≤576px) Navbar Adjustments */
+@media (max-width: 576px) {
+
+  /* Hide the main button */
+  button.Logo-btn.btn.btn-primary {
+    display: none;
+  }
+button.Logo-btn-4.btn.btn-primary {
+    padding: 7px 9px;
+    
+}
+.img-center img{
+  height: 60px;
+}
+.main-img-project img {
+    flex: 1 1 100%;
+    width: 100%;
+}
+.main-head-project h2 {
+    font-size: 48px;
+}
+.main-Our-project {
+    padding-top: 12px;
+}
+.main-heading-fq h2 {
+    font-size: 37px;
+}
+.testmonial-heading h2 {
+    font-size: 35px;
+}
+section.Testmonial-part {
+    padding-top: 30px;
+}
+.testmonial-heading {
+    padding-bottom: 28px;
+}
+.col-sm-12 {
+    padding: 10px;
+
+}
+.main-row-testm {
+    padding-bottom: 48px;
+}
+
+
+}
+/* ✅ Extra Small Devices (≤360px) Navbar Adjustments */
+@media (max-width: 360px) {
+
+  .img-center img {
+    height: 50px !important;
+    transition: 0.3s;
+}
+  /* Hide the main button completely */
+  button.Logo-btn.btn.btn-primary {
+    display: none;
+  }
+  .main-haeding-banner h2 {
+    font-size: 40px;
+}
+.main-para-banner p {
+    font-size: 23px;
+}
+.col-sm-12 {
+    padding: 0px;
+}
+.main-heading-fq h2 {
+    font-size: 25px;
+}
+button.form-btn-secmain.btn.btn-primary {
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.tabs-main-sec {
+
+    font-size: 9px;
+    padding: 6px 10px;
+}
+.form-title {
+    font-size: 25px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 16px;
+    font-size: 16px;
+}
+
+button.Logo-btn-3.btn.btn-primary {
+    width: 67%;
+    padding: 11px 0px;
+    font-size: 19px;
+}
+.testmonial-heading h2 {
+    font-size: 30px;
+} 
+.col-lg-4.col-md-12.col-sm-12 {
+    padding: 15px;
+}
+.row-main-sec2, .row-main-sec3, .row-main-sec4 {
+    text-align: left;
+    padding: 20px;
+}
+.card-main {
+  padding: 5px;
+}
+.row-main-sec1 {
+    
+    text-align: left;
+}
+
+.row-main-sec2 ul li, .row-main-sec3 ul li, .row-main-sec4 ul li {
+    line-height: 30px;
+}
+.testmonial-heading {
+    padding-bottom: 6px;
+}
+.testmonial-part{
+  padding: 40px 20px;
+}
+.test-img {
+    width: 77px;
+    height: 66px;
+}
+.img-center img {
+    width: 100%;
+}
+.img-center img {
+    height: 40px;
+    transition: 0.3s;
+}
+.row-main-sec2, .row-main-sec3, .row-main-sec4 {
+    padding: 10px;
+}
+.row-main-sec1 {
+    padding: 10px;
+}
+.section-frompart {
+    padding: 4px;
+}
+.main-heading-fq h2 {
+    font-size: 32px;
+    padding-top: 50px;
+    text-align: center;
+}
+button.form-btn-secmain.btn.btn-primary {
+    font-size: 18px;
+}
+.main-banner {
+    padding-top: 48%;
+}
+.testmonial-heading {
+    padding-bottom: 30px;
+}
+.testmonial-heading h2 {
+    font-size: 19px;
+}
+section.testmonial-part {
+    /* padding-top: 80px; */
+    padding: 35px 30px;
+}
+}
+
+
+
+
+
+
+
+
