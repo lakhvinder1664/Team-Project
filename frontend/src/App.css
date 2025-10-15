@@ -566,7 +566,7 @@ a.button {
 .right-pill-down-btn {
   color: white !important;
   border-radius: 10px;
-  background: black;
+  background: black !important;
   padding: 8px 24px;
   font-size: 20px;
   border: none;

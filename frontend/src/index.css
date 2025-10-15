@@ -714,7 +714,7 @@ html, body {
 }
 
 /* ===== VERY SMALL MOBILE ===== */
-@media (max-width: 360px) {
+@media (max-width: 362px) {
   .side-img-btn {
     order: 2 !important;
   }
@@ -732,7 +732,7 @@ html, body {
     font-size: 20px !important;
   }
   .banner-img-col{
-    margin: 20px 0 0 -24px;
+    margin: 20px 0 0 -6px;
   }
     .banner-img-col img {
     width: 50px !important;
@@ -745,12 +745,34 @@ html, body {
     font-size: 12px !important;
     padding: 8px 16px !important;
   }
+  .left-tabs-right {
+    margin-top: 25px !important;
+    display: flex;
+  }
+  .sec-2 {
+    padding: 25px 20px;
+  }
+  .sec-2-left ul {
+    gap: 5px;
+    display: flex;
+  }
+  .sec-2-left li a.active {
+    border-right: none !important;
+    border-bottom: 5px solid black;
+  }
+  .sec-2-left li a {
+    font-size: 16px !important;
+    padding: 15px 1px !important;
+  }
   .sec-2-top-head h2 {
     font-size: 30px !important;
   }
   .sec-2-top-head p {
     text-align: left !important;
     font-size: 19px !important;
+  }
+  .pill-right-cont h3 {
+    font-size: 25px !important;
   }
   .sec-3-btn {
     margin: 0% 57% 0 0 !important;
