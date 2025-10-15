@@ -2,7 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 
-import logo1 from '../assets/images/logo.png'
+import logo1 from '../assets/images/logo.png';
+// fontawasome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // Banners and Banner Icons
 import banner1 from "../assets/banner/homeban1.jpg";
@@ -802,7 +805,7 @@ useEffect(() => {
       </div>
 
       {/* Contact Form */}
-      <div className="sec-10">
+      {/* <div className="sec-10">
         <Container>
           <Row>
             <Col xs={12}  md={12} lg={6}>
@@ -833,7 +836,36 @@ useEffect(() => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
+      <section className='sec-10-form'>
+        <div className='form'>
+          <Container fluid>
+            <Row className='align-items-center'>
+              <Col lg={6} md={12}>
+                <div className='form-left'>
+                  <img src={logo1} alt="" />
+                  <h2>Ready to Start Your</h2>
+                  <span>Next Project With Schon?</span>
+                </div>
+              </Col>
+             <Col lg={6} md={12}>
+                <div className="form-right">
+            <h4>We’re just a step away!</h4>
+            <form className="contact-form">
+            <input type="text" placeholder="Full Name*" required />
+            <input type="email" placeholder="Email Address*" required />
+            <input type="tel" placeholder="Contact No.*" required />
+            <textarea placeholder="Message"></textarea>
+            <button className="formbtn header-btn">
+              Get in Touch <FontAwesomeIcon icon={faArrowRight} />
+            </button>
+            </form>
+            </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </section>
 
       {/* Experience Centres */}
       <div className="sec-11 text-center">
