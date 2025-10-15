@@ -714,7 +714,7 @@ html, body {
 }
 
 /* ===== VERY SMALL MOBILE ===== */
-@media (max-width: 362px) {
+@media (max-width: 360.98px) {
   .side-img-btn {
     order: 2 !important;
   }
