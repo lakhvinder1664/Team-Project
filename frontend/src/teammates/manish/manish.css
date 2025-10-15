@@ -1337,7 +1337,7 @@ button.btn.btn-primary {
     text-align: center;
   }
 
-  .sec-10-form.form-left {
+  .sec-10-form .form-left {
     margin-left: 0;
     padding-top: 30px;
   }
