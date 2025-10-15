@@ -303,9 +303,9 @@ section.testmonial-part {
     font-size: 36px;
   }
 
-  .contact-form {
+  /* .contact-form {
     padding: 60px;
-  }
+  } */
 
 }
 }
@@ -345,9 +345,9 @@ section.testmonial-part {
   }
 
   /* Form Section */
-  .contact-form {
+  /* .contact-form {
     padding: 60px 50px;
-  }
+  } */
 
   .form-title {
     font-size: 28px;
@@ -422,12 +422,6 @@ section.testmonial-part {
   .main-img-project img {
     flex: 1 1 calc(50% - 12px);
   }
-
-  /* Form Section */
-  .contact-form {
-    padding: 50px 35px;
-  }
-
   .form-title {
     font-size: 26px;
   }
@@ -491,14 +485,6 @@ section.testmonial-part {
     flex: 1 1 100%;
     max-width: 100%;
   }
-
-  /* Form Section */
-  .contact-form {
-    
-    padding: 40px 20px;
-    margin: 50px auto;
-  }
-
   .form-title {
     font-size: 22px;
   }
@@ -605,11 +591,6 @@ button.form-btn-secmain.btn.btn-primary {
 .form-title {
     font-size: 25px;
 }
-.contact-form input, .contact-form textarea {
-    padding: 16px;
-    font-size: 16px;
-}
-
 button.Logo-btn-3.btn.btn-primary {
     width: 67%;
     padding: 11px 0px;
