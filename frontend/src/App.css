@@ -1113,10 +1113,10 @@ a.button {
 }
 
 .contact-form {
-  width: 100%;
+  /* width: 100%; */
   /* max-width: 400px; */
 }
-
+/* 
 .form-input {
   margin-bottom: 15px;
 }
@@ -1132,7 +1132,7 @@ a.button {
   background: #2a2a2a;
   border: 1px solid rgba(203, 212, 230, 0.2);
   border-radius: 8px;
-}
+} */
 
 /* Section 11 */
 .sec-11{

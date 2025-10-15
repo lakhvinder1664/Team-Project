@@ -310,7 +310,7 @@ function Projects() {
                             </Col>
                             <Col md={12} lg={6} sm={12} col={12}>
                                 <div className="main-formsumit-part">
-                                    <div class="contact-form">
+                                    <div class="contact-form form-right">
                                         <h2 class="form-title">We’re just a step away!</h2>
 
                                         <form>
